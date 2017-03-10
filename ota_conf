@@ -2,6 +2,8 @@
 ota_url=https://raw.githubusercontent.com/TipsyOs-Devices/OTA_config/n7.1/TipsyOTA.xml
 release_type=Stable
 device_name=ro.product.device
+# For Tipsy builds, we use below to better support unified devices
+tipsy_device=ro.tipsy.device
  
 #exampe ro.tipsy.version=Tipsy-wt88047-7.1.0.Alpha-v4.0-20161129-1718
 version_source=ro.tipsy.version
