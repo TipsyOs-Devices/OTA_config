@@ -172,15 +172,19 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </flo>
         <flounder>
-            <Filename>Tipsy-flounder-7.1.1.Delirium-v4.7-20170301-0930.zip</Filename>
+            <Filename>Tipsy-flounder-7.1.1.Fantome-v4.9-20170312-1357.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=745425885120711801</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862709654</RomUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit XDA thread">https://forum.xda-developers.com/nexus-9/development/rom-gzroms-tesla-flounder-2015-06-19-t3139058</XDAUrl>
         </flounder>
         <clark>
             <Filename>Tipsy-clark-7.1.1.Fantome-v4.9-20170312-1218.zip</Filename>
