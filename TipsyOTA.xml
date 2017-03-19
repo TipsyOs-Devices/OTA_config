@@ -220,5 +220,24 @@
                 title="XDA"
                 description="Visit XDA thread">https://forum.xda-developers.com/nexus-5x/development/rom-tesla-rom-v3-4-beta-2017-01-03-t3531631</XDAUrl>
         </bullhead>
+        <lux>
+            <Filename>Tipsy-lux-7.1.1.Gildenbier-v5.0-20170319-1937.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=817550096634754878</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Motorola/lux/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit TipsyOs lux XDA thread">http://forum.xda-developers.com/oneplus-one/development/rom-kernel-tipsyos-bacon-t3165560</XDAUrl>
+        </lux>
     </Stable>
 </SlimOTA>

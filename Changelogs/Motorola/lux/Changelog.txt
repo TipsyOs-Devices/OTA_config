@@ -1,0 +1,136 @@
+====================
+     03-19-2017
+====================
+   * OTA_config/
+f638bad  Revert "op3: remove one - to fix it"  [Martinusbe]
+9d26df6  Clark 03/19  [GitHub]
+836cbd0  op3: remove one - to fix it  [GitHub]
+06b0417  wtf  [GitHub]
+d064753  op3 03/19  [Martinusbe]
+   * device/motorola/lux/
+7875c8c  lux: Featurize Flash LED  [GtrCraft]
+   * device/motorola/msm8916-common/
+67fa659  msm8916-common: Set camera permissions device specific  [GtrCraft]
+1915a7d  msm8916-common: Drop liboemcrypto  [GtrCraft]
+   * frameworks/base/
+1c6a5c4  SystemUI: Grant READ_PHONE_STATE permission  [Martinusbe]
+5378a70  camera: Make secondary camera package list opt out  [Martinusbe]
+ad28963  Camera: Expose dual camera for whitelist app  [Martinusbe]
+0cfdf84  camera: Tolerate errors in getHorizontal/VerticalViewAngle  [Martinusbe]
+a93d1ac  Guard in short-circuit evaluations for stringSplit methods.  [Martinusbe]
+8d2dcbf  Camera: Don't throw exceptions when value pairs have spaces in them  [Martinusbe]
+9038cf1  New easter egg designs  [Martinusbe]
+0d550a9  Expose temperature text in DetailedWeatherView  [Martinusbe]
+33033ce  ThemeSafety: Introduce App Crash Intent  [Martinusbe]
+30c2994  SubscriptionManager: remove unprovisioned sims from the list of active subscriptions  [Martinusbe]
+739bc8f  Fix update of brightness mode in QS slider  [Martinusbe]
+c1d323d  Revert "Brightness slider: only enable auto brightness toggle when also enabed for QS"  [Martinusbe]
+8976e99  Revert "QS auto brightness toggle rework"  [Martinusbe]
+f8535c2  fix build  [Martinusbe]
+ec84996  Notification Ticker: add darkintensity support  [Martinusbe]
+   * manifest/
+04d4f4c  Change github to track https  [Martinusbe]
+   * packages/apps/Settings/
+2a4c0aa  Fix possible NPE on SIM settings shutdown.  [Martinusbe]
+28a3c9d  Clean up SIM enable toggle implementation  [Martinusbe]
+4ad9e18  Settings: port manual provisiong support  [Martinusbe]
+   * packages/apps/Tavern/
+6e24675  Remove overlay added for gesturesAnywhere  [Martinusbe]
+7bd1db1  Let brightness icon use System switch preference  [Martinusbe]
+   * vendor/motorola/
+061dbf5  griffin: remove Mods related apks  [Ashwin Ramesh]
+2bb9c66  griffin: remove MotoDisplayFWProxy  [Ashwin Ramesh]
+d56d1fc  griffin: update drm blobs  [Ashwin Ramesh]
+f2913ed  griffin: fix wakelock type  [Ashwin Ramesh]
+5974b2c  griffin: fix missing package  [Ashwin Ramesh]
+e1b4c48  griffin: kang drm from bullhead  [Ashwin Ramesh]
+76bec1a  griffin: fix adreno blob lib64/libmm-disp-apis.so  [Ashwin Ramesh]
+dde42e9  griffin: update adreno blobs  [Ashwin Ramesh]
+0373e18  Revert "griffin: switch to shared graphics driver repository"  [Ashwin Ramesh]
+006b819  griffin: disable btsnoop trace  [Ashwin Ramesh]
+   * vendor/tipsy/
+21cdd67  Prema likes Gildenbier  [GitHub]
+b26562d  v5.0 Geuze  [Martinusbe]
+219f463  qcom: Automatically set TARGET_USES_COLOR_METADATA for msm8996/8  [Martinusbe]
+
+====================
+     03-18-2017
+====================
+
+
+====================
+     03-17-2017
+====================
+   * OTA_config/
+49af2cc  Flo 03/17  [GitHub]
+   * frameworks/av/
+c981a70  Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."  [Martinusbe]
+   * frameworks/opt/slim/
+bc857e1  SlimRecents: Fix potential SystemUI NPE  [Martinusbe]
+c8b3f26  Slim Recents: don't show panel if app pinning is currently active  [Martinusbe]
+72c33db  SlimRecents: add killapp button to toptask card  [Martinusbe]
+cc2beae  Slim Recents: make multiwindow more robust  [Martinusbe]
+e1b53f9  Slim Recents: fix toptask header layout and other ui improvements  [Martinusbe]
+3f49494  Slim Recent: scale apps thumbnails according to the panel size  [Martinusbe]
+   * packages/apps/DeskClock/
+f20b203  DeskClock: grant READ_PHONE_STATE and READ_PRIVILEGED_PHONE_STATE  [Martinusbe]
+8c44708  Black and Yellow please!  [Martinusbe]
+c2d47fc   DeskClock night mode  [Martinusbe]
+   * packages/apps/OmniStyle/
+faf258e  Fix: Are you kidding, Syed?  [Prema Chand Alugu]
+
+====================
+     03-16-2017
+====================
+
+   * packages/providers/MediaProvider/
+7107407  MediaProvider: Fix possible NPE  [Martinusbe]
+6696944  MediaProvider: Add read storage permission  [Martinusbe]
+9b16f95  Screenshots info is not updated when device is plugged in MTP mode  [Martinusbe]
+   * packages/resources/devicesettings/
+5a5b9c5  Automatic translation import  [Abhisek Devkota]
+
+====================
+     03-15-2017
+====================
+
+   * kernel/motorola/msm8916/
+89e6f5a  Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1  [desaishivam26]
+   * vendor/motorola/
+789936d  clark: kang drm from bullhead  [Dan Pasanen]
+
+====================
+     03-14-2017
+====================
+
+   * hardware/qcom/media-caf/msm8974/
+26cc5da  mm-video-v4l2: vdec: Fix makefile derp introduced in d443c0d  [Josue Rivera]
+
+====================
+     03-13-2017
+====================
+   * OTA_config/
+f4c2ef5  Add bullhead to TipsyOTA  [GitHub]
+
+====================
+     03-12-2017
+====================
+   * OTA_config/
+01906bb  Flounder 03/12  [GitHub]
+fe595ca  Clark 03/12  [GitHub]
+aa3269f  ota: update Redmi2 03/12  [Prema Chand Alugu]
+fb8cd51  update op3  [Martinusbe]
+d9e83d6  ota: update Bacon 03/12  [Prema Chand Alugu]
+   * kernel/motorola/msm8916/
+edac861  mfd: wcd9xxx: Add range checking in function wcd9xxx_init_slimslave  [Alberto97]
+ff38f59  ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map  [Alberto97]
+   * packages/services/OmniJaws/
+614ed6c  OmniJaws: Clean up unused imports, simpify few things  [Alx31]
+ac5d22a  OmniJaws: Add menu item to search for Chronus icons  [Alx31]
+77ee9d1  Fix potential actionbar npe  [Alx31]
+ea3de8b  OmniJaws: manifest add DEFAULT category to activities  [Alx31]
+   * vendor/motorola/
+245f629  msm8916-common: Drop liboemcrypto  [Ashwin Ramesh]
+   * vendor/tipsy/
+d39f091  v4.9 Fantome  [Prema Chand Alugu]
+
