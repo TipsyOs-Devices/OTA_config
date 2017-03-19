@@ -1,288 +1,261 @@
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+
 ====================
-     02-06-2017
+     03-19-2017
 ====================
 
    * device/oneplus/oneplus3/
-332bb94  op3:prop: net.tethering.noprovisioning  [Martinusbe]
-   * frameworks/base/
-2e1cd18  LS Quick Unlock Custom PIN Length(4-12) [1/2]  [Prema Chand Alugu]
-bc60a00  graphics: ADB "N" icon compatible with OMS7  [Martinusbe]
+edd68a3  op3: sepolicy: allow system_server user profile data  [Martinusbe]
+fb538fe  op3: Update to OxygenOS 4.1.0 blobs  [Martinusbe]
+b8f3b07  op3: Clean up camera shim library  [Martinusbe]
    * kernel/oneplus/msm8996/
-c9f1f2c  arm64: lib: improve copy_page to deal with 128 bytes at a time  [Martinusbe]
-a1abf26  synaptics_driver: Fix transposed memset() arguments  [Martinusbe]
-eae8ae7  ANDROID: trace: net: use %pK for kernel pointers  [Martinusbe]
-81f8921  ANDROID: video: adf: Avoid directly referencing user pointers  [Martinusbe]
-44dba58  sched: Fix integer overflow in sched_update_nr_prod()  [Martinusbe]
-ac978d4  diag: dci: avoid out of bounds memory access  [Martinusbe]
-d7af609  ion: blacklist %p kptr_restrict  [Martinusbe]
-f8be73d  ASoC: msm: q6dspv2: fix potentional information leak  [Martinusbe]
-b08eccb  usb: Avoid exposing kernel addresses  [Martinusbe]
-394912b  op3:tri_state_key: fix positions  [Martinusbe]
-63534dd  op3:tri_state_key: allow more key codes for extra modes  [Martinusbe]
-   * packages/apps/Settings/
-8e0102e  LS Quick Unlock Custom PIN Length(4-12) [2/2]  [Prema Chand Alugu]
-
-====================
-     02-05-2017
-====================
-
-   * packages/apps/Tavern/
-3c3c2c8  change category name for later purposes  [Alx31]
-6b94bf6  make a lockscreen battery category  [Alx31]
-
-====================
-     02-04-2017
-====================
-
-   * device/oneplus/oneplus3/
-1c802ae  op3: fix and simplify unified ini  [Martinusbe]
-08e78e9  op3: remove unused overlays  [Martinusbe]
-1b8eb13  op3: enable proximityCheckOnWake overlay  [Martinusbe]
-55a9ce3  Revert "op3: don't build the common"  [Martinusbe]
-043d9ce  op3: don't build the common  [Martinusbe]
-   * device/oppo/common/
-9b9a123  oppo_common:remove the gestures check  [Martinusbe]
-   * frameworks/opt/slim/
-5ec172c  utils: Introduce FileUtils class  [Martinusbe]
-   * kernel/oneplus/msm8996/
-1968d3a  Revert "input: synaptics_s3320: Commonize gesture flags"  [Martinusbe]
-3864215  Revert "input: synaptics_s3320: Clean up gesture handling"  [Martinusbe]
-567a3ca  Revert "input: synaptics_s3320: Support all gestures"  [Martinusbe]
-cad1650  shmem: fix shm fallocate() list corruption  [Martinusbe]
-53a91d3  blk-mq: update hardware and software queues for sleeping alloc  [Martinusbe]
-49dbb54  drivers: video: Add bounds checking in fb_cmap_to_user  [Martinusbe]
-f8d6a52  UPSTREAM: arm64: vdso: Mark vDSO code as read-only  [Martinusbe]
-0985be6  UPSTREAM: USB: iowarrior: fix oops with malicious USB descriptors  [Martinusbe]
-7b5c3db  UPSTREAM: USB: usb_driver_claim_interface: add sanity checking  [Martinusbe]
-fc0d750  UPSTREAM: USB: mct_u232: add sanity checking in probe  [Martinusbe]
-8ce07ae  UPSTREAM: USB: cypress_m8: add endpoint sanity check  [Martinusbe]
-99bac83  UPSTREAM: ppp: defer netns reference release for ppp channel  [Martinusbe]
-d093fa7  Undo unused changes  [Martinusbe]
-   * system/core/
-84c08c7  parse board_id from kernel command line  [Prema Chand Alugu]
-   * vendor/tipsy/
-48681d5  Merge branch 'testing' of https://github.com/TipsyOs/vendor_tipsy into HEAD  [Martinusbe]
-9a471f2  Update Nova  [Martinusbe]
-126a2ae  Add marlin  [GitHub]
-3381b89  tipsy-fy bootzip  [Alx31]
-d899de5  Import "make bootzip" task  [Alx31]
-47fc86a  Merge pull request #7 from scoobyjenkins/testing  [GitHub]
-
-====================
-     02-03-2017
-====================
-
-   * device/oneplus/oneplus3/
-86ccbfd  fixing a potential race condition  [Martinusbe]
-38bd7a5  fixing a race condition on MsgTask::destroy()  [Martinusbe]
-8ad57ee  update gps.conf  [Martinusbe]
-32366ff  op3: add CMHW to dependencies  [Martinusbe]
-224b271  op3:overlay: enable intrusiveBatteryLed  [Martinusbe]
-2737067  op3:overlay: disable safe_media_volume  [Martinusbe]
-af2db32  op3: Lockscreen charging info: real time values  [Martinusbe]
-78d8d54  op3:Tipsy: add overlay for gesture anywhere  [Martinusbe]
-df7bc25  op3:sepolicy: allow untrusted_app sysfs file perms  [Martinusbe]
-d49fa8a  op3:sepolicy: add priv_app.te fix some denials  [Martinusbe]
-7182064  op3: Google assistant prop  [Martinusbe]
-bd10fc0  tipsy  [Martinusbe]
-1f30b28  op3: remove pocketmode  [Martinusbe]
-b33f67f  op3: remove TrustZone assertion wait a bit with this  [Martinusbe]
-   * frameworks/base/
-591e0b3  Fix playing screenshot's sound when camera's sounds off  [Martinusbe]
-   * kernel/oneplus/msm8996/
-5aecc18  int_sqrt: Improve 3x faster integer sqrt.  [Martinusbe]
-00d5dea  Revert "int_sqrt: Improve 3x faster integer sqrt."  [Martinusbe]
-8c222e9  Revert "staging: ion: shrink highmem pages on kswapd"  [Martinusbe]
-fd0a51b  CHROMIUM: arm64: irq: lower the IRQ affinity notification when CPU goes offline  [Martinusbe]
-6165817  int_sqrt: Improve 3x faster integer sqrt.  [Martinusbe]
-1c34d06  int_sqrt.c: Correction square root algo with naming  [Martinusbe]
-47a46ec  staging: ion: shrink highmem pages on kswapd  [Martinusbe]
-046f2ba  lib/memcopy: use glibc version  [Martinusbe]
-b35fca4  lib/string: use glibc version  [Martinusbe]
-d737451  asm-generic: rwsem: ensure sem->cnt is only accessed via atomic_long_*  [Martinusbe]
-b23421a  ARM: optimize memset_io()/memcpy_fromio()/memcpy_toio()  [Martinusbe]
-71767fe  ARM: dts: 15801: Correct TP vdd min voltage  [Martinusbe]
-   * packages/apps/OmniStyle/
-9694548  OmniStyle: no padding for ListView bottom  [Martinusbe]
-7cf4b4c  add GzR Roms Header  [Martinusbe]
-56f4171  OmniStyles: Add Tipsy Walls  [Martinusbe]
-   * packages/apps/Tavern/
-a2332df  Merge pull request #8 from scoobyjenkins/testing  [GitHub]
-b85debc  Update ic_tavern_walls.xml  [GitHub]
-30b7b54  Merge pull request #7 from scoobyjenkins/testing  [GitHub]
-be8d2e9  Update ic_tavern_walls.xml  [GitHub]
-   * vendor/tipsy/
-3bbf620  Update default wall and boot animation  [Pete Best]
-
-====================
-     02-02-2017
-====================
-
-   * device/oneplus/oneplus3/
-3ddceb9  op3:overlay: disable uiBlur  [Martinusbe]
-df0d9ea  op3:overlay: disable intrusiveBatteryLed  [Martinusbe]
-011912c  op3:overlay: disable unsupported autoBrightnessBrighteningLightFastDebounce  [Martinusbe]
-63d8521  op3: fix pocketmode build  [Martinusbe]
-7e62aed  op3: disable longPressOnAppSwitchBehavior  [Martinusbe]
-9b0be21  op3: disable wakekeys  [Martinusbe]
-13a8a09  oneplus3:Doze: rename to OnePlus Doze  [Martinusbe]
-b198b4e  Revert "op3: Bring DozeSettings up to date"  [Martinusbe]
-92a8acb  Revert "oneplus3: doze: Commonize strings translations"  [Martinusbe]
-31aafa7  op3: LCD 420  [Martinusbe]
-7b0c120  oneplus3: switch back & menu key  [Martinusbe]
-700ef52  op3: move hwkeys overlay to fr/opt/slim  [Martinusbe]
-69a5dac  op3: disable hw keys overlay  [Martinusbe]
-0ae1ee7  op3: adb at boot  [Martinusbe]
-279c164  Slim  [Martinusbe]
-089de9b  op3: s6e3fa5: add QDCM configuration  [dianlujitao]
-   * frameworks/base/
-3718c49  [2/3] frameworks_base: SlimDoze 7.1.1  [Martinusbe]
-b761aab  Add support for Samsung extended AGPS  [Martinusbe]
-5eb296b  allow forcing HighEndGfx mode  [Martinusbe]
-e128c97  QS scroll default enabled  [Martinusbe]
-188882f  base: SystemUI: fix quickbar clipping with enabled scrolling  [Martinusbe]
-   * frameworks/opt/slim/
-ebf8899  [3/3] framework_opt_slim: SlimDoze 7.1.1  [Martinusbe]
-3d22050  add SlimSeekBarPreferencev2  [Martinusbe]
-bc76824  SlimDoze: remove MM iteration  [Martinusbe]
-   * kernel/oneplus/msm8996/
-ebf1740  defconfig: Slim_op3  [Martinusbe]
-   * packages/apps/OmniStyle/
-8e7cb1c  add GzR Font Header  [Martinusbe]
-3bc1396  OmniStyle: add wallpaper contribution and picker  [Martinusbe]
-   * packages/apps/Settings/
-dd17a20  [1/3] Settings: SlimDoze 7.1.1  [Martinusbe]
-c195b72  Settings: Fix double press power for camera settings  [Martinusbe]
-   * packages/apps/Tavern/
-4b0e505  Tavern: kill qs scroll toggle  [Martinusbe]
-c525f9d  Tavern: Shorten ls charging string a bit  [Martinusbe]
-64c12c4  Tavern: add an icon to walls Temp icon, waiting for the artsie Pete  [Martinusbe]
-d23ef66  Tavern: add preferencescreen for wallpapers  [Martinusbe]
+247a4f6  misc: Sync with OxygenOS 4.1.0 kernel release  [Martinusbe]
    * vendor/oneplus/
-5560ea5  op3: Add op3t adreno firmware  [Martinusbe]
-6db3e6d  op3: Update to OxygenOS 4.0.2 blobs  [Martinusbe]
-b587d92  op3: Update to N camera blobs  [Martinusbe]
-d4e6667  op3: update blobs  [Martinusbe]
-   * vendor/tipsy/
-fad3721  Revert "Bring in Chromium"  [Martinusbe]
-
-====================
-     02-01-2017
-====================
+0bae12e  op3: Update to OxygenOS 4.1.0 blobs  [Martinusbe]
+91eb29e  Revert "op3: add aptX codec support"  [Martinusbe]
 
    * device/oneplus/oneplus3/
-047b155  op3: Update README for 3t  [dianlujitao]
-2ba17a8  op3: Add support for op3t  [dianlujitao]
-8835354  op3: Update to N camera blobs  [dianlujitao]
-28240d1  Revert "op3: Remove obsolete Snap overlay"  [dianlujitao]
-3c02b75  op3: Support more gestures  [dianlujitao]
-3a8d35f  op3: Switch to the CMHW touchscreen gestures implementation  [dianlujitao]
-db2b1ff  op3: Add TrustZone assertion  [dianlujitao]
-9d73719  op3: Enable Wifi calling  [dianlujitao]
-db37abe  Revert "op3: Fix installing stock build"  [dianlujitao]
-   * device/qcom/common/
-5d2b74a  extractors: Set INITIAL_COPYRIGHT_YEAR  [Josue Rivera]
-   * external/ffmpeg/
-e3bbe77  ffmpeg: android: Regenerate configs  [Josue Rivera]
-   * frameworks/base/
-bc2afba  base: SystemUI: all tile scroller for quickbar settings [1/2]  [Martinusbe]
-25640af  base: volume dialog: hide headers on all streams if requested  [Martinusbe]
-7499dd8  telephony: Add state check for LteOnCdma to isGsm and isCdma  [Martinusbe]
-e9a0b3b  Store Network Mode selected in subId Table.  [Martinusbe]
-   * frameworks/opt/telephony/
-c28f27b  SubscriptionController: Make sure cis are not null  [Martinusbe]
-08c5e25  Convert multi_rat_capable property into an old RIL feature.  [Martinusbe]
-5b293eb  telephony: Improve compatibility for older DSDS stacks  [Martinusbe]
-32f547f  telephony: Set multi-rat default to true.  [Martinusbe]
-2790809  SubscriptionController: Default to DDS flexmap triggering  [Martinusbe]
-f509257  telephony: Override nw mode on creation and when trying to calculate nw type.  [Martinusbe]
-a859931  Fix crash when importing contacts from SIM in Contacts app  [Martinusbe]
-10b9d43  telephony: Respect user nw mode, handle DSDS non-multi-rat.  [Martinusbe]
-30e2925  Fixes and cleanups after 7.1.0/7.1.1 merge  [Martinusbe]
+9832334  op3: sepolicy: allow untrusted_app proc_stat  [Martinusbe]
    * kernel/oneplus/msm8996/
-f27e576  input: synaptics_s3320: Support all gestures  [dianlujitao]
-3616808  input: synaptics_s3320: Clean up gesture handling  [dianlujitao]
-eee5f91  input: synaptics_s3320: Commonize gesture flags  [dianlujitao]
-5bdc89f  Revert "msm: camera: isp: Handle standby mode for B+M"  [dianlujitao]
-   * manifest/
-ea733ca  damn  [Martinusbe]
-7cc7b72  oops  [Martinusbe]
-f3346b8  remove that old unused remote  [Martinusbe]
-0243e08  track some telephony in testing  [Martinusbe]
-   * packages/apps/OmniStyle/
-25b5262  OmniStyle: add Pete & Syed creator data  [Martinusbe]
-5aafccc  OmniStyle: add creator meta data for header packs  [Martinusbe]
-23d0bcd  OmniStyle: add Syed's Tipsy headers  [Martinusbe]
-1abd2e0  Add GZR themed Tipsy headers  [Martinusbe]
-90c1ee8  Tipsyfy Nature & Poly, add Pete's Tipsy headers  [Martinusbe]
-   * packages/services/Telecomm/
-8212414  CallAudioModeStateMachineTest: fix compilation  [Martinusbe]
-4b1ac59  Telecomm: Set MSIM audio params using the proper ID  [Martinusbe]
-a46171d  Telecomm: Fix error due to protected broadcast  [Martinusbe]
-edd13a4  Fix incorrect key in Maps  [Martinusbe]
-   * packages/services/Telephony/
-05a94fd  Telephony: Number of slot should start with 1  [Martinusbe]
+5750a87  qcacld-2.0: Update to LA.UM.5.5.r1-03800-8x96.0  [Martinusbe]
+6999570  Merge tag 'LA.UM.5.5.r1-03800-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1  [Martinusbe]
 
-====================
-     01-31-2017
-====================
-
+   * device/oneplus/bacon/
+cb09843  overlay: disbale aosp gestures  [Prema Chand Alugu]
    * device/oneplus/oneplus3/
-0723eea  ipacm: Fix KW issues  [dianlujitao]
-1387022  ipacm: Fix race condition between nat delete rule and update timestamp  [dianlujitao]
+e1e7fc2  Revert "Revert "op3: disable gesture settings overlay""  [Martinusbe]
+   * frameworks/av/
+c981a70  Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."  [Martinusbe]
    * frameworks/base/
-a067f69  carrierlabel: fix style in light theme  [Martinusbe]
-59f5387  Change toast frames color to some better look ones  [Martinusbe]
-0a9f928  Expose external qs tile tint color  [Martinusbe]
-   * kernel/oneplus/msm8996/
-2f01a39  qcacld-2.0: Update to LA.UM.5.5.r1-02800-8x96.0  [dianlujitao]
-7da2bbe  Merge tag 'LA.UM.5.5.r1-02800-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1-bringup  [dianlujitao]
-1ab7bc4  sg_write()/bsg_write() is not fit to be called under KERNEL_DS  [dianlujitao]
-b981abe  netlink: Fix dump skb leak/double free  [dianlujitao]
-5a9f921  ALSA: pcm : Call kill_fasync() in stream lock  [dianlujitao]
-13833b2  net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  [dianlujitao]
-7e4c598  ring-buffer: Prevent overflow of size in ring_buffer_resize()  [dianlujitao]
-56f637b  packet: fix race condition in packet_set_ring  [dianlujitao]
-6a67489  HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands  [dianlujitao]
-01bb16f  usbnet: cleanup after bind() in probe()  [dianlujitao]
-290deb0  USB: cdc-acm: more sanity checking  [dianlujitao]
-75cc79d  netfilter: x_tables: check for size overflow  [dianlujitao]
-05489f2  pipe: limit the per-user amount of pages allocated in pipes  [dianlujitao]
-7940da7  ALSA: hrtimer: Fix stall by hrtimer_cancel()  [dianlujitao]
-bd4967e  Input: aiptek - fix crash on detecting device without endpoints  [dianlujitao]
-2eae6da  BACKPORT: mm: avoid setting up anonymous pages into file mapping  [dianlujitao]
-935d8ff  net: llc: use correct size for sysctl timeout entries  [dianlujitao]
-   * packages/apps/Settings/
-00b7827  Settings: Fix crash on WifiAdvancedSetting  [Martinusbe]
-0079f39  settings: clean up xml's  [Martinusbe]
-cad8eb6  Settings: Expose bluetooth pin confirm dialog text colors  [Martinusbe]
-   * packages/apps/Snap/
-f20e0e1  Fix thumbnail sometimes not being shown initially in video mode.  [Josue Rivera]
-e835de4  Fix shutter button pressed state tracking issues.  [Josue Rivera]
-5410eac  Snap: store module index  [Josue Rivera]
-
-====================
-     01-30-2017
-====================
-
-   * device/oneplus/oneplus3/
-f023c72  op3: Use OOS brightness values  [dianlujitao]
-e3e7bf0  op3: add camera-daemon cpuset  [dianlujitao]
-f907586  op3: update cpusets at boot complete  [dianlujitao]
-   * device/oneplus/onyx/
-be0ca99  onyx: cross compile kernel with androideabi instead of androidkernel  [CheckYourScreen]
-86ce9b7  onyx: set BOARD_HAVE_QCOM_FM flag  [CheckYourScreen]
-   * frameworks/base/
-a2b4757  Add text shadow for text in qs header  [Martinusbe]
-415befb  Don't cut off Brightness slider & button  [Martinusbe]
-b7e1103  [1/2] base: SystemUI: header pack config enhancements  [Alx31]
-55899e8  base: SystemUI: fix custom header dpi change behaviour  [Alx31]
-481ab6f  [1/3] base: custom header extensions  [Alx31]
+c69032c  SystemUI: Grant READ_PHONE_STATE permission  [Martinusbe]
+65ffa3f  camera: Make secondary camera package list opt out  [Martinusbe]
+6c014f0  Camera: Expose dual camera for whitelist app  [Martinusbe]
+0861c12  camera: Tolerate errors in getHorizontal/VerticalViewAngle  [Martinusbe]
+09dd076  Guard in short-circuit evaluations for stringSplit methods.  [Martinusbe]
+0940ad2  Camera: Don't throw exceptions when value pairs have spaces in them  [Martinusbe]
+   * frameworks/opt/slim/
+bc857e1  SlimRecents: Fix potential SystemUI NPE  [Martinusbe]
+c8b3f26  Slim Recents: don't show panel if app pinning is currently active  [Martinusbe]
+72c33db  SlimRecents: add killapp button to toptask card  [Martinusbe]
+cc2beae  Slim Recents: make multiwindow more robust  [Martinusbe]
+e1b53f9  Slim Recents: fix toptask header layout and other ui improvements  [Martinusbe]
+3f49494  Slim Recent: scale apps thumbnails according to the panel size  [Martinusbe]
+   * packages/apps/DeskClock/
+f20b203  DeskClock: grant READ_PHONE_STATE and READ_PRIVILEGED_PHONE_STATE  [Martinusbe]
+8c44708  Black and Yellow please!  [Martinusbe]
+c2d47fc   DeskClock night mode  [Martinusbe]
    * packages/apps/OmniStyle/
-1da4418  Revert "Add tipsy headers"  [Martinusbe]
-ae4288c  [2/2] OmniStyle: header pack config enhancements  [Alx31]
+faf258e  Fix: Are you kidding, Syed?  [Prema Chand Alugu]
+
+   * device/oneplus/bacon/
+b31c2c4  Revert "overlay: enable gesturesanywhere"  [Prema Chand Alugu]
+   * device/oneplus/oneplus3/
+4610c9d  op3: prop: disable sdcardfs  [Martinusbe]
+   * frameworks/base/
+6fed024  New easter egg designs  [Alx31]
    * packages/apps/Tavern/
-6dd7af1  Repair Seekbar derps for header shadow  [Alx31]
-1dba1b2  [2/3] OmniGears: custom header extensions static image provider call BrowseHeaderActivity from OmniStyle  [Alx31]
-dbef21c  [2/2] base: SystemUI: custom QS header images  [Alx31]
+0b0423c  Remove overlay added for gesturesAnywhere  [Prema Chand Alugu]
+   * packages/providers/MediaProvider/
+7107407  MediaProvider: Fix possible NPE  [Martinusbe]
+6696944  MediaProvider: Add read storage permission  [Martinusbe]
+9b16f95  Screenshots info is not updated when device is plugged in MTP mode  [Martinusbe]
+   * vendor/tipsy/
+45a2d41  v5.0 Geuze-testing  [Martinusbe]
+
+   * device/oneplus/oneplus3/
+a53318d  op3: Sync audio properties with upstream  [Martinusbe]
+   * frameworks/base/
+d5ac778  Expose temperature text in DetailedWeatherView  [Martinusbe]
+f05894c  ThemeSafety: Introduce App Crash Intent  [Martinusbe]
+a6ac1e1  SubscriptionManager: remove unprovisioned sims from the list of active subscriptions  [Martinusbe]
+   * vendor/motorola/
+789936d  clark: kang drm from bullhead  [Dan Pasanen]
+
+   * device/oneplus/bacon/
+5e6fe7e  Add dependencies  [Prema Chand Alugu]
+   * frameworks/base/
+36d52d8  Fix update of brightness mode in QS slider  [Prema Chand Alugu]
+b5bd80c  Revert "Brightness slider: only enable auto brightness toggle when also enabed for QS"  [Prema Chand Alugu]
+68279fd  Revert "QS auto brightness toggle rework"  [Prema Chand Alugu]
+   * frameworks/opt/telephony/
+8c45a7f  Merge pull request #6 from SlimRoms/ng7.1  [GitHub]
+   * hardware/qcom/media-caf/msm8974/
+26cc5da  mm-video-v4l2: vdec: Fix makefile derp introduced in d443c0d  [Josue Rivera]
+   * manifest/
+bd8fb25  Change github to track https  [Prema Chand Alugu]
+   * packages/apps/Settings/
+ee3d690  Fix possible NPE on SIM settings shutdown.  [Martinusbe]
+f01573d  Clean up SIM enable toggle implementation  [Martinusbe]
+1b02170  Settings: port manual provisiong support  [Martinusbe]
+   * packages/apps/Tavern/
+d086813  Let brightness icon use System switch preference  [Prema Chand Alugu]
+   * packages/services/Telecomm/
+41840ec  Merge pull request #2 from SlimRoms/ng7.1  [GitHub]
+   * packages/services/Telephony/
+faf3baf  Merge remote-tracking branch 'slim/ng7.1' into n7.1  [Martinusbe]
+   * vendor/tipsy/
+468851a  device: add Redmi2 to the devices  [Prema Chand Alugu]
+
+   * OTA_config/
+f4c2ef5  Add bullhead to TipsyOTA  [GitHub]
+01906bb  Flounder 03/12  [GitHub]
+   * vendor/motorola/
+245f629  msm8916-common: Drop liboemcrypto  [Ashwin Ramesh]
+   * vendor/tipsy/
+fd04c65  qcom: Automatically set TARGET_USES_COLOR_METADATA for msm8996/8  [Martinusbe]
+
+   * OTA_config/
+fe595ca  Clark 03/12  [GitHub]
+aa3269f  ota: update Redmi2 03/12  [Prema Chand Alugu]
+fb8cd51  update op3  [Martinusbe]
+d9e83d6  ota: update Bacon 03/12  [Prema Chand Alugu]
+   * device/oneplus/oneplus3/
+f8a2f1c  Revert "op3: add aptX codec support"  [Martinusbe]
+   * frameworks/base/
+23f06cd  fix build  [Alx31]
+12a0855  Notification Ticker: add darkintensity support  [Martinusbe]
+   * kernel/oneplus/msm8996/
+e508d5a  perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race  [Martinusbe]
+ba445ef  sctp: avoid BUG_ON on sctp_wait_for_sndbuf  [Martinusbe]
+86b3e3f  op3: Remove CONFIG_TIMER_STATS  [Martinusbe]
+8e4cece  ipc/shm: Fix shmat mmap nil-page protection  [Martinusbe]
+5cf375d  ANDROID: ion: check for kref overflow  [Martinusbe]
+1ccd033  qcacld-2.0: Remove obsolete set/reset ssid hotlist  [Martinusbe]
+feaf2c4  mpi: Fix NULL ptr dereference in mpi_powm() [ver #3]  [Martinusbe]
+9d1a9c0  Merge tag 'LA.UM.5.5.r1-03600-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1  [Martinusbe]
+   * packages/services/OmniJaws/
+614ed6c  OmniJaws: Clean up unused imports, simpify few things  [Alx31]
+ac5d22a  OmniJaws: Add menu item to search for Chronus icons  [Alx31]
+77ee9d1  Fix potential actionbar npe  [Alx31]
+ea3de8b  OmniJaws: manifest add DEFAULT category to activities  [Alx31]
 
