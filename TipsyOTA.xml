@@ -97,15 +97,15 @@
                 description="Visit TipsyOs Xperia SP XDA thread">http://forum.xda-developers.com/xperia-sp/development/rom-6-0-1r22-layers-tipsy-os-3-x-t3361161</XDAUrl>
         </huashan>
         <wt88047>
-            <Filename>Tipsy-wt88047-7.1.1.Fantome-v4.9-20170312-0254.zip</Filename>
+            <Filename>Tipsy-wt88047-7.1.1.Gildenbier-v5.0-20170319-2125.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862709596</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=745425885120716845</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Xiaomi/wt88047/Changelog.txt</ChangelogUrl>
+                description="View TipsyOs changelogs">https://raw.githubusercontent.com/TipsyOs-Devices/OTA_config/n7.1/Changelogs/Xiaomi/wt88047/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
