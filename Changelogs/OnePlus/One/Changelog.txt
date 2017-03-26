@@ -1,7 +1,192 @@
 ====================
-     03-19-2017
+     03-27-2017
 ====================
 
+   * build/
+3dcf214  Magisk as default and define explict rootless method [1/2]  [Alx31]
+494389a  Default root method provision [1/2]  [Alx31]
+58bdf16  Revert "ota: Remove cruft we don't care about"  [Alx31]
+249ef38  Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash  [Alx31]
+cb7b442  build: core: Remove BUILD_TINY_ANDROID checks  [Alx31]
+3fbc86d  releasetools: Generate recovery-from-boot.p with bsdiff if necessary  [Alx31]
+06d318a  Revert "releasetools: Don't extract BOOTABLE_IMAGES when signing target files"  [Alx31]
+2a0dd6e  Move ro.bootimage.build.fingerprint to build.prop  [Alx31]
+ef6fe00  core: Fix unified trees with no TARGET_OTA_ASSERT_DEVICE  [Alx31]
+4fdc67e  core: include libf2fs_fmt_host_dyn in otatools  [Alx31]
+808c51d  ota_from_target_files: Remove device dependent arguments  [Alx31]
+f057b3b  releasetools: support reading release keys out of some sort of command  [Alx31]
+70268ed  releasetools: Add script to sign zips  [Alx31]
+6350860  Always copy bootable images in BOOTABLE_IMAGES/  [Alx31]
+3ca119b  build: Warn about prebuilt apk in PRODUCT_COPY_FILES  [Alx31]
+fe7555b  build sign_target_files_apks.py: clean tmp on exit  [Alx31]
+   * device/wingtech/wt88047/
+19b0be1  disable fluence for voicecall/speaker  [Prema Chand Alugu]
+5de824a  Move default root method to device makefile  [Prema Chand Alugu]
+   * frameworks/base/
+5ec159f  Expose Screenshot flash and background colors  [Alx31]
+   * packages/apps/KernelAdiutor/
+3623c82  Launcher icon update  [theringmaster]
+   * vendor/tipsy/
+15e265d  v5.1 HopVerdomme week  [Alx31]
+9c68d89  Update Magisk GZR Edition v1.1  [Alx31]
+a1130c9  Magisk as default and define explict rootless method [2/2]  [Alx31]
+994460c  Default root method provision [2/2]  [Alx31]
+2df8b7c  tipsy: build: tasks: Remove BUILD_TINY_ANDROID check  [Alx31]
+8139bf2  apn: Updating TelkomSA from 8ta South Africa APN  [Alx31]
+57fb5ff  repopick: encode commit subjects in utf-8 for printing  [Alx31]
+6c6a40e  apns: Remove proxy for the "TIM WAP" APN  [Alx31]
+79bfe40  vendor: Add templates for proprietary extraction scripts  [Alx31]
+71de6c0  extract_utils: Fix locale issue with sort  [Alx31]
+cfda732  extract-utils: Fix handling of pulling src:dest pairs from dumps  [Alx31]
+ab4d998  backuptool: Preserve the SELinux context of the files  [Alx31]
+b1621e9  backuptool: Don't rely on the order of the elements in the list  [Alx31]
+318a322  Magisk: v11.6 zip, GzR edition by Nick  [Alx31]
+fdc1651  Magisk: update magisk.zip to 11.6  [Alx31]
+c271471  Magisk:update: app v2.4.7, zip v11.5  [Alx31]
+b8e8d7c  device: add Redmi2 to the devices  [Alx31]
+
+====================
+     03-26-2017
+====================
+
+   * device/wingtech/wt88047/
+577ae89  prop: nuke frp parameter  [Prema Chand Alugu]
+994580a  config: Default root method is rootless  [Prema Chand Alugu]
+
+====================
+     03-25-2017
+====================
+
+   * bionic/
+b0b9441  linker: Allow devices to force shim libs  [Martinusbe]
+1f1e941  linker: Allow only specified non-PIE executables  [Martinusbe]
+017ea2f  Revert "Revert "Reenable support for non-PIE executables""  [Martinusbe]
+cb929e8  linker: allow text relocations on user builds  [Martinusbe]
+   * frameworks/native/
+c430c1d  libEGL: Only enable WORKAROUND_BUG_10194508 with board flag  [Martinusbe]
+   * frameworks/opt/slim/
+e19a932  Slim Recents: add icon cache to improve performances and fix FC  [Martinusbe]
+93ad287  Slim Recents iconpack support [2/2]  [Martinusbe]
+795d33c  Slim Recents iconpack support [1/2]  [Martinusbe]
+   * system/core/
+0f8451a  init: Don't update recovery on boot  [Martinusbe]
+450d317  rootdir: init.rc: Fix for "add_tid_to_cgroup failed to write" warnings  [Martinusbe]
+
+====================
+     03-24-2017
+====================
+
+
+====================
+     03-23-2017
+====================
+
+   * hardware/qcom/audio-caf/msm8974/
+0057e73  msm8974: bring back USECASE_AUDIO_RECORD_FM_VIRTUAL  [Josue Rivera]
+   * hardware/qcom/fm/
+e118e94  Automatic translation import  [Josue Rivera]
+005bc4b  Automatic translation import  [Josue Rivera]
+cedc003  Automatic translation import  [Josue Rivera]
+   * kernel/wingtech/msm8916/
+df2d8bd  config: disable ondemand proximity sensor  [Prema Chand Alugu]
+   * packages/apps/Camera2/
+9b9101a  Automatic translation import  [Josue Rivera]
+5cce77a  Automatic translation import  [Josue Rivera]
+48edbef  Automatic translation import  [Josue Rivera]
+   * packages/apps/Gallery2/
+423f501  Automatic translation import  [Josue Rivera]
+974d2cf  Automatic translation import  [Josue Rivera]
+477ab6d  Gallery: Make location permission truly optional  [Josue Rivera]
+10a8439  Automatic translation import  [Josue Rivera]
+   * packages/apps/Snap/
+d62555f  Automatic translation import  [Josue Rivera]
+b04cd4e  Automatic translation import  [Josue Rivera]
+6a1e9e7  Automatic translation import  [Josue Rivera]
+
+====================
+     03-22-2017
+====================
+
+   * device/oneplus/bacon/
+ce051f7  bacon: switch to bacon only vendor  [Prema Chand Alugu]
+   * vendor/oneplus/
+97b4013  Revert "Revert "bacon: Disable CNE/DPM/QC location/QC tether""  [Prema Chand Alugu]
+eb649a5  Revert "bacon: Disable CNE/DPM/QC location/QC tether"  [Prema Chand Alugu]
+5f736a6  bacon: update blobs remove cne/dpm  [Prema Chand Alugu]
+46825c8  Revert "bacon: Add gatekeeper and keystore blobs from OP2 and rename refs"  [Prema Chand Alugu]
+a69381b  bacon: add alpha N blobs  [Prema Chand Alugu]
+17a5204  bacon: update CAF blobs  [Prema Chand Alugu]
+a50fbf6  bacon: update blobs  [Prema Chand Alugu]
+453ed64  bacon: update blobs  [Prema Chand Alugu]
+2e62023  bacon: update my blobs  [Prema Chand Alugu]
+ef8fae5  bacon: add in my caf blobs  [Prema Chand Alugu]
+65217a6  bacon: Moar blob updates  [Prema Chand Alugu]
+b7b15cb  bacon: update blobs  [Prema Chand Alugu]
+21c2659  bacon: update blobs  [Prema Chand Alugu]
+a021648  bacon: Regenerate proprietary libraries  [Prema Chand Alugu]
+18fbd24  bacon: Update blobs  [Prema Chand Alugu]
+33ac671  bacon: Update blobs for old modem  [Prema Chand Alugu]
+391c42e  bacon: Remove QC extended location libraries  [Prema Chand Alugu]
+072f3e7  bacon: Update blobs  [Prema Chand Alugu]
+87c7ff6  bacon: Update blobs  [Prema Chand Alugu]
+6e04577  bacon: Update blobs  [Prema Chand Alugu]
+42153c2  bacon: Update blobs  [Prema Chand Alugu]
+894badb  bacon: Update blobs  [Prema Chand Alugu]
+9773fac  bacon: blobs  [Prema Chand Alugu]
+fd44353  Fix XML declaration  [Prema Chand Alugu]
+6ee77f3  bacon: Update blobs  [Prema Chand Alugu]
+1ad8432  bacon: Update definitely-not-final blobs  [Prema Chand Alugu]
+295fd17  bacon: Movin stuff  [Prema Chand Alugu]
+2d8f738  bacon: More preliminary stuff  [Prema Chand Alugu]
+82b2f40  bacon: Fix crash during calls  [Prema Chand Alugu]
+8788d63  bacon: Skip missing bits  [Prema Chand Alugu]
+fb964fc  bacon: Fix makefile  [Prema Chand Alugu]
+bad45ef  bacon: More preliminary stuff  [Prema Chand Alugu]
+d3b3230  bacon: Not even remotely final blobs  [Prema Chand Alugu]
+fb4d0cc  bacon: Update compass settings to align with upstream  [Prema Chand Alugu]
+3e4879c  bacon: update sensor_def  [Prema Chand Alugu]
+0e36dce  Import blobs from oppo/msm8974-common  [Prema Chand Alugu]
+6ff87ae  bacon: Fix inverted magnetometer  [Prema Chand Alugu]
+851220a  bacon: Remove unused ES325 firmware  [Prema Chand Alugu]
+9b281ff  bacon: Words cannot express my frustration right now.  [Prema Chand Alugu]
+c3508d6  bacon: Update makefiles  [Prema Chand Alugu]
+ce72688  bacon: Update camera blobs, again.  [Prema Chand Alugu]
+dba2501  bacon: Update camera driver  [Prema Chand Alugu]
+33d3a5c  Revert "bacon: Update blobs"  [Prema Chand Alugu]
+4f99723  bacon: Update blobs  [Prema Chand Alugu]
+f8434fe  bacon: Update blobs  [Prema Chand Alugu]
+4b66999  bacon: Add default report rates for sensors  [Prema Chand Alugu]
+0640cdb  bacon: Update blobs  [Prema Chand Alugu]
+fd049e6  bacon: Update blobs  [Prema Chand Alugu]
+9b912d6  bacon: Remove NFC HAL blob  [Prema Chand Alugu]
+c4dfa7b  bacon: Update sensor registry version  [Prema Chand Alugu]
+8c0ff7c  bacon: Update to 140630 release  [Prema Chand Alugu]
+fe7c777  bacon: Update to 140613 release  [Prema Chand Alugu]
+73fc453  bacon: Remove unused hwaddrs binary  [Prema Chand Alugu]
+db0ad22  Updated NFC HAL implementation  [Prema Chand Alugu]
+e39b5ba  nfc: Update pn547 firmware  [Prema Chand Alugu]
+f90da83  bacon: Initial import of OnePlus One proprietary libs  [Prema Chand Alugu]
+
+====================
+     03-21-2017
+====================
+   * OTA_config/
+3cd1921  Flounder 03/20  [GitHub]
+16bef72  bullhead 3/20 update  [GitHub]
+
+====================
+     03-20-2017
+====================
+   * OTA_config/
+7f2a67c  Merge https://github.com/TipsyOs-Devices/OTA_config into HEAD  [GtrCraft]
+d9fd6e5  Add lux  [GtrCraft]
+b52cbdf  ota: update Redmi2 03/19  [Prema Chand Alugu]
+ecbd506  ota: update 03/19  [Prema Chand Alugu]
+f638bad  Revert "op3: remove one - to fix it"  [Martinusbe]
+9d26df6  Clark 03/19  [GitHub]
+836cbd0  op3: remove one - to fix it  [GitHub]
+06b0417  wtf  [GitHub]
+d064753  op3 03/19  [Martinusbe]
    * frameworks/base/
 1c6a5c4  SystemUI: Grant READ_PHONE_STATE permission  [Martinusbe]
 5378a70  camera: Make secondary camera package list opt out  [Martinusbe]
@@ -27,124 +212,8 @@ ec84996  Notification Ticker: add darkintensity support  [Martinusbe]
    * packages/apps/Tavern/
 6e24675  Remove overlay added for gesturesAnywhere  [Martinusbe]
 7bd1db1  Let brightness icon use System switch preference  [Martinusbe]
-   * vendor/oneplus/
-e7470da  Merge pull request #3 from BigTopKrazies/test  [GitHub]
    * vendor/tipsy/
 21cdd67  Prema likes Gildenbier  [GitHub]
 b26562d  v5.0 Geuze  [Martinusbe]
 219f463  qcom: Automatically set TARGET_USES_COLOR_METADATA for msm8996/8  [Martinusbe]
-
-====================
-     03-18-2017
-====================
-   * OTA_config/
-49af2cc  Flo 03/17  [GitHub]
-
-====================
-     03-17-2017
-====================
-
-   * device/oneplus/bacon/
-cb09843  overlay: disbale aosp gestures  [Prema Chand Alugu]
-   * frameworks/av/
-c981a70  Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."  [Martinusbe]
-   * frameworks/opt/slim/
-bc857e1  SlimRecents: Fix potential SystemUI NPE  [Martinusbe]
-c8b3f26  Slim Recents: don't show panel if app pinning is currently active  [Martinusbe]
-72c33db  SlimRecents: add killapp button to toptask card  [Martinusbe]
-cc2beae  Slim Recents: make multiwindow more robust  [Martinusbe]
-e1b53f9  Slim Recents: fix toptask header layout and other ui improvements  [Martinusbe]
-3f49494  Slim Recent: scale apps thumbnails according to the panel size  [Martinusbe]
-   * packages/apps/DeskClock/
-f20b203  DeskClock: grant READ_PHONE_STATE and READ_PRIVILEGED_PHONE_STATE  [Martinusbe]
-8c44708  Black and Yellow please!  [Martinusbe]
-c2d47fc   DeskClock night mode  [Martinusbe]
-   * packages/apps/OmniStyle/
-faf258e  Fix: Are you kidding, Syed?  [Prema Chand Alugu]
-
-====================
-     03-16-2017
-====================
-
-   * device/oneplus/bacon/
-b31c2c4  Revert "overlay: enable gesturesanywhere"  [Prema Chand Alugu]
-   * device/wingtech/wt88047/
-48b8bfa  Revert "overlay: enable gesturesanywhere"  [Prema Chand Alugu]
-   * packages/providers/MediaProvider/
-7107407  MediaProvider: Fix possible NPE  [Martinusbe]
-6696944  MediaProvider: Add read storage permission  [Martinusbe]
-9b16f95  Screenshots info is not updated when device is plugged in MTP mode  [Martinusbe]
-
-====================
-     03-15-2017
-====================
-
-
-====================
-     03-14-2017
-====================
-
-   * device/oneplus/bacon/
-5e6fe7e  Add dependencies  [Prema Chand Alugu]
-   * device/wingtech/wt88047/
-142a11b  update dependencies  [Prema Chand Alugu]
-   * hardware/qcom/media-caf/msm8974/
-26cc5da  mm-video-v4l2: vdec: Fix makefile derp introduced in d443c0d  [Josue Rivera]
-
-====================
-     03-13-2017
-====================
-   * OTA_config/
-f4c2ef5  Add bullhead to TipsyOTA  [GitHub]
-
-====================
-     03-12-2017
-====================
-   * OTA_config/
-01906bb  Flounder 03/12  [GitHub]
-fe595ca  Clark 03/12  [GitHub]
-aa3269f  ota: update Redmi2 03/12  [Prema Chand Alugu]
-fb8cd51  update op3  [Martinusbe]
-d9e83d6  ota: update Bacon 03/12  [Prema Chand Alugu]
-   * build/
-6ed7214  NOF27C  [Prema Chand Alugu]
-82f6a30  NOF27B  [Prema Chand Alugu]
-7937306  NOF26Z  [Prema Chand Alugu]
-40fe5c0  NOF26Y  [Prema Chand Alugu]
-f9a8ac1  NOF26X  [Prema Chand Alugu]
-ebc676b  Updating Security String to 2017-03-05 on nyc-dev  [Prema Chand Alugu]
-9f6522f  Updating Security String to 2017-03-01 on nyc-dev  [Prema Chand Alugu]
-   * frameworks/base/
-505b13a  Base: SlimRecent refactor (2/2)  [Prema Chand Alugu]
-7262aad  Revert "HFP 1.7 profile update (3/4)"  [Prema Chand Alugu]
-0bf3123  Compilation fix: N-MR1 merge  [Prema Chand Alugu]
-431e16c  Fix incorrect FIFO cgroup assignment.  [Prema Chand Alugu]
-1b8eb05  Fix window transformation related issue  [Prema Chand Alugu]
-a2329a7  Fix a memory leak.  [Prema Chand Alugu]
-bfb5eb6  QS - Fix race condition in accessibility  [Prema Chand Alugu]
-01df447  Make sure Zygote is running at process priority 0 after VM has started.  [Prema Chand Alugu]
-450b162  QS: Fix QuickQS visibility at non-first page  [Prema Chand Alugu]
-fbd627e  Fix clipping for edit screen of Quick Settings  [Prema Chand Alugu]
-e3e378e  Avoid starving RT anims  [Prema Chand Alugu]
-357d8e9  Fix issue with saving admins before finishing loading.  [Prema Chand Alugu]
-8d292aa  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev  [Prema Chand Alugu]
-a2a36cc  Fix exploit where can hide the fact that a location was mocked am: a206a0f17e am: d417e54872 am: 3380a77516 am: 0a8978f04b am: 1684e5f344 am: d28eef0cc2 am: 1f458fdc66 am: d82f8a67fc am: 1ac8affd51 am: 56098f81b6 am: 7cec76de0f am: 2da05d0f9e  [Prema Chand Alugu]
-593393e  [DO NOT MERGE] Prevent crash from early Toast surface destruction.  [Prema Chand Alugu]
-8b85768  Add @GuardedBy annotation to PersistentDataBlockService#mIsWritable.  [Prema Chand Alugu]
-7df23eb  Prevent writing to FRP partition during factory reset.  [Prema Chand Alugu]
-   * manifest/
-88af7e1  config: move OTA_config to devices repo  [Prema Chand Alugu]
-1c19a3f  r26  [Prema Chand Alugu]
-8fe99f9  track our system_vold  [Prema Chand Alugu]
-   * packages/services/OmniJaws/
-614ed6c  OmniJaws: Clean up unused imports, simpify few things  [Alx31]
-ac5d22a  OmniJaws: Add menu item to search for Chronus icons  [Alx31]
-77ee9d1  Fix potential actionbar npe  [Alx31]
-ea3de8b  OmniJaws: manifest add DEFAULT category to activities  [Alx31]
-   * vendor/tipsy/
-d39f091  v4.9 Fantome  [Prema Chand Alugu]
-25238b5  sepolicy: Escape '.' character  [Prema Chand Alugu]
-78f7fc6  sepolicy: Fix "Allow adb pull of executables without root"  [Prema Chand Alugu]
-e38bacd  apns: Add Perfectum  [Prema Chand Alugu]
-fecb7d7  Update Nova 5.0.3  [Prema Chand Alugu]
 
