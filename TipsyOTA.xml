@@ -176,11 +176,11 @@
                 description="Visit XDA thread">https://forum.xda-developers.com/nexus-7-2013/development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
         </flo>
         <flounder>
-            <Filename>Tipsy-flounder-7.1.1.Gildenbier-v5.0-20170320-0810.zip</Filename>
+            <Filename>Tipsy-flounder-7.1.1.HopVerdomme-v5.1-20170329-1022.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862712264</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862715335</RomUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
