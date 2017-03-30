@@ -2,6 +2,7 @@
      03-30-2017
 ====================
    * OTA_config/
+a5de67f  op3 BD build  [Martinusbe]
 e8efbac  Flounder 03/29  [GitHub]
    * frameworks/base/
 90787af  Revert "Wifi: Introduce a config parameter for IpReachabilityMonitor"  [Martinusbe]
@@ -10,6 +11,29 @@ e8efbac  Flounder 03/29  [GitHub]
 01b2670  WifiStateMachine: Probe neighbours only when roaming  [Martinusbe]
 aaf809c  WifiStateMachine: Revert IpReachabilityMonitor handling changes  [Martinusbe]
    * kernel/oneplus/msm8996/
+6d871b1  defconfig: Intoxicated  [Martinusbe]
+f673c32  op3:defconfig: enable fifo, fiops,sio, sioplus, tripndroid, vr, zen  [Martinusbe]
+07b5405  msm8996: Add overclocking frequencies  [Martinusbe]
+1370624  zen-iosched: set fifo batch to 16 to reduce overload on eMMC and CPU  [Martinusbe]
+f064825  block: correct zen version number to the one for zen v2  [Martinusbe]
+e8f7155  block: add zen scheduler  [Martinusbe]
+104d8607f  block: add vr scheduler  [Martinusbe]
+f8347dd  block: add tripndroid scheduler  [Martinusbe]
+e2d430d  block: add sioplus scheduler  [Martinusbe]
+db4aa55  block: add fifo scheduler  [Martinusbe]
+ba5e014  block: Add SIO scheduler  [Martinusbe]
+cbe2344  block: add FIOPS scheduler  [Martinusbe]
+73532be  op3:defconfig: enable impulse governor  [Martinusbe]
+93ff552  kernel/sched/core: add missing function for impulse  [Martinusbe]
+0850e74  cpufreq: Add impulse governor  [Martinusbe]
+3d55eef  op3:defconfig: enable kcal  [Martinusbe]
+592bb8f  msm: mdss: kcal: KCAL driver is off by default  [Martinusbe]
+b648a7a  msm: mdss: kcal: Make KCAL master switch working again  [Martinusbe]
+4850e27  msm: mdss: KCAL: Send a pp display commit when changes are made  [Martinusbe]
+cb6b9af  msm: mdss: kcal: Remove KCAL master switch + invert mode  [Martinusbe]
+4518035  msm: mdss: kcal: Add KCAL support for post processing control [v2]  [Martinusbe]
+45aee91  msm: mdss: Adding lcd notifier  [Martinusbe]
+39102d9  proc: Remove verifiedbootstate flag from /proc/cmdline  [Martinusbe]
 2baf950  UPSTREAM: udp: properly support MSG_PEEK with truncated buffers  [Martinusbe]
 219e4a7  shmem: fix shm fallocate() list corruption  [Martinusbe]
 50f9b229  drivers: video: Add bounds checking in fb_cmap_to_user  [Martinusbe]
@@ -308,6 +332,22 @@ d479ce1  Magisk as default and define explict rootless method [2/2]  [Prema Chan
      03-25-2017
 ====================
 
+   * device/oneplus/onyx/
+2f2e633  onyx: address rmt_storage denial  [CheckYourScreen]
+7f44fe0  Revert "onyx: kill CNE and QC location"  [CheckYourScreen]
+b65a8e0  Revert "onyx: enable qualcomm video enhancement flag"  [CheckYourScreen]
+   * frameworks/opt/slim/
+e19a932  Slim Recents: add icon cache to improve performances and fix FC  [Martinusbe]
+93ad287  Slim Recents iconpack support [2/2]  [Martinusbe]
+795d33c  Slim Recents iconpack support [1/2]  [Martinusbe]
+   * vendor/motorola/
+5c3c4cf  victara: Correct deodex the location apk files from stock  [Luca Stefani]
+59d27c5  victara: Fix the copyright string  [Luca Stefani]
+
+====================
+     03-24-2017
+====================
+
    * bionic/
 b0b9441  linker: Allow devices to force shim libs  [Martinusbe]
 1f1e941  linker: Allow only specified non-PIE executables  [Martinusbe]
@@ -329,22 +369,14 @@ e8965e0  releasetools: Add script to sign zips  [Martinusbe]
 b58709b  Always copy bootable images in BOOTABLE_IMAGES/  [Martinusbe]
 77b1c28  build: Warn about prebuilt apk in PRODUCT_COPY_FILES  [Martinusbe]
 be2e562  build sign_target_files_apks.py: clean tmp on exit  [Martinusbe]
-   * device/oneplus/onyx/
-2f2e633  onyx: address rmt_storage denial  [CheckYourScreen]
-7f44fe0  Revert "onyx: kill CNE and QC location"  [CheckYourScreen]
-b65a8e0  Revert "onyx: enable qualcomm video enhancement flag"  [CheckYourScreen]
    * frameworks/native/
 c430c1d  libEGL: Only enable WORKAROUND_BUG_10194508 with board flag  [Martinusbe]
-   * frameworks/opt/slim/
-e19a932  Slim Recents: add icon cache to improve performances and fix FC  [Martinusbe]
-93ad287  Slim Recents iconpack support [2/2]  [Martinusbe]
-795d33c  Slim Recents iconpack support [1/2]  [Martinusbe]
    * system/core/
 0f8451a  init: Don't update recovery on boot  [Martinusbe]
 450d317  rootdir: init.rc: Fix for "add_tid_to_cgroup failed to write" warnings  [Martinusbe]
    * vendor/motorola/
-5c3c4cf  victara: Correct deodex the location apk files from stock  [Luca Stefani]
-59d27c5  victara: Fix the copyright string  [Luca Stefani]
+278078f  victara: regen blobs/makefiles after switching to common extraction scripts  [Dan Pasanen]
+fd13e8a  clark: regen makefiles  [Dan Pasanen]
    * vendor/tipsy/
 f937dbf  tipsy: build: tasks: Remove BUILD_TINY_ANDROID check  [Martinusbe]
 61ef4b6  apn: Updating TelkomSA from 8ta South Africa APN  [Martinusbe]
@@ -355,14 +387,6 @@ a8a3d90  extract_utils: Fix locale issue with sort  [Martinusbe]
 6395e49  extract-utils: Fix handling of pulling src:dest pairs from dumps  [Martinusbe]
 3b253bd  backuptool: Preserve the SELinux context of the files  [Martinusbe]
 0bbc5ea  backuptool: Don't rely on the order of the elements in the list  [Martinusbe]
-
-====================
-     03-24-2017
-====================
-
-   * vendor/motorola/
-278078f  victara: regen blobs/makefiles after switching to common extraction scripts  [Dan Pasanen]
-fd13e8a  clark: regen makefiles  [Dan Pasanen]
 
 ====================
      03-23-2017
