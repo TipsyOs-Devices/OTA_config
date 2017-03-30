@@ -1,129 +1,373 @@
 ====================
-     03-19-2017
+     03-30-2017
+====================
+   * OTA_config/
+e8efbac  Flounder 03/29  [GitHub]
+   * frameworks/base/
+90787af  Revert "Wifi: Introduce a config parameter for IpReachabilityMonitor"  [Martinusbe]
+   * frameworks/opt/net/wifi/
+9346c5c  WiFi: Fix possible NPE  [Martinusbe]
+01b2670  WifiStateMachine: Probe neighbours only when roaming  [Martinusbe]
+aaf809c  WifiStateMachine: Revert IpReachabilityMonitor handling changes  [Martinusbe]
+   * kernel/oneplus/msm8996/
+2baf950  UPSTREAM: udp: properly support MSG_PEEK with truncated buffers  [Martinusbe]
+219e4a7  shmem: fix shm fallocate() list corruption  [Martinusbe]
+50f9b229  drivers: video: Add bounds checking in fb_cmap_to_user  [Martinusbe]
+ab202e7  UPSTREAM: USB: mct_u232: add sanity checking in probe  [Martinusbe]
+25fc04d  UPSTREAM: USB: cypress_m8: add endpoint sanity check  [Martinusbe]
+c0ae0d2  UPSTREAM: USB: iowarrior: fix oops with malicious USB descriptors  [Martinusbe]
+5b20162  UPSTREAM: USB: usb_driver_claim_interface: add sanity checking  [Martinusbe]
+adf1099  UPSTREAM: ppp: defer netns reference release for ppp channel  [Martinusbe]
+7deafd4  synaptics_driver: Fix transposed memset() arguments  [Martinusbe]
+8b5527a  blk-mq: update hardware and software queues for sleeping alloc  [Martinusbe]
+a747693  diag: dci: avoid out of bounds memory access  [Martinusbe]
+08f9e72  qcacld-2.0: Remove obsolete set/reset ssid hotlist  [Martinusbe]
+0504fb8  removing msm calls to trace_printk  [Martinusbe]
+0e787f5  power: oneplus_fastcg: Silence log spam  [Martinusbe]
+54540d5  mdss: livedisplay: Fix memory leaks in mdss_livedisplay_update()  [Martinusbe]
+6a91d5f  op3: Remove CONFIG_TIMER_STATS  [Martinusbe]
+d06de4f  misc: fpc1020: Increase fingerprintd nice value when screen is off  [Martinusbe]
+08230c2  input: synaptics: s3320: Don't run baseline after first touch  [Martinusbe]
+c238316  input: synaptics: s1302: Clean up PM routines and move them into worker  [Martinusbe]
+7cc6f76  input: synaptics: s3320: Make interrupt handling more robust  [Martinusbe]
+5d3feaa  ARM: dts: 15801: Configure ramoops memory  [Martinusbe]
+d647cf2  fs/pstore: fix compilation warning  [Martinusbe]
+3822a27  pstore: Fix the ramoops module parameters update  [Martinusbe]
+3459883  fs/pstore: initialize pmsg from device tree  [Martinusbe]
+554eadd  fs:pstore:ramoops: config mem from dt  [Martinusbe]
+cf868aa  input: synaptics_s3320: Support all gestures  [Martinusbe]
+3943bb1  input: synaptics_s3320: Clean up gesture handling  [Martinusbe]
+4662ca9  input: synaptics_s3320: Commonize gesture flags  [Martinusbe]
+e2da1dc  ARM: dts: 15811: Target different GPU firmware image name  [Martinusbe]
+ea9af54  op3: Preserve memory on restart  [Martinusbe]
+c8c3a41  power: reset: Allow device to preserve memory on restart  [Martinusbe]
+d6b9b30  FROMLIST: pstore: drop pmsg bounce buffer  [Martinusbe]
+59989c2  op3: Update defconfig  [Martinusbe]
+3633062  misc: fpc1020: Wait for uevent to send before exiting IRQ handler  [Martinusbe]
+7a7b89b  misc: fpc1020: Simplify proximity shut-off  [Martinusbe]
+29c819c  misc: fpc1020: Honor proximity state  [Martinusbe]
+bc075ee  usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs  [Martinusbe]
+6b66257  power: oneplus_fastcg: Remove    *_info dependency  [Martinusbe]
+78b3df5  misc: fpc1020: Clean up interrupt handler  [Martinusbe]
+a366313  misc: fpc1020: Set fingerprintd priority to max when screen is off  [Martinusbe]
+980976d  misc: fpc1020: Report key input when interrupt is fired with screen off  [Martinusbe]
+6dec253  misc: fpc1020: Clean up PM routines and move them into dedicated worker  [Martinusbe]
+5799a8f  input: synaptics: s3320: Silence log spam  [Martinusbe]
+eeeb8b3  input: synaptics: s3320: Clean up PM routines and move them into worker  [Martinusbe]
+0652b29  input: synaptics: s3320: Don't run baseline on resume  [Martinusbe]
+4848898  msm: qpnp-haptic: Process haptics asynchronously  [Martinusbe]
+40563dc  power: bq27541: Silence log spam  [Martinusbe]
+517c1c9  power: bq27541: Don't queue work onto a specific CPU  [Martinusbe]
+133f124  op3: CONFIG_HZ_300  [Martinusbe]
+3a9a36c  asoc/msm: Disable unwanted modules in arch config  [Martinusbe]
+7735fd4  Silences WLAN, PCIe, and CPU suspend state kernel messages  [Martinusbe]
+a53f13f  asoc/msm: Reduce min capture size  [Martinusbe]
+2894925  arm64: crypto: reduce priority of core AES cipher  [Martinusbe]
+7f416de  arm64/crypto: use crypto instructions to generate AES key schedule  [Martinusbe]
+0031d41  arm64: crypto: increase AES interleave to 4x  [Martinusbe]
+6b645671  arm64/crypto: issue aese/aesmc instructions in pairs  [Martinusbe]
+c1ac49e  arm64: crypto: Change priority of arm64 aes cipher.  [Martinusbe]
+22fcc84  crypto: arm64/crc32 - bring in line with generic CRC32  [Martinusbe]
+8d595ec2  crypto: crc32 - Add ARM64 CRC32 hw accelerated module  [Martinusbe]
+190f94b  ARM: dts: 15801: Adjust display power settings for s6e3fa5 panel  [Martinusbe]
+674f433  op3: Adjust display power settings  [Martinusbe]
+ba3f51a  asoc: msm: Add async ops for SLIMBUS_6 backend  [Martinusbe]
+d2d16b1  sys: Horrible hack for compat_sysinfo userspace confusion  [Martinusbe]
+9b07e4c  ARM: dts: 15801: Fix and optimize SRGB commands for s6e3fa5 panel  [Martinusbe]
+ac901ab  op3: Fix and optimize SRGB commands  [Martinusbe]
+672ae03  ARM: dts: 15801: Enable SRGB for s6e3fa5 panel  [Martinusbe]
+62547ba  mdss: livedisplay: Add commands to enable SRGB mode  [Martinusbe]
+5cf262e  qpnp-haptic: Dejank the haptics  [Martinusbe]
+1c910de  input: synaptics_s3320: Report nanosecond timestamps to improve accuracy  [Martinusbe]
+e00197c  input: add new input event code to pass timestamp to userspace  [Martinusbe]
+a643245  op3: Enable partial update mode for Samsung display  [Martinusbe]
+878e7fe  op3: Fix display brightness  [Martinusbe]
+c32b17f  video: mdss: LiveDisplay driver  [Martinusbe]
+50c8e92  cpuset: Make cpusets restore on hotplug  [Martinusbe]
+f6b5336  cpuset: Add allow_attach hook for cpusets on android.  [Martinusbe]
+6d0a4cb  block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.18.0  [Martinusbe]
+0b7ccc1  block, bfq: add Early Queue Merge (EQM) to BFQ-v7r7 for 3.18.0  [Martinusbe]
+d1c6d0f  block: introduce the BFQ-v7r7 I/O sched for 3.18  [Martinusbe]
+e152822  block: cgroups, kconfig, build bits for BFQ-v7r7-3.18  [Martinusbe]
+3e9306f  msm: qpnp-haptic: set up sysfs interface for common cmhw implementation  [Martinusbe]
+6914675  qpnp-haptic: Add sysfs interface to control intensity  [Martinusbe]
+f2e6db5  input: tri-state-key: Get it ready for CM  [Martinusbe]
+f71d698  input: synpatics_s3320: Get gestures ready for CM  [Martinusbe]
+8266eba  input: synaptics_s3320: Clean up oneplus' logic  [Martinusbe]
+4cac047  op3: Adjust LEDs configuration slightly  [Martinusbe]
+6eff88b  ARM: dts: 15801: Add add synchronized RGB blink params  [Martinusbe]
+4c69fb2  leds: leds-qpnp: add synchronized rgb control  [Martinusbe]
+9cf3882  pwm: qpnp-pwm: add api for synchronous enable of pwms  [Martinusbe]
+e3bca59  ARM: dts: 15801: Correct MPP4 behaviour  [Martinusbe]
+bf6ab4f  staging: Import LA.UM.5.5.r1-03800-8x96.0 qcacld-2.0 driver  [Martinusbe]
+436142c  op3: Add initial lineageos defconfig  [Martinusbe]
+6b0fad6  misc: Import OnePlus 7.1 kernel release  [Martinusbe]
+9525de1  Revert "msm: camera: isp: Handle standby mode for B+M"  [Martinusbe]
+efc446f  Revert "msm: isp: Add support for VFE resolution limit"  [Martinusbe]
+5df0bce  msm: camera: sensor: Fix memory leaks when sensor probe fails  [Martinusbe]
+5b6b1b2  cpufreq: stats: Fix memory leaks when updating stats table  [Martinusbe]
+73a2aa5  msm: camera: isp: Fix memory leaks in vfe probe  [Martinusbe]
+327a069  msm: mdss: Don't cache the address of a stack variable in timings init  [Martinusbe]
+1a23b5a  soc: qcom: glink: Fix memory leak in driver probe  [Martinusbe]
+e44a421  net: ipc_router: Fix memory leaks when releasing a remote port  [Martinusbe]
+9123fb3  time: Remove CONFIG_TIMER_STATS  [Martinusbe]
+97cc005  sctp: deny peeloff operation on asocs with threads sleeping on it  [Martinusbe]
+03154d0  irda: Fix lockdep annotations in hashbin_delete().  [Martinusbe]
+69481e2  net/llc: avoid BUG_ON() in skb_orphan()  [Martinusbe]
+75dd2aa  l2tp: fix racy SOCK_ZAPPED flag check in l2tp_ip{,6}_bind()  [Martinusbe]
+126cc9c  ANDROID: ion: check for kref overflow  [Martinusbe]
+5d89d58  mpi: Fix NULL ptr dereference in mpi_powm() [ver #3]  [Martinusbe]
+a27c6ab  sctp: avoid BUG_ON on sctp_wait_for_sndbuf  [Martinusbe]
+ba52c53  perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race  [Martinusbe]
+953e60c  ipc/shm: Fix shmat mmap nil-page protection  [Martinusbe]
+d84591b  ext4: validate s_first_meta_bg at mount time  [Martinusbe]
+372e3bf  dccp: fix freeing skb too early for IPV6_RECVPKTINFO  [Martinusbe]
+3a0ea53  tmpfs: clear S_ISGID when setting posix ACLs  [Martinusbe]
+5eaf166  ANDROID: video: adf: Avoid directly referencing user pointers  [Martinusbe]
+4bdf7ae  ANDROID: trace: net: use %pK for kernel pointers  [Martinusbe]
+f515fb3  sched: Fix integer overflow in sched_update_nr_prod()  [Martinusbe]
+adb3bd6  ion: blacklist %p kptr_restrict  [Martinusbe]
+102bf59  packet: fix race condition in packet_set_ring  [Martinusbe]
+7a58257  USB: cdc-acm: more sanity checking  [Martinusbe]
+5937bf4  usbnet: cleanup after bind() in probe()  [Martinusbe]
+2dcfb13  Input: aiptek - fix crash on detecting device without endpoints  [Martinusbe]
+b121f4c  HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands  [Martinusbe]
+8d85bb7  ALSA: hrtimer: Fix stall by hrtimer_cancel()  [Martinusbe]
+f3ac2a4  ALSA: pcm : Call kill_fasync() in stream lock  [Martinusbe]
+624a154  netlink: Fix dump skb leak/double free  [Martinusbe]
+fa6c8a7  netfilter: x_tables: check for size overflow  [Martinusbe]
+340e9df  net: llc: use correct size for sysctl timeout entries  [Martinusbe]
+40e1be7  net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  [Martinusbe]
+2d4e229  sg_write()/bsg_write() is not fit to be called under KERNEL_DS  [Martinusbe]
+412251f  ANDROID: ext4 crypto: Disables zeroing on truncation when there's no key  [Martinusbe]
+98a061e  ext4 crypto: fix bugs in ext4_encrypted_zeroout()  [Martinusbe]
+9812777  ext4 crypto: replace some BUG_ON()'s with error checks  [Martinusbe]
+dd59e56  ext4 crypto: ext4_page_crypto() doesn't need a encryption context  [Martinusbe]
+7e32f98  ext4: optimize ext4_writepage() for attempted 4k delalloc writes  [Martinusbe]
+7716700  ext4 crypto: fix memory leak in ext4_bio_write_page()  [Martinusbe]
+2650ed0  ext4: disable zeroout optimization when encryption is enabled  [Martinusbe]
+df79fda  ext4 crypto: remove duplicate header file  [Martinusbe]
+dde64bc  ext4 crypto: fix spelling typo in comment  [Martinusbe]
+48f5e7f  ext4 crypto: exit cleanly if ext4_derive_key_aes() fails  [Martinusbe]
+9a852d1  ext4 crypto: check for too-short encrypted file names  [Martinusbe]
+cddd39c  ext4 crypto: use a jbd2 transaction when adding a crypto policy  [Martinusbe]
+d77b0ad  ext4 crypto: fail the mount if blocksize != pagesize  [Martinusbe]
+2887cba  ext4 crypto: fix sparse warnings in fs/ext4/ioctl.c  [Martinusbe]
+5be6217  ext4 crypto: fix ext4_get_crypto_ctx()'s calling convention in ext4_decrypt_one  [Martinusbe]
+12d89cc  ext4 crypto: allocate bounce pages using GFP_NOWAIT  [Martinusbe]
+f351a3e  ext4 crypto: release crypto resource on module exit  [Martinusbe]
+982fa1b  ext4 crypto: handle unexpected lack of encryption keys  [Martinusbe]
+8fd6788  ext4 crypto: allocate the right amount of memory for the on-disk symlink  [Martinusbe]
+b093ba54  ext4 crypto: clean up error handling in ext4_fname_setup_filename  [Martinusbe]
+51e6cee  ext4 crypto: policies may only be set on directories  [Martinusbe]
+1512e69  ext4 crypto: enforce crypto policy restrictions on cross-renames  [Martinusbe]
+7bcc5d3  ext4 crypto: encrypt tmpfile located in encryption protected directory  [Martinusbe]
+eb183f6  ext4 crypto: make sure the encryption info is initialized on opendir(2)  [Martinusbe]
+887da29  ext4 crypto: set up encryption info for new inodes in ext4_inherit_context()  [Martinusbe]
+52d4a9e  ext4 crypto: fix memory leaks in ext4_encrypted_zeroout  [Martinusbe]
+d9a9133  ext4 crypto: use per-inode tfm structure  [Martinusbe]
+21900fe  ext4 crypto: require CONFIG_CRYPTO_CTR if ext4 encryption is enabled  [Martinusbe]
+77aea69  ext4 crypto: shrink size of the ext4_crypto_ctx structure  [Martinusbe]
+9577af7  ext4 crypto: get rid of ci_mode from struct ext4_crypt_info  [Martinusbe]
+295fcd8  ext4 crypto: use slab caches  [Martinusbe]
+ca08039  ext4: clean up superblock encryption mode fields  [Martinusbe]
+ab12a78  ext4 crypto: reorganize how we store keys in the inode  [Martinusbe]
+7b70cb0  ext4 crypto: separate kernel and userspace structure for the key  [Martinusbe]
+8b5b257  ext4 crypto: don't allocate a page when encrypting/decrypting file names  [Martinusbe]
+c137823  ext4 crypto: optimize filename encryption  [Martinusbe]
+7f32444  ext4 crypto: Do not select from EXT4_FS_ENCRYPTION  [Martinusbe]
+e976c29  ext4 crypto: add padding to filenames before encrypting  [Martinusbe]
+e8f6ce7  ext4 crypto: simplify and speed up filename encryption  [Martinusbe]
+19f91f7  ext4 crypto: enable encryption feature flag  [Martinusbe]
+065da28  ext4 crypto: Add symlink encryption  [Martinusbe]
+298fcac  ext4 crypto: enable filename encryption  [Martinusbe]
+d18ef4e  ext4 crypto: filename encryption modifications  [Martinusbe]
+aa7f83f  ext4 crypto: partial update to namei.c for fname crypto  [Martinusbe]
+82e814e  ext4 crypto: insert encrypted filenames into a leaf directory block  [Martinusbe]
+cd77574  ext4 crypto: teach ext4_htree_store_dirent() to store decrypted filenames  [Martinusbe]
+558ef48  ext4 crypto: filename encryption facilities  [Martinusbe]
+89e7131  ext4 crypto: implement the ext4 decryption read path  [Martinusbe]
+5f40141  ext4 crypto: implement the ext4 encryption write path  [Martinusbe]
+972a150  ext4 crypto: inherit encryption policies on inode and directory create  [Martinusbe]
+b4bcebe  ext4 crypto: enforce context consistency  [Martinusbe]
+0e749ad  ext4 crypto: add encryption key management facilities  [Martinusbe]
+b8bbbd0  ext4 crypto: add ext4 encryption facilities  [Martinusbe]
+b6ffefd  ext4 crypto: add encryption policy and password salt support  [Martinusbe]
+711de73  ext4 crypto: add encryption xattr support  [Martinusbe]
+e7a2b5c  ext4 crypto: export ext4_empty_dir()  [Martinusbe]
+e9a07a0  ext4 crypto: add ext4 encryption Kconfig  [Martinusbe]
+c605863  ext4 crypto: reserve codepoints used by the ext4 encryption feature  [Martinusbe]
+f37869a  ext4 crypto: add ext4_mpage_readpages()  [Martinusbe]
+a5204f3  ANDROID: sdcardfs: Fix style issues in macros  [Martinusbe]
+024cf9e  ANDROID: sdcardfs: Use seq_puts over seq_printf  [Martinusbe]
+33b7b51  ANDROID: sdcardfs: Use to kstrout  [Martinusbe]
+449920f  ANDROID: sdcardfs: Use pr_[...] instead of printk  [Martinusbe]
+630ba01  ANDROID: sdcardfs: remove unneeded null check  [Martinusbe]
+4236b87  ANDROID: sdcardfs: Fix style issues with comments  [Martinusbe]
+2b49b07  ANDROID: sdcardfs: Fix formatting  [Martinusbe]
+75fe0b0  ANDROID: sdcardfs: correct order of descriptors  [Martinusbe]
+dbebf71  ANDROID: sdcardfs: Fix gid issue  [Martinusbe]
+12330d5  ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h  [Martinusbe]
+416a22d  ANDROID: sdcardfs: Remove uninformative prints  [Martinusbe]
+79d28c9  ANDROID: sdcardfs: move path_put outside of spinlock  [Martinusbe]
+dce7b6a  ANDROID: sdcardfs: Use case insensitive hash function  [Martinusbe]
+9d7c52f  ANDROID: sdcardfs: declare MODULE_ALIAS_FS  [Martinusbe]
+8d53c8e  ANDROID: sdcardfs: Get the blocksize from the lower fs  [Martinusbe]
+9d5a9fc  ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve  [Martinusbe]
+5bc5f1a  ANDROID: sdcardfs: Switch to internal case insensitive compare  [Martinusbe]
+0f2cef1  ANDROID: sdcardfs: Use spin_lock_nested  [Martinusbe]
+ede1d96  ANDROID: sdcardfs: Replace get/put with d_lock  [Martinusbe]
+f5fc353  ANDROID: sdcardfs: rate limit warning print  [Martinusbe]
+4f5b395  ANDROID: sdcardfs: Fix case insensitive lookup  [Martinusbe]
+349217e  ANDROID: mnt: remount should propagate to slaves of slaves  [Martinusbe]
+be33ca3  ANDROID: sdcardfs: support direct-IO (DIO) operations  [Martinusbe]
+d890128f  ANDROID: sdcardfs: implement vm_ops->page_mkwrite  [Martinusbe]
+f6539b2  ANDROID: sdcardfs: Don't bother deleting freelist  [Martinusbe]
+c60b876  ANDROID: sdcardfs: Add missing path_put  [Martinusbe]
+a22715d  ANDROID: sdcardfs: Fix incorrect hash  [Martinusbe]
+a55fbfe  ANDROID: sdcardfs: Switch strcasecmp for internal call  [Martinusbe]
+429408a  ANDROID: sdcardfs: switch to full_name_hash and qstr  [Martinusbe]
+90711ac  ANDROID: sdcardfs: Add GID Derivation to sdcardfs  [Martinusbe]
+0f17238  ANDROID: sdcardfs: Remove redundant operation  [Martinusbe]
+7aaf4d3  ANDROID: sdcardfs: add support for user permission isolation  [Martinusbe]
+b3a4318  ANDROID: sdcardfs: Refactor configfs interface  [Martinusbe]
+5be7d33  ANDROID: sdcardfs: Allow non-owners to touch  [Martinusbe]
+5ab1834  vfs: Add setattr2 for filesystems with per mount permissions  [Martinusbe]
+784e0fa  vfs: Allow filesystems to access their private mount data  [Martinusbe]
+2de2e5f  mnt: Add filesystem private data to mount points  [Martinusbe]
+4f3f923  vfs: Add permission2 for filesystems with per mount permissions  [Martinusbe]
+7c4e75d  ANDROID: sdcardfs: Fix locking issue with permision fix up  [Martinusbe]
+7292a08  sdcardfs: Use per mount permissions  [Martinusbe]
+3cbc15d  sdcardfs: Add gid and mask to private mount data  [Martinusbe]
+6d9adb1  sdcardfs: User new permission2 functions  [Martinusbe]
+ee827fe  sdcardfs: Move directory unlock before touch  [Martinusbe]
+c16524d  sdcardfs: fix external storage exporting incorrect uid  [Martinusbe]
+4dbadaa  sdcardfs: Added top to sdcardfs_inode_info  [Martinusbe]
+5221bca  sdcardfs: Switch package list to RCU  [Martinusbe]
+b28757e  sdcardfs: Fix locking for permission fix up  [Martinusbe]
+50d9d04  sdcardfs: Check for other cases on path lookup  [Martinusbe]
+0b6c839  sdcardfs: override umask on mkdir and create  [Martinusbe]
+18f8cd0  ANDROID: sdcardfs: fix itnull.cocci warnings  [Martinusbe]
+59f884b  sdcardfs: Truncate packages_gid.list on overflow  [Martinusbe]
+5f978c8  vfs: change d_canonical_path to take two paths  [Martinusbe]
+09e5003  Merge branch 'linux-3.18.y' of git://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-stable into cm-14.1  [dianlujitao]
+1b747ee  Revert "BACKPORT: f2fs: add a max block check for get_data_block_bmap"  [dianlujitao]
+   * packages/apps/masquerade/
+6721adf  JobService: Fix inital font application  [Martinusbe]
+dc3ba93  JobService: fix initial theme dir creation  [Martinusbe]
+292ced8  Run RestartService immediately if called  [Martinusbe]
+
+====================
+     03-29-2017
 ====================
 
-   * device/oneplus/oneplus3/
-edd68a3  op3: sepolicy: allow system_server user profile data  [Martinusbe]
-fb538fe  op3: Update to OxygenOS 4.1.0 blobs  [Martinusbe]
-b8f3b07  op3: Clean up camera shim library  [Martinusbe]
-   * kernel/oneplus/msm8996/
-247a4f6  misc: Sync with OxygenOS 4.1.0 kernel release  [Martinusbe]
-   * vendor/oneplus/
-0bae12e  op3: Update to OxygenOS 4.1.0 blobs  [Martinusbe]
-91eb29e  Revert "op3: add aptX codec support"  [Martinusbe]
+   * device/oneplus/onyx/
+9588b7b  op3: Hide sRGB toggle in developer options  [CheckYourScreen]
+0edf7eb  overlay: enable proximity check on wake  [CheckYourScreen]
+f21ab99  onyx: Go Rootless  [CheckYourScreen]
+a757072  sepolicy: address more untrusted_app denials  [CheckYourScreen]
+d02b3a4  sepolicy: address untrusted_app denials  [CheckYourScreen]
 
-   * device/oneplus/oneplus3/
-9832334  op3: sepolicy: allow untrusted_app proc_stat  [Martinusbe]
-   * kernel/oneplus/msm8996/
-5750a87  qcacld-2.0: Update to LA.UM.5.5.r1-03800-8x96.0  [Martinusbe]
-6999570  Merge tag 'LA.UM.5.5.r1-03800-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1  [Martinusbe]
+====================
+     03-28-2017
+====================
+   * OTA_config/
+7dbd610  Clark 03/27  [GitHub]
+79ab6e1  Flo 03/27  [GitHub]
 
-   * device/oneplus/bacon/
-cb09843  overlay: disbale aosp gestures  [Prema Chand Alugu]
-   * device/oneplus/oneplus3/
-e1e7fc2  Revert "Revert "op3: disable gesture settings overlay""  [Martinusbe]
-   * frameworks/av/
-c981a70  Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."  [Martinusbe]
-   * frameworks/base/
-c69032c  SystemUI: Grant READ_PHONE_STATE permission  [Martinusbe]
-65ffa3f  camera: Make secondary camera package list opt out  [Martinusbe]
-6c014f0  Camera: Expose dual camera for whitelist app  [Martinusbe]
-0861c12  camera: Tolerate errors in getHorizontal/VerticalViewAngle  [Martinusbe]
-09dd076  Guard in short-circuit evaluations for stringSplit methods.  [Martinusbe]
-0940ad2  Camera: Don't throw exceptions when value pairs have spaces in them  [Martinusbe]
+====================
+     03-27-2017
+====================
+   * OTA_config/
+33912f6  ota: update Redmi2 03/27  [Prema Chand Alugu]
+ec40ee6  bullhead 03/27  [GitHub]
+e6cce46  ota: update Oneplus One 03/27  [Prema Chand Alugu]
+   * packages/apps/KernelAdiutor/
+3623c82  Launcher icon update  [theringmaster]
+   * vendor/motorola/
+43550dc  omap4-common: remove outdated PowerVR app profiles  [Ashwin Ramesh]
+493fef8  omap4-common: move common graphic blobs to ti vendor  [Ashwin Ramesh]
+bd743f4  omap4-common: use the re-implemented pvrsrvinit  [Ashwin Ramesh]
+
+====================
+     03-26-2017
+====================
+
+   * build/
+e72e27f  Magisk as default and define explict rootless method [1/2]  [Prema Chand Alugu]
+628f86f  Default root method provision [1/2]  [Prema Chand Alugu]
+   * device/oneplus/oneplus2/
+1c2ed0e  fix dev options  [GitHub]
+   * vendor/tipsy/
+25137e4  testing_HopVerdomme  [Martinusbe]
+8d7812e  Update Magisk GZR Edition v1.1  [Martinusbe]
+d479ce1  Magisk as default and define explict rootless method [2/2]  [Prema Chand Alugu]
+54c525d  Default root method provision [2/2]  [Prema Chand Alugu]
+
+====================
+     03-25-2017
+====================
+
+   * bionic/
+b0b9441  linker: Allow devices to force shim libs  [Martinusbe]
+1f1e941  linker: Allow only specified non-PIE executables  [Martinusbe]
+017ea2f  Revert "Revert "Reenable support for non-PIE executables""  [Martinusbe]
+cb929e8  linker: allow text relocations on user builds  [Martinusbe]
+   * build/
+de8de37  Revert "ota: Remove cruft we don't care about"  [Martinusbe]
+d62e3b4  Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash  [Martinusbe]
+4aa95ec  build: core: Remove BUILD_TINY_ANDROID checks  [Martinusbe]
+314eb3a  Revert "build_image: Unbreak verity/FEC generation"  [Martinusbe]
+96bf5b3  releasetools: Generate recovery-from-boot.p with bsdiff if necessary  [Martinusbe]
+d0eb518  Revert "releasetools: Don't extract BOOTABLE_IMAGES when signing target files"  [Martinusbe]
+3cb40b0  Move ro.bootimage.build.fingerprint to build.prop  [Martinusbe]
+baaa49d  core: Fix unified trees with no TARGET_OTA_ASSERT_DEVICE  [Martinusbe]
+ad8e36c  core: include libf2fs_fmt_host_dyn in otatools  [Martinusbe]
+4f6ba59  ota_from_target_files: Remove device dependent arguments  [Martinusbe]
+1e2059c  releasetools: support reading release keys out of some sort of command  [Martinusbe]
+e8965e0  releasetools: Add script to sign zips  [Martinusbe]
+b58709b  Always copy bootable images in BOOTABLE_IMAGES/  [Martinusbe]
+77b1c28  build: Warn about prebuilt apk in PRODUCT_COPY_FILES  [Martinusbe]
+be2e562  build sign_target_files_apks.py: clean tmp on exit  [Martinusbe]
+   * device/oneplus/onyx/
+2f2e633  onyx: address rmt_storage denial  [CheckYourScreen]
+7f44fe0  Revert "onyx: kill CNE and QC location"  [CheckYourScreen]
+b65a8e0  Revert "onyx: enable qualcomm video enhancement flag"  [CheckYourScreen]
+   * frameworks/native/
+c430c1d  libEGL: Only enable WORKAROUND_BUG_10194508 with board flag  [Martinusbe]
    * frameworks/opt/slim/
-bc857e1  SlimRecents: Fix potential SystemUI NPE  [Martinusbe]
-c8b3f26  Slim Recents: don't show panel if app pinning is currently active  [Martinusbe]
-72c33db  SlimRecents: add killapp button to toptask card  [Martinusbe]
-cc2beae  Slim Recents: make multiwindow more robust  [Martinusbe]
-e1b53f9  Slim Recents: fix toptask header layout and other ui improvements  [Martinusbe]
-3f49494  Slim Recent: scale apps thumbnails according to the panel size  [Martinusbe]
-   * packages/apps/DeskClock/
-f20b203  DeskClock: grant READ_PHONE_STATE and READ_PRIVILEGED_PHONE_STATE  [Martinusbe]
-8c44708  Black and Yellow please!  [Martinusbe]
-c2d47fc   DeskClock night mode  [Martinusbe]
-   * packages/apps/OmniStyle/
-faf258e  Fix: Are you kidding, Syed?  [Prema Chand Alugu]
-
-   * device/oneplus/bacon/
-b31c2c4  Revert "overlay: enable gesturesanywhere"  [Prema Chand Alugu]
-   * device/oneplus/oneplus3/
-4610c9d  op3: prop: disable sdcardfs  [Martinusbe]
-   * frameworks/base/
-6fed024  New easter egg designs  [Alx31]
-   * packages/apps/Tavern/
-0b0423c  Remove overlay added for gesturesAnywhere  [Prema Chand Alugu]
-   * packages/providers/MediaProvider/
-7107407  MediaProvider: Fix possible NPE  [Martinusbe]
-6696944  MediaProvider: Add read storage permission  [Martinusbe]
-9b16f95  Screenshots info is not updated when device is plugged in MTP mode  [Martinusbe]
-   * vendor/tipsy/
-45a2d41  v5.0 Geuze-testing  [Martinusbe]
-
-   * device/oneplus/oneplus3/
-a53318d  op3: Sync audio properties with upstream  [Martinusbe]
-   * frameworks/base/
-d5ac778  Expose temperature text in DetailedWeatherView  [Martinusbe]
-f05894c  ThemeSafety: Introduce App Crash Intent  [Martinusbe]
-a6ac1e1  SubscriptionManager: remove unprovisioned sims from the list of active subscriptions  [Martinusbe]
+e19a932  Slim Recents: add icon cache to improve performances and fix FC  [Martinusbe]
+93ad287  Slim Recents iconpack support [2/2]  [Martinusbe]
+795d33c  Slim Recents iconpack support [1/2]  [Martinusbe]
+   * system/core/
+0f8451a  init: Don't update recovery on boot  [Martinusbe]
+450d317  rootdir: init.rc: Fix for "add_tid_to_cgroup failed to write" warnings  [Martinusbe]
    * vendor/motorola/
-789936d  clark: kang drm from bullhead  [Dan Pasanen]
-
-   * device/oneplus/bacon/
-5e6fe7e  Add dependencies  [Prema Chand Alugu]
-   * frameworks/base/
-36d52d8  Fix update of brightness mode in QS slider  [Prema Chand Alugu]
-b5bd80c  Revert "Brightness slider: only enable auto brightness toggle when also enabed for QS"  [Prema Chand Alugu]
-68279fd  Revert "QS auto brightness toggle rework"  [Prema Chand Alugu]
-   * frameworks/opt/telephony/
-8c45a7f  Merge pull request #6 from SlimRoms/ng7.1  [GitHub]
-   * hardware/qcom/media-caf/msm8974/
-26cc5da  mm-video-v4l2: vdec: Fix makefile derp introduced in d443c0d  [Josue Rivera]
-   * manifest/
-bd8fb25  Change github to track https  [Prema Chand Alugu]
-   * packages/apps/Settings/
-ee3d690  Fix possible NPE on SIM settings shutdown.  [Martinusbe]
-f01573d  Clean up SIM enable toggle implementation  [Martinusbe]
-1b02170  Settings: port manual provisiong support  [Martinusbe]
-   * packages/apps/Tavern/
-d086813  Let brightness icon use System switch preference  [Prema Chand Alugu]
-   * packages/services/Telecomm/
-41840ec  Merge pull request #2 from SlimRoms/ng7.1  [GitHub]
-   * packages/services/Telephony/
-faf3baf  Merge remote-tracking branch 'slim/ng7.1' into n7.1  [Martinusbe]
+5c3c4cf  victara: Correct deodex the location apk files from stock  [Luca Stefani]
+59d27c5  victara: Fix the copyright string  [Luca Stefani]
    * vendor/tipsy/
-468851a  device: add Redmi2 to the devices  [Prema Chand Alugu]
+f937dbf  tipsy: build: tasks: Remove BUILD_TINY_ANDROID check  [Martinusbe]
+61ef4b6  apn: Updating TelkomSA from 8ta South Africa APN  [Martinusbe]
+f88379e  repopick: encode commit subjects in utf-8 for printing  [Martinusbe]
+142c879  apns: Remove proxy for the "TIM WAP" APN  [Martinusbe]
+2ab81f2  vendor: Add templates for proprietary extraction scripts  [Martinusbe]
+a8a3d90  extract_utils: Fix locale issue with sort  [Martinusbe]
+6395e49  extract-utils: Fix handling of pulling src:dest pairs from dumps  [Martinusbe]
+3b253bd  backuptool: Preserve the SELinux context of the files  [Martinusbe]
+0bbc5ea  backuptool: Don't rely on the order of the elements in the list  [Martinusbe]
 
-   * OTA_config/
-f4c2ef5  Add bullhead to TipsyOTA  [GitHub]
-01906bb  Flounder 03/12  [GitHub]
+====================
+     03-24-2017
+====================
+
    * vendor/motorola/
-245f629  msm8916-common: Drop liboemcrypto  [Ashwin Ramesh]
-   * vendor/tipsy/
-fd04c65  qcom: Automatically set TARGET_USES_COLOR_METADATA for msm8996/8  [Martinusbe]
+278078f  victara: regen blobs/makefiles after switching to common extraction scripts  [Dan Pasanen]
+fd13e8a  clark: regen makefiles  [Dan Pasanen]
 
-   * OTA_config/
-fe595ca  Clark 03/12  [GitHub]
-aa3269f  ota: update Redmi2 03/12  [Prema Chand Alugu]
-fb8cd51  update op3  [Martinusbe]
-d9e83d6  ota: update Bacon 03/12  [Prema Chand Alugu]
-   * device/oneplus/oneplus3/
-f8a2f1c  Revert "op3: add aptX codec support"  [Martinusbe]
-   * frameworks/base/
-23f06cd  fix build  [Alx31]
-12a0855  Notification Ticker: add darkintensity support  [Martinusbe]
-   * kernel/oneplus/msm8996/
-e508d5a  perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race  [Martinusbe]
-ba445ef  sctp: avoid BUG_ON on sctp_wait_for_sndbuf  [Martinusbe]
-86b3e3f  op3: Remove CONFIG_TIMER_STATS  [Martinusbe]
-8e4cece  ipc/shm: Fix shmat mmap nil-page protection  [Martinusbe]
-5cf375d  ANDROID: ion: check for kref overflow  [Martinusbe]
-1ccd033  qcacld-2.0: Remove obsolete set/reset ssid hotlist  [Martinusbe]
-feaf2c4  mpi: Fix NULL ptr dereference in mpi_powm() [ver #3]  [Martinusbe]
-9d1a9c0  Merge tag 'LA.UM.5.5.r1-03600-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1  [Martinusbe]
-   * packages/services/OmniJaws/
-614ed6c  OmniJaws: Clean up unused imports, simpify few things  [Alx31]
-ac5d22a  OmniJaws: Add menu item to search for Chronus icons  [Alx31]
-77ee9d1  Fix potential actionbar npe  [Alx31]
-ea3de8b  OmniJaws: manifest add DEFAULT category to activities  [Alx31]
+====================
+     03-23-2017
+====================
+
+   * vendor/motorola/
+72183c3  falcon/peregrine: Go back to prebuilt AKM daemon  [gmrt]
 
