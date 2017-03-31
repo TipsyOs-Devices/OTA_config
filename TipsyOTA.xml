@@ -2,23 +2,23 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <onyx>
-            <Filename>Tipsy-onyx-frunk-v4.6-20160819-1706.zip</Filename>
+            <Filename>Tipsy-onyx-7.1.1.HopVerdomme-v5.1-20170331-0617.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=56591</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=745425885120720707</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Vatsal/Changelog.txt</ChangelogUrl>
+                description="View TipsyOs changelogs">https://forum.xda-developers.com/showpost.php?p=70770832&postcount=4</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
-                description="Download latest Banks gapps">https://www.androidfilehost.com/?w=files&amp;flid=41020</GappsUrl>
+                description="Download Latest Gapps">http://www.opengapps.org</GappsUrl>
             <OPUrl
                 id="op"
-                title="OnePlus Forums"
-                description="Visit GZR onyx thread on OnePlus Forums">https://forums.oneplus.net/threads/gzr-05-07-onyx-tipsy-tesla-validus-6-0-1_43-aospb-official.437885/</OPUrl>
+                title="XDA Forums"
+                description="Visit GZR onyx thread on XDA Forum">https://forum.xda-developers.com/oneplus-x/development/roms-ground-zero-roms-validus-tesla-t3546588</OPUrl>
         </onyx>
         <bacon>
             <Filename>Tipsy-bacon-7.1.1.HopVerdomme-v5.1-20170327-0106.zip</Filename>
