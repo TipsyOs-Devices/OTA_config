@@ -10,7 +10,7 @@
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View TipsyOs changelogs">https://forum.xda-developers.com/showpost.php?p=70770832&postcount=4</ChangelogUrl>
+                description="View TipsyOs changelogs">https://forum.xda-developers.com/showpost.php?p=70770832&amp;postcount=4</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
