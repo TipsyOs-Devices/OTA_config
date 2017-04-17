@@ -161,11 +161,11 @@
                 description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
         </mako>
         <flo>
-            <Filename>Tipsy-flo-7.1.1.HopVerdomme-v5.1-20170327-1045.zip</Filename>
+            <Filename>Tipsy-flo-7.1.1.Jupiler-v5.3-20170417-1919.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=457095661767149272</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=673368273298948014</RomUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
