@@ -1,0 +1,173 @@
+====================
+     04-22-2017
+====================
+
+   * manifest/
+8a2ff4c  7.1.2_r2  [Martinusbe]
+
+   * frameworks/base/
+41f1e37  Add protected broadcast for app crash broadcast  [Martinusbe]
+
+   * build/
+c47dc13  build_image.py: Update commands based on our python3 update  [Martinusbe]
+1c82c6d  build: allow to disable recovery-two-step.img generation  [Martinusbe]
+   * frameworks/av/
+0876f7e  stagefright: Fix SurfaceMediaSource buffer search condition when buffer return  [Martinusbe]
+d6fb19a  Revert "Fix Miracast(wifi display)"  [Martinusbe]
+356834b  stagefright: Remove the HAL3 limitation from the video reference clock selection  [Martinusbe]
+   * frameworks/base/
+2a85e39  Fix Aosp bug on custom apps tiles: color not changing on tile state change  [Martinusbe]
+c6140d9  KILL FULLSCREEN KEYBOARD WITH FIRE  [Martinusbe]
+e6569d5  Zygote: Fix GL preload property evaluation  [Martinusbe]
+   * frameworks/native/
+0c9f6af  sensorservice: Register orientation sensor if HAL doesn't provide it  [Martinusbe]
+   * frameworks/opt/slim/
+378a6f8  Update for new color picker  [Martinusbe]
+c9e1aff  Fix battery alignment  [Martinusbe]
+c9638b8  Cleanup SlimSettings layouts on tablets  [Martinusbe]
+   * manifest/
+d9093b3  track slim colorpicker  [Martinusbe]
+   * packages/apps/Nfc/
+0d15c7a  Nfc: Add android-support-v4 to static libs  [Josue Rivera]
+   * vendor/tipsy/
+b69a1e7  kernel: Fix broken C_INCLUDE_PATH for Darwin  [Martinusbe]
+8cfdf3e  kernel: Include openssl headers and dylibs on darwin  [Martinusbe]
+2fb4e41  charger: updates for 7.1.2 minui  [Martinusbe]
+ca29e6e  cm: charger: Correct res_create_multi_display_surface() usage  [Martinusbe]
+c0d3df6  cm: charger: Center capacity and vertical offset  [Martinusbe]
+f88e70d  cm: charger: Fix cm healthd  [Martinusbe]
+72fc2b4  cm: charger: Export the RTC Clock and Alarm timestamps  [Martinusbe]
+d6f17fd  cm: charger: Add support for double backlight displays  [Martinusbe]
+d7e40e3  cm: Add custom off-mode charging screen  [Martinusbe]
+
+   * device/oneplus/oneplus3/
+7b8bf12  op3: 7.1.2:healthd: Set wake interval timing  [Martinusbe]
+   * system/core/
+485f907  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
+
+   * bionic/
+18207f8  Merge android-7.1.2_r2  [Martinusbe]
+   * build/
+508afba  Merge android-7.1.2_r2  [Martinusbe]
+   * frameworks/av/
+976f805  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
+   * frameworks/base/
+2899427  7.1.2 fixes  [Martinusbe]
+807857c  Merge android-7.1.2_r2  [Martinusbe]
+   * frameworks/native/
+52cc38e  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
+   * frameworks/opt/color-picker/
+fd2ac56  color-picker: Add a credits file  [Griffin Millender]
+c14977e  Fixes  [Griffin Millender]
+5b5f388  Remove setAlphaEnabled temporarily  [Griffin Millender]
+6a7a50a  color-picker:  Add ability to set initial color from the fragment  [Griffin Millender]
+003d754  Cleanup the dialog when used in settings  [Griffin Millender]
+ba2eaa0  color-picker: Prepare to build inline with rom  [Griffin Millender]
+17c2dec  Cleanup leftover code from rewrite  [Griffin Millender]
+2556f50  Rewrite  [Griffin Millender]
+   * frameworks/opt/telephony/
+1a54863  Merge tag 'android-7.1.2_r2' into cm-14.1  [Martinusbe]
+   * hardware/libhardware/
+e4775fe  hw_auth_token: use macro for HW_AUTH_TOKEN_VERSION  [Martinusbe]
+83fb089  BLE OOB Pairing - parse address type (2/5)  [Martinusbe]
+7a8f0bd  Sensors: MultiHal: support sensor API version 1.4  [Martinusbe]
+9e91ea4  Treat all tags as unsigned when comparing them  [Martinusbe]
+ba38a1c  Sensors: MultiHal: ignore errors from poll calls  [Martinusbe]
+
+   * packages/apps/Bluetooth/
+bffbf5c  Automatic translation import  [Josue Rivera]
+1d92f96  Automatic translation import  [Josue Rivera]
+77ff627  Revert "Introduced Active device for volume updates and volume update in pause state"  [Josue Rivera]
+c612300  Bluetooth: AIRPLANE_MODE_ON has moved  [Josue Rivera]
+65092c4  Automatic translation import  [Josue Rivera]
+45ac8e0  Automatic translation import  [Josue Rivera]
+   * packages/apps/Camera2/
+2b2d5dd  Merge "Automatic translation import" into ng7.1  [Gerrit Code Review]
+   * packages/apps/Settings/
+c79b196  Merge android-7.1.2_r2  [Martinusbe]
+   * packages/services/Telecomm/
+0ae327a  Merge android-7.1.2_r2  [Martinusbe]
+   * packages/services/Telephony/
+18d29e1  Merge android-7.1.2_r2  [Martinusbe]
+   * system/extras/
+4c29ba0  Update verity_verifier from master branch  [Josue Rivera]
+8d3f159  verity: Include libcrypto_utils_static  [Josue Rivera]
+   * system/sepolicy/
+ab8bdcc  Merge android-7.1.2_r2  [Martinusbe]
+   * system/vold/
+fd4d286  Merge android-7.1.2_r2  [Martinusbe]
+
+   * art/
+94883f0  Revert "Revert "ART: Give JIT thread pool workers a peer""  [Josue Rivera]
+5f54193  ART: Add ThreadPool mode that creates peers  [Josue Rivera]
+74875fe  Add Thread entry to signal if the thread can call into java  [Josue Rivera]
+d13785f  Cache flush/invalidate needs RWX permission  [Josue Rivera]
+0e8c0ba  Delete extra arm64/mips64 MterpReturn suspend check  [Josue Rivera]
+e0968c9  Add visiting for class loaders in StickyMarkSweep  [Josue Rivera]
+09e0452  Revert "Revert "Prune uses library classes even without profile DO NOT MERGE""  [Josue Rivera]
+ccc75b1  Revert "Prune uses library classes even without profile DO NOT MERGE"  [Josue Rivera]
+11caaeb  Prune uses library classes even without profile DO NOT MERGE  [Josue Rivera]
+412117f  Fix event reporting from the debugger thread  [Josue Rivera]
+f236cef  ART: Prioritize reference table dump  [Josue Rivera]
+   * frameworks/base/
+c33a76f  Intercept Home button press to wake device  [Martinusbe]
+   * system/netd/
+5132e6f  DO NOT MERGE Add success/errno to connect() event reporting  [Josue Rivera]
+480f0d1  DO NOT MERGE onConnectEvent does not report udp connects  [Josue Rivera]
+c2891cf  DO NOT MERGE Comment out tests/benchmarks/Android.mk on nyc-mr2-dev  [Josue Rivera]
+baf5f04  DO NOT MERGE Fix use-after-free of mClient member DnsProxyListener::GetHostByNameHandler::run().  [Josue Rivera]
+cf52440  DO NOT MERGE Add null check for hp in DnsProxyListener::GetHostByNameHandler  [Josue Rivera]
+ab4bd29  DO NOT MERGE Add connect event reporting  [Josue Rivera]
+9b4b135  DO NOT MERGE Fixing the netd benchmark  [Josue Rivera]
+7920eb0  DO NOT MERGE Extending DNS event reporting  [Josue Rivera]
+8041075  DO NOT MERGE Remove "if (auto ret = " treated as unused by some compilers  [Josue Rivera]
+c90a962  DO NOT MERGE Adding EventReporter class  [Josue Rivera]
+860a6a6  DO NOT MERGE [benchmark] remove unnecessary shared libs, fix apct  [Josue Rivera]
+6a29d43  DO NOT MERGE Benchmarks for network metrics reporting  [Josue Rivera]
+95cb551  DO NOT MERGE Move Stopwatch into its own header  [Josue Rivera]
+a76621a  DO NOT MERGE Fix getaddrinfo test to use random mapping ids  [Josue Rivera]
+1ebd668  DO NOT MERGE UidRange bounds-checking typo  [Josue Rivera]
+94529f8  DO NOT MERGE Rename the DnsEventListenerService to NetdEventListenerService  [Josue Rivera]
+   * vendor/oneplus/
+1c6862d  oneplus3: Hex-edit camera HAL to fix FFC crashes on the OP3T  [Martinusbe]
+
+   * OTA_config/
+11926cd  Flo 04/17 fixed build  [GitHub]
+5eb57d9  Flo 04/17  [GitHub]
+6180a94  Clark 04/17  [GitHub]
+   * frameworks/base/
+1fa9208  Fix NullPointerException in MediaPlayer  [Martinusbe]
+71212e4  Frameworks/base: Fix old code in MediaPlayer  [Martinusbe]
+c515472  FATAL EXCEPTION IN SYSTEM PROCESS: android.ui  [Martinusbe]
+   * kernel/oneplus/msm8996/
+78a73d1  Merge tag 'LA.UM.5.5.r1-04300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into HEAD  [Martinusbe]
+0312aed  mdss: Fix solid fill unpack pattern  [Martinusbe]
+a9d0ebf  mdss: move to a kthread for vsync_retire_work_handler  [Martinusbe]
+0ddf0b1  msm: mdss: avoid scheduling pp work during continuous updates  [Martinusbe]
+46c7fbd  mdss: Do not wait for kickoff in display commit  [Martinusbe]
+9dac8d6  kgsl: convert some workqueues to use kthreads  [Martinusbe]
+   * system/sepolicy/
+7e4524f  sepolicy: add file and domain trans to interfacer  [Martinusbe]
+   * vendor/motorola/
+108aa97  shamu: add faceunlock proprietary file libfrsdk.so  [razorloves]
+
+   * kernel/oneplus/msm8996/
+8924c8c  input: synaptics: Ditch oneplus virtual abs code  [Martinusbe]
+bcec63a  perf:arm64: fix lockdep warning when handling CPU_STARTING.  [Martinusbe]
+b6239dc  perf:arm64: fix pmu percpu irq handling at hotplug.  [Martinusbe]
+15adf80  perf: arm64: fix RCU usage on pmu resume from low-power  [Martinusbe]
+ac950f5  perf: arm64: implement CPU_PM notifier  [Martinusbe]
+a6974ac  Revert "Perf: arm64: support hotplug and power collapse"  [Martinusbe]
+d458be7  Revert "Perf: arm64: fix disable of pmu irq during hotplug"  [Martinusbe]
+f4e4388  Revert "Perf: arm64: restore registers after reset"  [Martinusbe]
+eeeaa67  Revert "Perf: arm64: stop counters when going into hotplug"  [Martinusbe]
+
+   * frameworks/base/
+56646cb  Themes: Allow volume slider and thumb to work with custom images.  [Martinusbe]
+233c5b2  Separate tile label color from icon drawable color  [Martinusbe]
+   * hardware/qcom/audio/default/
+2b507e6  8960: Define HFP_ASM_RX_TX  [Josue Rivera]
+   * packages/apps/masquerade/
+cd66c01  restartService --> forceStopService  [Martinusbe]
+544fd21  Polish copyright  [Martinusbe]
+

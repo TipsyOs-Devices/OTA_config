@@ -125,25 +125,17 @@
                 id="changelog"
                 title="Changelog"
                 description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Vatsal/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
         </titan>
         <falcon>
-            <Filename>Tipsy-falcon-frunk-v4.6-20160819-1457.zip</Filename>
+            <Filename>Tipsy-falcon-7.1.2.Kasteelbier-v5.4-20170423-1129.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=34929</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=673368273298949563</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Vatsal/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
+                description="View TipsyOs changelogs">https://github.com/TipsyOs-Devices/OTA_config/blob/n7.1/Changelogs/Motorola/falcon/Changelog.txt</ChangelogUrl>
         </falcon>
         <mako>
             <Filename>Tipsy-mako-frunk-v4.6-20160819-1759.zip</Filename>
