@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <onyx>
-            <Filename>Tipsy-onyx-7.1.1.HopVerdomme-v5.1-20170331-0617.zip</Filename>
+            <Filename>Tipsy-onyx-7.1.2.Lucifer-v5.5-20170503-1429.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=745425885120720707</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=817550096634766805</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
