@@ -1,173 +1,450 @@
-====================
-     04-22-2017
-====================
 
-   * manifest/
-8a2ff4c  7.1.2_r2  [Martinusbe]
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+
+====================
+     05-06-2017
+====================
 
    * frameworks/base/
-41f1e37  Add protected broadcast for app crash broadcast  [Martinusbe]
-
-   * build/
-c47dc13  build_image.py: Update commands based on our python3 update  [Martinusbe]
-1c82c6d  build: allow to disable recovery-two-step.img generation  [Martinusbe]
-   * frameworks/av/
-0876f7e  stagefright: Fix SurfaceMediaSource buffer search condition when buffer return  [Martinusbe]
-d6fb19a  Revert "Fix Miracast(wifi display)"  [Martinusbe]
-356834b  stagefright: Remove the HAL3 limitation from the video reference clock selection  [Martinusbe]
-   * frameworks/base/
-2a85e39  Fix Aosp bug on custom apps tiles: color not changing on tile state change  [Martinusbe]
-c6140d9  KILL FULLSCREEN KEYBOARD WITH FIRE  [Martinusbe]
-e6569d5  Zygote: Fix GL preload property evaluation  [Martinusbe]
-   * frameworks/native/
-0c9f6af  sensorservice: Register orientation sensor if HAL doesn't provide it  [Martinusbe]
-   * frameworks/opt/slim/
-378a6f8  Update for new color picker  [Martinusbe]
-c9e1aff  Fix battery alignment  [Martinusbe]
-c9638b8  Cleanup SlimSettings layouts on tablets  [Martinusbe]
-   * manifest/
-d9093b3  track slim colorpicker  [Martinusbe]
-   * packages/apps/Nfc/
-0d15c7a  Nfc: Add android-support-v4 to static libs  [Josue Rivera]
+b58b97d  Frameworks: Re-adapt toast window animations for 7.1.1 - Since google updated toast popup notifications on 7.1.1 release. toast window animations stop working .So now this is make it work again  [Prema Chand Alugu]
    * vendor/tipsy/
-b69a1e7  kernel: Fix broken C_INCLUDE_PATH for Darwin  [Martinusbe]
-8cfdf3e  kernel: Include openssl headers and dylibs on darwin  [Martinusbe]
-2fb4e41  charger: updates for 7.1.2 minui  [Martinusbe]
-ca29e6e  cm: charger: Correct res_create_multi_display_surface() usage  [Martinusbe]
-c0d3df6  cm: charger: Center capacity and vertical offset  [Martinusbe]
-f88e70d  cm: charger: Fix cm healthd  [Martinusbe]
-72fc2b4  cm: charger: Export the RTC Clock and Alarm timestamps  [Martinusbe]
-d6f17fd  cm: charger: Add support for double backlight displays  [Martinusbe]
-d7e40e3  cm: Add custom off-mode charging screen  [Martinusbe]
+9c02f40  Update Amaze to RC3  [Martinusbe]
+0a6045b  Add AmazeFileManager apk v3.1.2-RC2  [Martinusbe]
 
-   * device/oneplus/oneplus3/
-7b8bf12  op3: 7.1.2:healthd: Set wake interval timing  [Martinusbe]
-   * system/core/
-485f907  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
-
-   * bionic/
-18207f8  Merge android-7.1.2_r2  [Martinusbe]
-   * build/
-508afba  Merge android-7.1.2_r2  [Martinusbe]
-   * frameworks/av/
-976f805  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
    * frameworks/base/
-2899427  7.1.2 fixes  [Martinusbe]
-807857c  Merge android-7.1.2_r2  [Martinusbe]
-   * frameworks/native/
-52cc38e  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
-   * frameworks/opt/color-picker/
-fd2ac56  color-picker: Add a credits file  [Griffin Millender]
-c14977e  Fixes  [Griffin Millender]
-5b5f388  Remove setAlphaEnabled temporarily  [Griffin Millender]
-6a7a50a  color-picker:  Add ability to set initial color from the fragment  [Griffin Millender]
-003d754  Cleanup the dialog when used in settings  [Griffin Millender]
-ba2eaa0  color-picker: Prepare to build inline with rom  [Griffin Millender]
-17c2dec  Cleanup leftover code from rewrite  [Griffin Millender]
-2556f50  Rewrite  [Griffin Millender]
-   * frameworks/opt/telephony/
-1a54863  Merge tag 'android-7.1.2_r2' into cm-14.1  [Martinusbe]
-   * hardware/libhardware/
-e4775fe  hw_auth_token: use macro for HW_AUTH_TOKEN_VERSION  [Martinusbe]
-83fb089  BLE OOB Pairing - parse address type (2/5)  [Martinusbe]
-7a8f0bd  Sensors: MultiHal: support sensor API version 1.4  [Martinusbe]
-9e91ea4  Treat all tags as unsigned when comparing them  [Martinusbe]
-ba38a1c  Sensors: MultiHal: ignore errors from poll calls  [Martinusbe]
-
-   * packages/apps/Bluetooth/
-bffbf5c  Automatic translation import  [Josue Rivera]
-1d92f96  Automatic translation import  [Josue Rivera]
-77ff627  Revert "Introduced Active device for volume updates and volume update in pause state"  [Josue Rivera]
-c612300  Bluetooth: AIRPLANE_MODE_ON has moved  [Josue Rivera]
-65092c4  Automatic translation import  [Josue Rivera]
-45ac8e0  Automatic translation import  [Josue Rivera]
-   * packages/apps/Camera2/
-2b2d5dd  Merge "Automatic translation import" into ng7.1  [Gerrit Code Review]
-   * packages/apps/Settings/
-c79b196  Merge android-7.1.2_r2  [Martinusbe]
-   * packages/services/Telecomm/
-0ae327a  Merge android-7.1.2_r2  [Martinusbe]
-   * packages/services/Telephony/
-18d29e1  Merge android-7.1.2_r2  [Martinusbe]
-   * system/extras/
-4c29ba0  Update verity_verifier from master branch  [Josue Rivera]
-8d3f159  verity: Include libcrypto_utils_static  [Josue Rivera]
-   * system/sepolicy/
-ab8bdcc  Merge android-7.1.2_r2  [Martinusbe]
-   * system/vold/
-fd4d286  Merge android-7.1.2_r2  [Martinusbe]
-
-   * art/
-94883f0  Revert "Revert "ART: Give JIT thread pool workers a peer""  [Josue Rivera]
-5f54193  ART: Add ThreadPool mode that creates peers  [Josue Rivera]
-74875fe  Add Thread entry to signal if the thread can call into java  [Josue Rivera]
-d13785f  Cache flush/invalidate needs RWX permission  [Josue Rivera]
-0e8c0ba  Delete extra arm64/mips64 MterpReturn suspend check  [Josue Rivera]
-e0968c9  Add visiting for class loaders in StickyMarkSweep  [Josue Rivera]
-09e0452  Revert "Revert "Prune uses library classes even without profile DO NOT MERGE""  [Josue Rivera]
-ccc75b1  Revert "Prune uses library classes even without profile DO NOT MERGE"  [Josue Rivera]
-11caaeb  Prune uses library classes even without profile DO NOT MERGE  [Josue Rivera]
-412117f  Fix event reporting from the debugger thread  [Josue Rivera]
-f236cef  ART: Prioritize reference table dump  [Josue Rivera]
-   * frameworks/base/
-c33a76f  Intercept Home button press to wake device  [Martinusbe]
-   * system/netd/
-5132e6f  DO NOT MERGE Add success/errno to connect() event reporting  [Josue Rivera]
-480f0d1  DO NOT MERGE onConnectEvent does not report udp connects  [Josue Rivera]
-c2891cf  DO NOT MERGE Comment out tests/benchmarks/Android.mk on nyc-mr2-dev  [Josue Rivera]
-baf5f04  DO NOT MERGE Fix use-after-free of mClient member DnsProxyListener::GetHostByNameHandler::run().  [Josue Rivera]
-cf52440  DO NOT MERGE Add null check for hp in DnsProxyListener::GetHostByNameHandler  [Josue Rivera]
-ab4bd29  DO NOT MERGE Add connect event reporting  [Josue Rivera]
-9b4b135  DO NOT MERGE Fixing the netd benchmark  [Josue Rivera]
-7920eb0  DO NOT MERGE Extending DNS event reporting  [Josue Rivera]
-8041075  DO NOT MERGE Remove "if (auto ret = " treated as unused by some compilers  [Josue Rivera]
-c90a962  DO NOT MERGE Adding EventReporter class  [Josue Rivera]
-860a6a6  DO NOT MERGE [benchmark] remove unnecessary shared libs, fix apct  [Josue Rivera]
-6a29d43  DO NOT MERGE Benchmarks for network metrics reporting  [Josue Rivera]
-95cb551  DO NOT MERGE Move Stopwatch into its own header  [Josue Rivera]
-a76621a  DO NOT MERGE Fix getaddrinfo test to use random mapping ids  [Josue Rivera]
-1ebd668  DO NOT MERGE UidRange bounds-checking typo  [Josue Rivera]
-94529f8  DO NOT MERGE Rename the DnsEventListenerService to NetdEventListenerService  [Josue Rivera]
-   * vendor/oneplus/
-1c6862d  oneplus3: Hex-edit camera HAL to fix FFC crashes on the OP3T  [Martinusbe]
+369615f  SystemUI:Bluetooth can't be turn off  [Martinusbe]
+a6bf2d6  BT: Update wait function in ManagerService to handle  BLE states  [Martinusbe]
+88b9f5c  Bluetooth: Handle user switch with new states  [Martinusbe]
 
    * OTA_config/
-11926cd  Flo 04/17 fixed build  [GitHub]
-5eb57d9  Flo 04/17  [GitHub]
-6180a94  Clark 04/17  [GitHub]
+0ce1acd  Flounder 05/04  [GitHub]
+   * build/
+8569574  pull BoardConfigTIPSY.mk from vendor  [Martinusbe]
+   * frameworks/av/
+844da4c  seccomp: Fix policy for ffmpeg  [Martinusbe]
    * frameworks/base/
-1fa9208  Fix NullPointerException in MediaPlayer  [Martinusbe]
-71212e4  Frameworks/base: Fix old code in MediaPlayer  [Martinusbe]
-c515472  FATAL EXCEPTION IN SYSTEM PROCESS: android.ui  [Martinusbe]
-   * kernel/oneplus/msm8996/
-78a73d1  Merge tag 'LA.UM.5.5.r1-04300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into HEAD  [Martinusbe]
-0312aed  mdss: Fix solid fill unpack pattern  [Martinusbe]
-a9d0ebf  mdss: move to a kthread for vsync_retire_work_handler  [Martinusbe]
-0ddf0b1  msm: mdss: avoid scheduling pp work during continuous updates  [Martinusbe]
-46c7fbd  mdss: Do not wait for kickoff in display commit  [Martinusbe]
-9dac8d6  kgsl: convert some workqueues to use kthreads  [Martinusbe]
-   * system/sepolicy/
-7e4524f  sepolicy: add file and domain trans to interfacer  [Martinusbe]
-   * vendor/motorola/
-108aa97  shamu: add faceunlock proprietary file libfrsdk.so  [razorloves]
+2c5ea90  StatusBar: Catch OOM caused by third-party icons  [Martinusbe]
+   * kernel/motorola/msm8226/
+eabaaf5  netlink: Fix dump skb leak/double free  [Gabriele M]
+742bd0e  msm: crypto: set CLR_CNTXT bit for crypto operations  [Gabriele M]
+de9679e  qseecom: check buffer size when loading firmware images  [Gabriele M]
+5a4f8bd  ASoC: msm: qdsp6v2: Fix out-of-bounds access in put functions  [Gabriele M]
+bf35e60  tcp: do not lock listener to process SYN packets  [Gabriele M]
+750f6a0  input: synaptics_dsx: protect tmpbuf allocation.  [Gabriele M]
+ae466fb  tmpfs: clear S_ISGID when setting posix ACLs  [Gabriele M]
+1ea2480  BACKPORT: posix_acl: Clear SGID bit when setting file permissions  [Gabriele M]
+   * manifest/
+aaabb40  track 8937 from Tesla for Alex  [Martinusbe]
+aeb29bd  Revert "track tesla's hw_qcom"  [Martinusbe]
+   * packages/apps/Settings/
+6bcc228  Settings[Wifi]: fix the input invalid length for WEP encryption.  [Martinusbe]
+6119c07  Settings: Fix internal storage summary for non-emulated storage  [Martinusbe]
+   * vendor/tipsy/
+67a13b9  Rename BoardConfigCM.mk to BoardConfigTIPSY.mk  [Martinusbe]
 
-   * kernel/oneplus/msm8996/
-8924c8c  input: synaptics: Ditch oneplus virtual abs code  [Martinusbe]
-bcec63a  perf:arm64: fix lockdep warning when handling CPU_STARTING.  [Martinusbe]
-b6239dc  perf:arm64: fix pmu percpu irq handling at hotplug.  [Martinusbe]
-15adf80  perf: arm64: fix RCU usage on pmu resume from low-power  [Martinusbe]
-ac950f5  perf: arm64: implement CPU_PM notifier  [Martinusbe]
-a6974ac  Revert "Perf: arm64: support hotplug and power collapse"  [Martinusbe]
-d458be7  Revert "Perf: arm64: fix disable of pmu irq during hotplug"  [Martinusbe]
-f4e4388  Revert "Perf: arm64: restore registers after reset"  [Martinusbe]
-eeeaa67  Revert "Perf: arm64: stop counters when going into hotplug"  [Martinusbe]
-
-   * frameworks/base/
-56646cb  Themes: Allow volume slider and thumb to work with custom images.  [Martinusbe]
-233c5b2  Separate tile label color from icon drawable color  [Martinusbe]
-   * hardware/qcom/audio/default/
-2b507e6  8960: Define HFP_ASM_RX_TX  [Josue Rivera]
+   * OTA_config/
+74a8dcf  onyx (05/03)  [GitHub]
+   * device/oneplus/onyx/
+0752d95  overlay: disbale aosp gestures  [CheckYourScreen]
+   * kernel/motorola/msm8226/
+1a18e02  fs/proc/array.c: make safe access to group_leader  [Gabriele M]
+f29e875  ALSA: info: Check for integer overflow in snd_info_entry_write()  [Gabriele M]
+ff57117  perf: don't leave group_entry on sibling list (use-after-free)  [Gabriele M]
+9a56042  xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder  [Gabriele M]
+176e3d5  xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window  [Gabriele M]
+37308e4  input: touchscreen: gt9xx: fix memory corruption in Goodix driver  [Gabriele M]
+8304341  soc: qcom: scm: add check to avoid buffer overflow  [Gabriele M]
+49b3d1d  ASoC: soc: prevent risk of buffer overflow  [Gabriele M]
+41cc25c  ASoC: msm: qdsp6v2: return error when copy from userspace fails  [Gabriele M]
+81c5e81  ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map  [Gabriele M]
+eb958e7  trace: resolve stack corruption due to string copy  [Gabriele M]
+e4b58a8  ASoC: wcd9320: Fix out of bounds for mad input value  [Gabriele M]
+02ab642  slim-msm: Synchronize SSR callbacks  [Gabriele M]
+6084099  crypto: msm: check length before copying to buf in _debug_stats_read  [Gabriele M]
+3f70bb8  prima: Trim operation classes to max supported in change station  [Gabriele M]
+2ea1026  perf: Tighten (and fix) the grouping condition  [Gabriele M]
    * packages/apps/masquerade/
-cd66c01  restartService --> forceStopService  [Martinusbe]
-544fd21  Polish copyright  [Martinusbe]
+00415e7  JobService: Expose configuration shim refresh delay  [Martinusbe]
+8208ce8  Add a looper to the locale change handler  [Martinusbe]
+ebb9a01  README: Recommend Interfacer be put in the services folder  [Martinusbe]
+67f9a0c  JobService: Transition to the Binder Interprocess Communication System  [Martinusbe]
+963118d  restartService --> forceStopService  [Martinusbe]
+8d305f3  Polish copyright  [Martinusbe]
+a97402d  Fix failed authorization toast on restartService  [Martinusbe]
+509ae52  JobService: Fix inital font application  [Martinusbe]
+5f24233  JobService: fix initial theme dir creation  [Martinusbe]
+e0d329d  Run RestartService immediately if called  [Martinusbe]
+eb7d9ad  Welcome to Theme Interfacer! [1/2]  [Martinusbe]
+38a4d87  AndroidManifest: Add protected broadcasts  [Martinusbe]
+df989e9  JobService: new RestartService job  [Martinusbe]
+d1529cb  Broadcast authorization result  [Martinusbe]
+5677261  Introducing Signature check in Masquerade (1/3)  [Martinusbe]
+d2678da  Add missing exception handling in setDefaultAudible  [Martinusbe]
+52816c6  Rewrite the way we handle sound overlays  [Martinusbe]
+81fa0c9  This is not how you convert long to String ;_;  [Martinusbe]
+503d252  Improve code style  [Martinusbe]
+877bd69  Unify logging  [Martinusbe]
+cff4d74  Use Log.e() instead of printStackTrace();  [Martinusbe]
+   * vendor/motorola/
+9b10207  victara: Hexedit libqc-opt.so for N  [Tom Powell]
+35319b9  victara: Switch to using libqc-opt  [Tom Powell]
 
+   * build/
+30521f4  N2G47O  [Martinusbe]
+7a0794a  N2G47N  [Martinusbe]
+845b59e  N2G47M  [Martinusbe]
+cccd6ea  N2G47L  [Martinusbe]
+97bf1e1  N2G47K  [Martinusbe]
+0a38768  Update Security String to 2017-05-05 on nyc-dev  [Martinusbe]
+d05b138  Update Security String to 2017-05-01 on nyc-dev  [Martinusbe]
+e29891c  N2G47I  [Martinusbe]
+85bcfc8  N2G47H  [Martinusbe]
+c40d320  N2G47G  [Martinusbe]
+805de7e  N2G47F  [Martinusbe]
+   * device/oneplus/oneplus3/
+3c9d38c  op3:config: enable sustainedPerformanceMode  [Martinusbe]
+   * device/qcom/common/
+6f3603c  add support of mpctlv3 on msm8953  [Alx31]
+1af178b  add power-8953  [Alx31]
+   * frameworks/av/
+649801f  Add bounds check in SoftAACEncoder2::onQueueFilled()  [Martinusbe]
+253956a  Fix NPDs in h263 decoder  [Martinusbe]
+a6263fc  Fix out of bounds access  [Martinusbe]
+01b856a  Fix integer overflow and divide-by-zero  [Martinusbe]
+e53dd22  Validate lengths in HEVC metadata parsing  [Martinusbe]
+58967f1  AudioFlinger: Check framecount overflow when creating track  [Martinusbe]
+   * frameworks/base/
+545f1ba  Remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
+257b201  [DO NOT MERGE] Don't allow permission change to runtime  [Martinusbe]
+7460682  [DO NOT MERGE] Throw exception if slot has invalid offset  [Martinusbe]
+62a7917  [DO NOT MERGE] Check bounds in offsetToPtr  [Martinusbe]
+ef1ea21  Fix issue with saving admins before finishing loading.  [Martinusbe]
+0596eaa  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release  [Martinusbe]
+11e1c83  Protect Bluetooth OPP ACCEPT and DECLINE broadcast  [Martinusbe]
+   * frameworks/native/
+9a52e54  binder: remove cgroup interactions [ DO NOT MERGE ]  [Martinusbe]
+   * kernel/motorola/msm8226/
+f033a00  net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  [Gabriele M]
+4e441ac  Fix "Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs"  [Gabriele M]
+   * manifest/
+56ebfae  track tesla's hw_qcom  [Alx31]
+6a0bf11  Merge branch 'testing' of https://github.com/TipsyOs/platform_manifest into default  [Martinusbe]
+709a853  7.1.2_r8  [Martinusbe]
+cc92069  tc cleanup and bring back 5.x for mzp kernel  [Alx31]
+   * packages/apps/Tavern/
+73c2166  nuke wifi easy toggle since we have this b8dce5c  [Alx31]
+   * system/bt/
+f8eceb6  resolve merge conflicts of a3ee2e35 to nyc-dev  [Josue Rivera]
+   * system/core/
+400c7fc  libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]  [Martinusbe]
+3393bef  init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
+   * vendor/motorola/
+43d0c43  shamu: update blobs from N6F27C factory image  [razorloves]
+   * vendor/tipsy/
+8a88b5b  Update Magisk Manager 4.3.3  [Martinusbe]
+b4ee663  testing 5.6  [Martinusbe]
+
+   * OTA_config/
+3963e16  Flo 05/01  [GitHub]
+   * frameworks/base/
+c71a66e  fix anr when concurrent request provider  [Martinusbe]
+f63c556  Ensure that the decor view is attached to window.  [Martinusbe]
+45fcf41  Bad token of activity when do the launch work at the app process side.  [Martinusbe]
+ddad4c6  Query geo description in worker thread to prevent ANR  [Martinusbe]
+6e20be8  remove duplicated incorrectly code in ProcessRecord  [Martinusbe]
+582e4aa  fix foreground process will be mistakenly killed when it uses content provider.  [Martinusbe]
+7860898  Fix PacketKeepalive.stop() crash  [Martinusbe]
+8ca7103  Restart persistent process if start timeout.  [Martinusbe]
+eb834f9  fix system_server crash issue caused by fd leak.  [Martinusbe]
+50d656c  framework: fix screenshot and rotation animation for devices with abnormal hw rotation  [Martinusbe]
+   * hardware/qcom/fm/
+7297363  Automatic translation import  [Josue Rivera]
+   * kernel/motorola/msm8226/
+a64e601  KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings  [Gabriele M]
+2b7ef00  KEYS: Change the name of the dead type to ".dead" to prevent user access  [Gabriele M]
+66fa46b  KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings  [Gabriele M]
+   * packages/apps/Snap/
+af5839c  Automatic translation import  [Josue Rivera]
+
+   * OTA_config/
+c1dabfa  Redmi2 04/30 Lucifer  [Prema Chand Alugu]
+b1764aa  Clark 04/30  [GitHub]
+885c217  ota: bacon 04/30 Lucifer  [Prema Chand Alugu]
+ec695ab  op3 Lucifer  [Martinusbe]
+   * frameworks/base/
+39bd618  fix pastie derp  [Martinusbe]
+cdf1d56  QS WiFi easy toggle: if enabled, long press for detail view no.2  [Martinusbe]
+757ef0a  QS BT easy toggle: if enabled, long press for detail view  [Martinusbe]
+370e905  QS: BT easy toggle [1/2]  [Martinusbe]
+b83c847  Data tile quick toggle: apply the custom behavior also to mini tiles bar  [Martinusbe]
+912e7b2  Add VOLTE icon from caf  [Martinusbe]
+8de7872  IMS: Add API to get IMS Registration Status based on subId  [Martinusbe]
+79bf152  SystemUI:Notification bar custom notification display problems  [Martinusbe]
+   * kernel/motorola/msm8226/
+51e4af0  mm: migrate dirty page without clear_page_dirty_for_io etc  [Gabriele M]
+38e1eb4  mm: fix warning in __set_page_dirty_nobuffers  [Gabriele M]
+b81b030  mm/mempolicy.c: fix error handling in set_mempolicy and mbind.  [Gabriele M]
+864971d  BACKPORT: signal: allow to send any siginfo to itself  [Gabriele M]
+   * manifest/
+08b908f  track our caf telephony  [Martinusbe]
+   * packages/apps/Dialer/
+89a3a77  IMS-VT: Send static image in a Video Call  [Martinusbe]
+   * packages/apps/Settings/
+11800ad  add new Tipsy banner for red theme  [Alx31]
+   * packages/apps/Tavern/
+7d598dd  add missing import from b8dce5c  [Alx31]
+b8dce5c  Unify all "advanced" tiles into one easy toggle tile  [Alx31]
+e54ee29  QS: WiFi easy toggle [2/2]  [Alx31]
+5d6823f  QS: Bluetooth easy toggle [2/2]  [Alx31]
+   * packages/services/OmniJaws/
+7ebbbc4  Automatic translation import  [Alx31]
+75a2504  OmniJaws: come here all you hidden bugs into the bright light  [Alx31]
+   * packages/services/Telephony/
+f713b23  Revert "Add support to launch call barring"  [Martinusbe]
+d363525  Revert "CallFeaturesSettings: Only show Call Barring if QTI package is installed"  [Martinusbe]
+   * vendor/codeaurora/telephony/
+8de9275  IMS-VT: Send static image in a Video Call  [Martinusbe]
+
+   * hardware/libhardware_legacy/
+6559ee3  wifi: add firmware loader support for the non-LKM case  [Josue Rivera]
+   * hardware/qcom/fm/
+ba45ce9  libfm_jni: Fix strchr implicit char* typecast in ConfFileParser  [Josue Rivera]
+c810bd1  libjm_jni: Missing liblog dependency and jni core headers  [Josue Rivera]
+c59116f  Automatic translation import  [Josue Rivera]
+   * packages/apps/Bluetooth/
+1706726  Automatic translation import  [Josue Rivera]
+7a4942b  Revert "Bluetooth: handle opening incoming APK files"  [Josue Rivera]
+   * packages/resources/devicesettings/
+c08986d  Automatic translation import  [Josue Rivera]
+22b6d92  Add strings for hand wave gesture extra option  [Josue Rivera]
+6df1340  Add strings for fingerprint pocketmode  [Josue Rivera]
+decab19  Automatic translation import  [Josue Rivera]
+f9a8b9f  Automatic translation import  [Josue Rivera]
+1477228  Automatic translation import  [Josue Rivera]
+a0991a1  Automatic translation import  [Josue Rivera]
+9a535f0  Automatic translation import  [Josue Rivera]
+e3a2579  Automatic translation import  [Josue Rivera]
