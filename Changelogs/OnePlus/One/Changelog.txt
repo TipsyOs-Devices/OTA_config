@@ -1,133 +1,209 @@
 ====================
-     04-02-2017
+     05-07-2017
 ====================
 
+   * device/wingtech/wt88047/
+52a2beb  wt88047: charger: Switch to CM charger libhealthd  [Prema Chand Alugu]
+   * frameworks/base/
+e87d3c3  Frameworks: Re-adapt toast window animations for 7.1.1 - Since google updated toast popup notifications on 7.1.1 release. toast window animations stop working .So now this is make it work again  [Prema Chand Alugu]
+2003a49  SystemUI:Bluetooth can't be turn off  [Prema Chand Alugu]
+d2bb0f7  BT: Update wait function in ManagerService to handle  BLE states  [Prema Chand Alugu]
+49edbfd  Bluetooth: Handle user switch with new states  [Prema Chand Alugu]
+af22b80  StatusBar: Catch OOM caused by third-party icons  [Prema Chand Alugu]
+   * manifest/
+f7b5a98  track 8937 from Tesla for Alex  [Prema Chand Alugu]
+   * packages/apps/Settings/
+4e44f4d  Settings[Wifi]: fix the input invalid length for WEP encryption.  [Prema Chand Alugu]
+4f957d2  Settings: Fix internal storage summary for non-emulated storage  [Prema Chand Alugu]
+   * packages/apps/Tavern/
+357ddbc  nuke wifi easy toggle since we have this b8dce5c  [Prema Chand Alugu]
+   * vendor/tipsy/
+b71ef95  v5.6 Mystic  [Prema Chand Alugu]
+1bcc130  Update Amaze to RC3  [Prema Chand Alugu]
+e404771  Add AmazeFileManager apk v3.1.2-RC2  [Prema Chand Alugu]
+
+====================
+     05-06-2017
+====================
+
+
+====================
+     05-05-2017
+====================
+   * OTA_config/
+0ce1acd  Flounder 05/04  [GitHub]
    * frameworks/av/
-64aadc1  Fix Miracast(wifi display)  [Martinusbe]
-   * frameworks/base/
-4cb7c10  Themes: Expose Keyboard Shortcuts Dialog  [Alx31]
-0ff3cf3  Hold "volume up" during boot to disable all overlays  [Alx31]
-f0ef013  Add tile information to ACTION_QS_TILE_PREFERENCES intent  [Alx31]
-5810f49  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Alx31]
-415b3ed  Fix intermittent slowness in resolver activity towards end of day.  [Alx31]
-75117b1  Revert "Wifi: Introduce a config parameter for IpReachabilityMonitor"  [Alx31]
-   * packages/apps/masquerade/
-fe58057  Fix failed authorization toast on restartService  [Martinusbe]
-   * packages/services/OmniJaws/
-c2b8726  OmniJaws: use vector logo  [Alx31]
-4c679ba  Automatic translation import  [Alx31]
-   * vendor/tipsy/
-26016c5  v5.2 Ichtegems week  [Alx31]
-e032d3d  Update Nova 5.1-beta3  [Alx31]
-b0bf313  Update Nova 5.1-beta2  [Alx31]
-797992a  Magisk: update Manager apk to v4.3.1  [Alx31]
-acf7c50  Magisk: update zip to v12.0  [Alx31]
-dc109f5  APN: Fix TalkTalk  [Alx31]
-441f416  apns: Update Swiss APNs  [Alx31]
+844da4c  seccomp: Fix policy for ffmpeg  [Martinusbe]
 
 ====================
-     04-01-2017
-====================
-
-
-====================
-     03-31-2017
+     05-04-2017
 ====================
    * OTA_config/
-7f0d6d6  ota: remove deprecated stuff  [CheckYourScreen]
-bf6aa04  OTA: Tipsy-onyx (03/31)  [CheckYourScreen]
-6c3abba  op3 updated BD build kernel  [Martinusbe]
-   * frameworks/opt/net/wifi/
-f09f7de  WiFi: Fix possible NPE  [Josue Rivera]
-
-====================
-     03-30-2017
-====================
-   * OTA_config/
-a5de67f  op3 BD build  [Martinusbe]
-e8efbac  Flounder 03/29  [GitHub]
-   * device/wingtech/wt88047/
-0a7859b  wt88047: Add fs_config support for custom binary  [Prema Chand Alugu]
-   * packages/apps/masquerade/
-6721adf  JobService: Fix inital font application  [Martinusbe]
-dc3ba93  JobService: fix initial theme dir creation  [Martinusbe]
-292ced8  Run RestartService immediately if called  [Martinusbe]
-
-====================
-     03-29-2017
-====================
-
-   * frameworks/opt/net/wifi/
-3651e30  WifiStateMachine: Probe neighbours only when roaming  [Dan Cartier]
-dfe7350  WifiStateMachine: Revert IpReachabilityMonitor handling changes  [Dan Cartier]
-
-====================
-     03-28-2017
-====================
-   * OTA_config/
-7dbd610  Clark 03/27  [GitHub]
-79ab6e1  Flo 03/27  [GitHub]
-   * vendor/qcom/binaries/
-536f332  msm8974: Add adreno blobs  [Jake Weinstein]
-
-====================
-     03-27-2017
-====================
-   * OTA_config/
-33912f6  ota: update Redmi2 03/27  [Prema Chand Alugu]
-ec40ee6  bullhead 03/27  [GitHub]
-e6cce46  ota: update Oneplus One 03/27  [Prema Chand Alugu]
+74a8dcf  onyx (05/03)  [GitHub]
    * build/
-3dcf214  Magisk as default and define explict rootless method [1/2]  [Alx31]
-494389a  Default root method provision [1/2]  [Alx31]
-58bdf16  Revert "ota: Remove cruft we don't care about"  [Alx31]
-249ef38  Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash  [Alx31]
-cb7b442  build: core: Remove BUILD_TINY_ANDROID checks  [Alx31]
-3fbc86d  releasetools: Generate recovery-from-boot.p with bsdiff if necessary  [Alx31]
-06d318a  Revert "releasetools: Don't extract BOOTABLE_IMAGES when signing target files"  [Alx31]
-2a0dd6e  Move ro.bootimage.build.fingerprint to build.prop  [Alx31]
-ef6fe00  core: Fix unified trees with no TARGET_OTA_ASSERT_DEVICE  [Alx31]
-4fdc67e  core: include libf2fs_fmt_host_dyn in otatools  [Alx31]
-808c51d  ota_from_target_files: Remove device dependent arguments  [Alx31]
-f057b3b  releasetools: support reading release keys out of some sort of command  [Alx31]
-70268ed  releasetools: Add script to sign zips  [Alx31]
-6350860  Always copy bootable images in BOOTABLE_IMAGES/  [Alx31]
-3ca119b  build: Warn about prebuilt apk in PRODUCT_COPY_FILES  [Alx31]
-fe7555b  build sign_target_files_apks.py: clean tmp on exit  [Alx31]
-   * device/wingtech/wt88047/
-0f37774  overlay: enable proximity wake  [Prema Chand Alugu]
-19b0be1  disable fluence for voicecall/speaker  [Prema Chand Alugu]
-   * frameworks/base/
-5ec159f  Expose Screenshot flash and background colors  [Alx31]
-   * hardware/qcom/fm/
-38948f2  FM: Fix KHz->kHz  [Josue Rivera]
-   * packages/apps/KernelAdiutor/
-3623c82  Launcher icon update  [theringmaster]
+5b40e13  pull BoardConfigTIPSY.mk from vendor  [GitHub]
    * vendor/tipsy/
-15e265d  v5.1 HopVerdomme week  [Alx31]
-9c68d89  Update Magisk GZR Edition v1.1  [Alx31]
-a1130c9  Magisk as default and define explict rootless method [2/2]  [Alx31]
-994460c  Default root method provision [2/2]  [Alx31]
-2df8b7c  tipsy: build: tasks: Remove BUILD_TINY_ANDROID check  [Alx31]
-8139bf2  apn: Updating TelkomSA from 8ta South Africa APN  [Alx31]
-57fb5ff  repopick: encode commit subjects in utf-8 for printing  [Alx31]
-6c6a40e  apns: Remove proxy for the "TIM WAP" APN  [Alx31]
-79bfe40  vendor: Add templates for proprietary extraction scripts  [Alx31]
-71de6c0  extract_utils: Fix locale issue with sort  [Alx31]
-cfda732  extract-utils: Fix handling of pulling src:dest pairs from dumps  [Alx31]
-ab4d998  backuptool: Preserve the SELinux context of the files  [Alx31]
-b1621e9  backuptool: Don't rely on the order of the elements in the list  [Alx31]
-318a322  Magisk: v11.6 zip, GzR edition by Nick  [Alx31]
-fdc1651  Magisk: update magisk.zip to 11.6  [Alx31]
-c271471  Magisk:update: app v2.4.7, zip v11.5  [Alx31]
-b8e8d7c  device: add Redmi2 to the devices  [Alx31]
+266a5a3  Rename BoardConfigCM.mk to BoardConfigTIPSY.mk  [GitHub]
 
 ====================
-     03-26-2017
+     05-03-2017
 ====================
 
-   * device/wingtech/wt88047/
-5de824a  Move default root method to device makefile  [Prema Chand Alugu]
-577ae89  prop: nuke frp parameter  [Prema Chand Alugu]
-994580a  config: Default root method is rootless  [Prema Chand Alugu]
+   * build/
+1cceefe  N2G47O  [Martinusbe]
+62e9d73  N2G47N  [Martinusbe]
+eec4276  N2G47M  [Martinusbe]
+9f54eff  N2G47L  [Martinusbe]
+0186621  N2G47K  [Martinusbe]
+6aed3a7  Update Security String to 2017-05-05 on nyc-dev  [Martinusbe]
+94f8b0c  Update Security String to 2017-05-01 on nyc-dev  [Martinusbe]
+2ef3365  N2G47I  [Martinusbe]
+49782e9  N2G47H  [Martinusbe]
+acf9399  N2G47G  [Martinusbe]
+d9e5559  N2G47F  [Martinusbe]
+   * device/qcom/common/
+6f3603c  add support of mpctlv3 on msm8953  [Alx31]
+1af178b  add power-8953  [Alx31]
+   * frameworks/av/
+649801f  Add bounds check in SoftAACEncoder2::onQueueFilled()  [Martinusbe]
+253956a  Fix NPDs in h263 decoder  [Martinusbe]
+a6263fc  Fix out of bounds access  [Martinusbe]
+01b856a  Fix integer overflow and divide-by-zero  [Martinusbe]
+e53dd22  Validate lengths in HEVC metadata parsing  [Martinusbe]
+58967f1  AudioFlinger: Check framecount overflow when creating track  [Martinusbe]
+   * frameworks/base/
+5affdc0  Remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
+e169fd6  [DO NOT MERGE] Don't allow permission change to runtime  [Martinusbe]
+1e26fbe  [DO NOT MERGE] Throw exception if slot has invalid offset  [Martinusbe]
+65ca0fa  [DO NOT MERGE] Check bounds in offsetToPtr  [Martinusbe]
+949995d  Fix issue with saving admins before finishing loading.  [Martinusbe]
+79130c8  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release  [Martinusbe]
+2f8ac0c  Protect Bluetooth OPP ACCEPT and DECLINE broadcast  [Martinusbe]
+4bbd37e  fix anr when concurrent request provider  [Martinusbe]
+edc660f  Ensure that the decor view is attached to window.  [Martinusbe]
+983b699  Bad token of activity when do the launch work at the app process side.  [Martinusbe]
+97ec414  Query geo description in worker thread to prevent ANR  [Martinusbe]
+225ca85  remove duplicated incorrectly code in ProcessRecord  [Martinusbe]
+3592883  fix foreground process will be mistakenly killed when it uses content provider.  [Martinusbe]
+bca4541  Fix PacketKeepalive.stop() crash  [Martinusbe]
+b600df4  Restart persistent process if start timeout.  [Martinusbe]
+c3814be  fix system_server crash issue caused by fd leak.  [Martinusbe]
+6cd6431  framework: fix screenshot and rotation animation for devices with abnormal hw rotation  [Martinusbe]
+   * frameworks/native/
+199664b  Merge pull request #11 from TipsyOs/testing  [GitHub]
+9a52e54  binder: remove cgroup interactions [ DO NOT MERGE ]  [Martinusbe]
+   * manifest/
+69489e3  7.1.2_r8  [Martinusbe]
+c64f144  tc cleanup and bring back 5.x for mzp kernel  [Martinusbe]
+d550923  update readme just because  [GitHub]
+   * packages/apps/masquerade/
+00415e7  JobService: Expose configuration shim refresh delay  [Martinusbe]
+8208ce8  Add a looper to the locale change handler  [Martinusbe]
+ebb9a01  README: Recommend Interfacer be put in the services folder  [Martinusbe]
+67f9a0c  JobService: Transition to the Binder Interprocess Communication System  [Martinusbe]
+963118d  restartService --> forceStopService  [Martinusbe]
+8d305f3  Polish copyright  [Martinusbe]
+a97402d  Fix failed authorization toast on restartService  [Martinusbe]
+509ae52  JobService: Fix inital font application  [Martinusbe]
+5f24233  JobService: fix initial theme dir creation  [Martinusbe]
+e0d329d  Run RestartService immediately if called  [Martinusbe]
+eb7d9ad  Welcome to Theme Interfacer! [1/2]  [Martinusbe]
+38a4d87  AndroidManifest: Add protected broadcasts  [Martinusbe]
+df989e9  JobService: new RestartService job  [Martinusbe]
+d1529cb  Broadcast authorization result  [Martinusbe]
+5677261  Introducing Signature check in Masquerade (1/3)  [Martinusbe]
+d2678da  Add missing exception handling in setDefaultAudible  [Martinusbe]
+52816c6  Rewrite the way we handle sound overlays  [Martinusbe]
+81fa0c9  This is not how you convert long to String ;_;  [Martinusbe]
+503d252  Improve code style  [Martinusbe]
+877bd69  Unify logging  [Martinusbe]
+cff4d74  Use Log.e() instead of printStackTrace();  [Martinusbe]
+   * system/bt/
+f8eceb6  resolve merge conflicts of a3ee2e35 to nyc-dev  [Josue Rivera]
+   * system/core/
+400c7fc  libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]  [Martinusbe]
+3393bef  init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
+   * vendor/tipsy/
+6be4419  Update Magisk Manager 4.3.3  [Martinusbe]
+
+====================
+     05-02-2017
+====================
+   * OTA_config/
+3963e16  Flo 05/01  [GitHub]
+   * hardware/qcom/fm/
+7297363  Automatic translation import  [Josue Rivera]
+   * packages/apps/Snap/
+af5839c  Automatic translation import  [Josue Rivera]
+
+====================
+     05-01-2017
+====================
+   * OTA_config/
+c1dabfa  Redmi2 04/30 Lucifer  [Prema Chand Alugu]
+b1764aa  Clark 04/30  [GitHub]
+885c217  ota: bacon 04/30 Lucifer  [Prema Chand Alugu]
+ec695ab  op3 Lucifer  [Martinusbe]
+   * build/
+8e0b0cb  Use 'release-keys' for build tag  [Alx31]
+   * frameworks/base/
+816d18a  fix pastie derp  [Alx31]
+25334e7  QS WiFi easy toggle: if enabled, long press for detail view no.2  [Alx31]
+aabb00a  QS BT easy toggle: if enabled, long press for detail view  [Alx31]
+cb23f84  QS: BT easy toggle [1/2]  [Alx31]
+1ad3d00  Data tile quick toggle: apply the custom behavior also to mini tiles bar  [Alx31]
+66f06ff  Add VOLTE icon from caf  [Alx31]
+95bcfc6  IMS: Add API to get IMS Registration Status based on subId  [Alx31]
+43796c4  SystemUI:Notification bar custom notification display problems  [Alx31]
+ff41679  SystemUI: Fix SystemUI ANR  [Alx31]
+7988612  Retro Theme [2/7]  [Alx31]
+   * frameworks/native/
+b80cbb6  Retro Theme [3/7]  [Alx31]
+   * manifest/
+59c7629  track our caf telephony  [Alx31]
+1dc85e3  track MusicFX  [Alx31]
+7c25100  track our development and fw_support  [Alx31]
+   * packages/apps/Dialer/
+89a3a77  IMS-VT: Send static image in a Video Call  [Martinusbe]
+   * packages/apps/Settings/
+98aa5d4  add new Tipsy banner for red theme  [Alx31]
+56ee678  Settings: Phone process crash in SIM Status.  [Alx31]
+6f5d274  IMS: Cellular network type is not showing VoLTE enabled  [Alx31]
+6c4f1fd  Add package overlay support for carrier  [Alx31]
+3cc6d93  Add new network types in settings app.  [Alx31]
+4299439  Port "Battery Usage Alerts" feature from factory images to aosp  [Alx31]
+5462fb0  cosmetics.  [Alx31]
+10d6b47  move wolvesden retro theme commit to tipsy settings  [Alx31]
+6499987  Retro Theme [5/7]  [Alx31]
+   * packages/apps/Tavern/
+4124874  add missing import from b8dce5c  [Alx31]
+e261ac2  Unify all "advanced" tiles into one easy toggle tile  [Alx31]
+3abd317  QS: WiFi easy toggle [2/2]  [Alx31]
+c425a74  QS: Bluetooth easy toggle [2/2]  [Alx31]
+   * packages/services/OmniJaws/
+7ebbbc4  Automatic translation import  [Alx31]
+75a2504  OmniJaws: come here all you hidden bugs into the bright light  [Alx31]
+   * packages/services/Telephony/
+f713b23  Revert "Add support to launch call barring"  [Martinusbe]
+d363525  Revert "CallFeaturesSettings: Only show Call Barring if QTI package is installed"  [Martinusbe]
+   * vendor/codeaurora/telephony/
+8de9275  IMS-VT: Send static image in a Video Call  [Martinusbe]
+   * vendor/tipsy/
+967a342  v5.5 Lucifer week it is.  [Alx31]
+ffed833  Introduce the 'Turbo' apk  [Alx31]
+c9d367d  Retro Theme [7/7]  [Alx31]
+
+====================
+     04-30-2017
+====================
+
+   * hardware/libhardware_legacy/
+6559ee3  wifi: add firmware loader support for the non-LKM case  [Josue Rivera]
+   * hardware/qcom/fm/
+ba45ce9  libfm_jni: Fix strchr implicit char* typecast in ConfFileParser  [Josue Rivera]
+c810bd1  libjm_jni: Missing liblog dependency and jni core headers  [Josue Rivera]
+c59116f  Automatic translation import  [Josue Rivera]
+   * packages/apps/Bluetooth/
+1706726  Automatic translation import  [Josue Rivera]
+7a4942b  Revert "Bluetooth: handle opening incoming APK files"  [Josue Rivera]
 
