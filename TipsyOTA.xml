@@ -153,11 +153,11 @@
                 description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
         </mako>
         <flo>
-            <Filename>Tipsy-flo-7.1.2.Lucifer-v5.5-20170501-1135.zip</Filename>
+            <Filename>Tipsy-flo-7.1.2.Mystic-v5.6-20170512-1637.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=817550096634766265</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=817550096634768843</RomUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -165,7 +165,7 @@
             <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit XDA thread">https://forum.xda-developers.com/nexus-7-2013/development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
+                description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
         </flo>
         <flounder>
             <Filename>Tipsy-flounder-7.1.2.Lucifer-v5.5-20170504-1017.zip</Filename>
