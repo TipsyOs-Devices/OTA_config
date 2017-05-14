@@ -168,283 +168,169 @@
 166
 167
 168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219
-220
-221
-222
-223
-224
 
 ====================
-     05-06-2017
+     05-14-2017
 ====================
 
+   * bionic/
+b57bd20  libc: memcpy_base: Disable opt for certain targets  [Alx31]
+   * device/oneplus/bacon/
+9e327b0  sepolicy: Fix up neverallow errors  [Prema Chand Alugu]
+   * device/oneplus/oneplus2/
+63ab154  oneplus2: remove not existing ipv6 conf files  [Martinusbe]
+17290b6  oneplus2: remove not existing sched files  [Martinusbe]
+e9b501a  oneplus2: dont start services if it is not present  [Martinusbe]
+ed4d2d4  oneplus2: remove not existing file and uid from uevent  [Martinusbe]
+c38b856  oneplus2: fix bluetooth_loader denials  [Martinusbe]
+ce16cea  oneplus2: Notify client when fp cancelling succeeded  [Martinusbe]
+f8c8df7  sepolicy: Fix denials  [Martinusbe]
+db9a545  oneplus2: Don't vibrate for T2W  [Martinusbe]
+1090837  oneplus2_defconfig  [Martinusbe]
+4c5f9dc  create dependencies  [Martinusbe]
    * frameworks/base/
-b58b97d  Frameworks: Re-adapt toast window animations for 7.1.1 - Since google updated toast popup notifications on 7.1.1 release. toast window animations stop working .So now this is make it work again  [Prema Chand Alugu]
-   * vendor/tipsy/
-9c02f40  Update Amaze to RC3  [Martinusbe]
-0a6045b  Add AmazeFileManager apk v3.1.2-RC2  [Martinusbe]
-
-   * frameworks/base/
-369615f  SystemUI:Bluetooth can't be turn off  [Martinusbe]
-a6bf2d6  BT: Update wait function in ManagerService to handle  BLE states  [Martinusbe]
-88b9f5c  Bluetooth: Handle user switch with new states  [Martinusbe]
-
-   * OTA_config/
-0ce1acd  Flounder 05/04  [GitHub]
-   * build/
-8569574  pull BoardConfigTIPSY.mk from vendor  [Martinusbe]
-   * frameworks/av/
-844da4c  seccomp: Fix policy for ffmpeg  [Martinusbe]
-   * frameworks/base/
-2c5ea90  StatusBar: Catch OOM caused by third-party icons  [Martinusbe]
-   * kernel/motorola/msm8226/
-eabaaf5  netlink: Fix dump skb leak/double free  [Gabriele M]
-742bd0e  msm: crypto: set CLR_CNTXT bit for crypto operations  [Gabriele M]
-de9679e  qseecom: check buffer size when loading firmware images  [Gabriele M]
-5a4f8bd  ASoC: msm: qdsp6v2: Fix out-of-bounds access in put functions  [Gabriele M]
-bf35e60  tcp: do not lock listener to process SYN packets  [Gabriele M]
-750f6a0  input: synaptics_dsx: protect tmpbuf allocation.  [Gabriele M]
-ae466fb  tmpfs: clear S_ISGID when setting posix ACLs  [Gabriele M]
-1ea2480  BACKPORT: posix_acl: Clear SGID bit when setting file permissions  [Gabriele M]
-   * manifest/
-aaabb40  track 8937 from Tesla for Alex  [Martinusbe]
-aeb29bd  Revert "track tesla's hw_qcom"  [Martinusbe]
-   * packages/apps/Settings/
-6bcc228  Settings[Wifi]: fix the input invalid length for WEP encryption.  [Martinusbe]
-6119c07  Settings: Fix internal storage summary for non-emulated storage  [Martinusbe]
-   * vendor/tipsy/
-67a13b9  Rename BoardConfigCM.mk to BoardConfigTIPSY.mk  [Martinusbe]
-
-   * OTA_config/
-74a8dcf  onyx (05/03)  [GitHub]
-   * device/oneplus/onyx/
-0752d95  overlay: disbale aosp gestures  [CheckYourScreen]
-   * kernel/motorola/msm8226/
-1a18e02  fs/proc/array.c: make safe access to group_leader  [Gabriele M]
-f29e875  ALSA: info: Check for integer overflow in snd_info_entry_write()  [Gabriele M]
-ff57117  perf: don't leave group_entry on sibling list (use-after-free)  [Gabriele M]
-9a56042  xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder  [Gabriele M]
-176e3d5  xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window  [Gabriele M]
-37308e4  input: touchscreen: gt9xx: fix memory corruption in Goodix driver  [Gabriele M]
-8304341  soc: qcom: scm: add check to avoid buffer overflow  [Gabriele M]
-49b3d1d  ASoC: soc: prevent risk of buffer overflow  [Gabriele M]
-41cc25c  ASoC: msm: qdsp6v2: return error when copy from userspace fails  [Gabriele M]
-81c5e81  ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map  [Gabriele M]
-eb958e7  trace: resolve stack corruption due to string copy  [Gabriele M]
-e4b58a8  ASoC: wcd9320: Fix out of bounds for mad input value  [Gabriele M]
-02ab642  slim-msm: Synchronize SSR callbacks  [Gabriele M]
-6084099  crypto: msm: check length before copying to buf in _debug_stats_read  [Gabriele M]
-3f70bb8  prima: Trim operation classes to max supported in change station  [Gabriele M]
-2ea1026  perf: Tighten (and fix) the grouping condition  [Gabriele M]
-   * packages/apps/masquerade/
-00415e7  JobService: Expose configuration shim refresh delay  [Martinusbe]
-8208ce8  Add a looper to the locale change handler  [Martinusbe]
-ebb9a01  README: Recommend Interfacer be put in the services folder  [Martinusbe]
-67f9a0c  JobService: Transition to the Binder Interprocess Communication System  [Martinusbe]
-963118d  restartService --> forceStopService  [Martinusbe]
-8d305f3  Polish copyright  [Martinusbe]
-a97402d  Fix failed authorization toast on restartService  [Martinusbe]
-509ae52  JobService: Fix inital font application  [Martinusbe]
-5f24233  JobService: fix initial theme dir creation  [Martinusbe]
-e0d329d  Run RestartService immediately if called  [Martinusbe]
-eb7d9ad  Welcome to Theme Interfacer! [1/2]  [Martinusbe]
-38a4d87  AndroidManifest: Add protected broadcasts  [Martinusbe]
-df989e9  JobService: new RestartService job  [Martinusbe]
-d1529cb  Broadcast authorization result  [Martinusbe]
-5677261  Introducing Signature check in Masquerade (1/3)  [Martinusbe]
-d2678da  Add missing exception handling in setDefaultAudible  [Martinusbe]
-52816c6  Rewrite the way we handle sound overlays  [Martinusbe]
-81fa0c9  This is not how you convert long to String ;_;  [Martinusbe]
-503d252  Improve code style  [Martinusbe]
-877bd69  Unify logging  [Martinusbe]
-cff4d74  Use Log.e() instead of printStackTrace();  [Martinusbe]
-   * vendor/motorola/
-9b10207  victara: Hexedit libqc-opt.so for N  [Tom Powell]
-35319b9  victara: Switch to using libqc-opt  [Tom Powell]
-
-   * build/
-30521f4  N2G47O  [Martinusbe]
-7a0794a  N2G47N  [Martinusbe]
-845b59e  N2G47M  [Martinusbe]
-cccd6ea  N2G47L  [Martinusbe]
-97bf1e1  N2G47K  [Martinusbe]
-0a38768  Update Security String to 2017-05-05 on nyc-dev  [Martinusbe]
-d05b138  Update Security String to 2017-05-01 on nyc-dev  [Martinusbe]
-e29891c  N2G47I  [Martinusbe]
-85bcfc8  N2G47H  [Martinusbe]
-c40d320  N2G47G  [Martinusbe]
-805de7e  N2G47F  [Martinusbe]
-   * device/oneplus/oneplus3/
-3c9d38c  op3:config: enable sustainedPerformanceMode  [Martinusbe]
-   * device/qcom/common/
-6f3603c  add support of mpctlv3 on msm8953  [Alx31]
-1af178b  add power-8953  [Alx31]
-   * frameworks/av/
-649801f  Add bounds check in SoftAACEncoder2::onQueueFilled()  [Martinusbe]
-253956a  Fix NPDs in h263 decoder  [Martinusbe]
-a6263fc  Fix out of bounds access  [Martinusbe]
-01b856a  Fix integer overflow and divide-by-zero  [Martinusbe]
-e53dd22  Validate lengths in HEVC metadata parsing  [Martinusbe]
-58967f1  AudioFlinger: Check framecount overflow when creating track  [Martinusbe]
-   * frameworks/base/
-545f1ba  Remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
-257b201  [DO NOT MERGE] Don't allow permission change to runtime  [Martinusbe]
-7460682  [DO NOT MERGE] Throw exception if slot has invalid offset  [Martinusbe]
-62a7917  [DO NOT MERGE] Check bounds in offsetToPtr  [Martinusbe]
-ef1ea21  Fix issue with saving admins before finishing loading.  [Martinusbe]
-0596eaa  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release  [Martinusbe]
-11e1c83  Protect Bluetooth OPP ACCEPT and DECLINE broadcast  [Martinusbe]
-   * frameworks/native/
-9a52e54  binder: remove cgroup interactions [ DO NOT MERGE ]  [Martinusbe]
-   * kernel/motorola/msm8226/
-f033a00  net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  [Gabriele M]
-4e441ac  Fix "Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs"  [Gabriele M]
-   * manifest/
-56ebfae  track tesla's hw_qcom  [Alx31]
-6a0bf11  Merge branch 'testing' of https://github.com/TipsyOs/platform_manifest into default  [Martinusbe]
-709a853  7.1.2_r8  [Martinusbe]
-cc92069  tc cleanup and bring back 5.x for mzp kernel  [Alx31]
-   * packages/apps/Tavern/
-73c2166  nuke wifi easy toggle since we have this b8dce5c  [Alx31]
-   * system/bt/
-f8eceb6  resolve merge conflicts of a3ee2e35 to nyc-dev  [Josue Rivera]
-   * system/core/
-400c7fc  libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]  [Martinusbe]
-3393bef  init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
-   * vendor/motorola/
-43d0c43  shamu: update blobs from N6F27C factory image  [razorloves]
-   * vendor/tipsy/
-8a88b5b  Update Magisk Manager 4.3.3  [Martinusbe]
-b4ee663  testing 5.6  [Martinusbe]
-
-   * OTA_config/
-3963e16  Flo 05/01  [GitHub]
-   * frameworks/base/
-c71a66e  fix anr when concurrent request provider  [Martinusbe]
-f63c556  Ensure that the decor view is attached to window.  [Martinusbe]
-45fcf41  Bad token of activity when do the launch work at the app process side.  [Martinusbe]
-ddad4c6  Query geo description in worker thread to prevent ANR  [Martinusbe]
-6e20be8  remove duplicated incorrectly code in ProcessRecord  [Martinusbe]
-582e4aa  fix foreground process will be mistakenly killed when it uses content provider.  [Martinusbe]
-7860898  Fix PacketKeepalive.stop() crash  [Martinusbe]
-8ca7103  Restart persistent process if start timeout.  [Martinusbe]
-eb834f9  fix system_server crash issue caused by fd leak.  [Martinusbe]
-50d656c  framework: fix screenshot and rotation animation for devices with abnormal hw rotation  [Martinusbe]
-   * hardware/qcom/fm/
-7297363  Automatic translation import  [Josue Rivera]
-   * kernel/motorola/msm8226/
-a64e601  KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings  [Gabriele M]
-2b7ef00  KEYS: Change the name of the dead type to ".dead" to prevent user access  [Gabriele M]
-66fa46b  KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings  [Gabriele M]
-   * packages/apps/Snap/
-af5839c  Automatic translation import  [Josue Rivera]
-
-   * OTA_config/
-c1dabfa  Redmi2 04/30 Lucifer  [Prema Chand Alugu]
-b1764aa  Clark 04/30  [GitHub]
-885c217  ota: bacon 04/30 Lucifer  [Prema Chand Alugu]
-ec695ab  op3 Lucifer  [Martinusbe]
-   * frameworks/base/
-39bd618  fix pastie derp  [Martinusbe]
-cdf1d56  QS WiFi easy toggle: if enabled, long press for detail view no.2  [Martinusbe]
-757ef0a  QS BT easy toggle: if enabled, long press for detail view  [Martinusbe]
-370e905  QS: BT easy toggle [1/2]  [Martinusbe]
-b83c847  Data tile quick toggle: apply the custom behavior also to mini tiles bar  [Martinusbe]
-912e7b2  Add VOLTE icon from caf  [Martinusbe]
-8de7872  IMS: Add API to get IMS Registration Status based on subId  [Martinusbe]
-79bf152  SystemUI:Notification bar custom notification display problems  [Martinusbe]
-   * kernel/motorola/msm8226/
-51e4af0  mm: migrate dirty page without clear_page_dirty_for_io etc  [Gabriele M]
-38e1eb4  mm: fix warning in __set_page_dirty_nobuffers  [Gabriele M]
-b81b030  mm/mempolicy.c: fix error handling in set_mempolicy and mbind.  [Gabriele M]
-864971d  BACKPORT: signal: allow to send any siginfo to itself  [Gabriele M]
-   * manifest/
-08b908f  track our caf telephony  [Martinusbe]
-   * packages/apps/Dialer/
-89a3a77  IMS-VT: Send static image in a Video Call  [Martinusbe]
-   * packages/apps/Settings/
-11800ad  add new Tipsy banner for red theme  [Alx31]
-   * packages/apps/Tavern/
-7d598dd  add missing import from b8dce5c  [Alx31]
-b8dce5c  Unify all "advanced" tiles into one easy toggle tile  [Alx31]
-e54ee29  QS: WiFi easy toggle [2/2]  [Alx31]
-5d6823f  QS: Bluetooth easy toggle [2/2]  [Alx31]
+4142376  base: SystemUI: add dedicated TextView for OmniJaws error marker  [Alx31]
+2fd1d76  base: SystemUI: dont show OmniJaws error that prominent  [Alx31]
+f91dac5  base: remove duplicates sounds  [Alx31]
+444ff94  base: SystemUI: thread protect keyguard callbacks  [Alx31]
+929d7a5  base: SystemUI: dont hide weather forcast data on errors  [Alx31]
+84b84c9  base: SystemUI: use new OmniJaws error broadcasts  [Alx31]
+f5dd725  base: SystemUI: remove force weather update bits  [Alx31]
+   * kernel/oneplus/msm8994/
+eb0cd89  Remove '+' symbol from kernel version string  [Martinusbe]
+50aecbf  msm: vidc: Protect debug_buffer access in core_info_read with lock.  [Martinusbe]
+98b03ec  soc: qcom: socinfo: Protect current_image using semaphore lock.  [Martinusbe]
+dcd1768  ASoC: msm: qdspv2: add mutex to prevent access same memory simultaneously  [Martinusbe]
+54a5f44  ion: blacklist %p kptr_restrict  [Martinusbe]
+7b92789  soc: qcom: Do not clear segments if pil boot failed in memory allocation  [Martinusbe]
+77bcda8  soc: qcom: Skip clearing modem FW region post load failure  [Martinusbe]
+8f42018  msm: thermal-dev: Protect IOCTL from race condition  [Martinusbe]
+7003b18  msm: mdss: Validate cursor image size  [Martinusbe]
+2b7f75a  msm: mdss: Fix possible integer overflow  [Martinusbe]
+df682e7  ASoC: msm: qdsp6v2: set pointer to NULL after free.  [Martinusbe]
+11cc58a  msm-vidc: Allocate bus vote data during initialization  [Martinusbe]
+33c6812  arm64: Fix out of bound access to compat_hwcap_str  [Martinusbe]
+fffb6be  msm: mdss: Fix fence installation when retire fence is skipped  [Martinusbe]
+f84173d  soc: qcom: pil: Clear elf region on authentication failure  [Martinusbe]
+6feedfc  android: fiq_debugger: restrict access to critical commands.  [Martinusbe]
+54a190e  msm: mdss: fix race condition in mdp debugfs  [Martinusbe]
+ae23ac6  usb: dwc3: Replace sscanf with kstrtou8_from_user  [Martinusbe]
+ef3814f  msm: camera: isp: fix for out of bound access array  [Martinusbe]
+08aca4e  msm: IPA: add the check on intf query  [Martinusbe]
+29879d8  CHROMIUM: usb: gadget: configfs: Fix KASAN use-after-free  [Martinusbe]
+461ee00  packet: fix race condition in packet_set_ring  [Martinusbe]
+98376a8  mpi: Fix NULL ptr dereference in mpi_powm() [ver #3]  [Martinusbe]
+1ab3e59  input: synaptics: put offset checks under mutex.  [Martinusbe]
+72cf3e0  net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  [Martinusbe]
+dab7ce2  input: touchscreen: synaptics: Remove fw_update sysfs entries  [Martinusbe]
+4e6faca  msm_vidc: Fix hang due to incorrect buffer unmap  [Martinusbe]
+93301d1  l2tp: fix racy SOCK_ZAPPED flag check in l2tp_ip{,6}_bind()  [Martinusbe]
+ae082623  msm: mdss: Check for buffer boundary condition in panel_debug_reg_write  [Martinusbe]
+f1a37e4  ASoC: msm: qdsp6v2: Fix out-of-bounds access in put functions  [Martinusbe]
+86cdbf2  soc: qcom: pil: Clear elf memory on validation failure  [Martinusbe]
+92dedb3  msm: wlan: update regulatory database  [Martinusbe]
+9c0e842  ASoC: Add backend user count checking  [Martinusbe]
+9d96ad3  msm: mdss: Install sync fences after user copy  [Martinusbe]
+ed22f93  drivers: soc: add size check  [Martinusbe]
+567a779  usb: replace %p with %pK  [Martinusbe]
+16594b3  ASoC: msm: qdsp6v2: extend validation of virtual address  [Martinusbe]
+d21c64a  misc: qcom: qdsp6v2: Add range check in function aac_in_ioctl_shared  [Martinusbe]
+03c09d1  msm: camera: cpp: Fixing Heap overflow in output buffer  [Martinusbe]
+6b13a18  input: misc: fix heap overflow issue in hbtp_input.c  [Martinusbe]
+d615c30  ASoC: msm: qdsp6v2: Add support to set volume in ASM loopback  [Martinusbe]
+0795b0a  msm: mdss: Add debugfs support for panel command data type  [Martinusbe]
+6a29ab6  msm: ADSPRPC: Check for buffer overflow condition  [Martinusbe]
+74c1b45  input: touchscreen: remove msg21xx mstar touch driver  [Martinusbe]
+302661d  input: touchscreen: gt9xx: fix memory corruption in Goodix driver  [Martinusbe]
+b9f2a04  soc: qcom: smem: Fix uninitialized usage of a stack variable  [Martinusbe]
+a313509  Synchronize codes for OxygenOS 3.5.8 The changes list: 1.Recording 4K video capture process caused by the phone into the crash 2.Fix some stability issue and crash issue 3.add some secure patch  [Martinusbe]
+4fb1c24  oneplus2_defconfig  [Martinusbe]
    * packages/services/OmniJaws/
-7ebbbc4  Automatic translation import  [Alx31]
-75a2504  OmniJaws: come here all you hidden bugs into the bright light  [Alx31]
-   * packages/services/Telephony/
-f713b23  Revert "Add support to launch call barring"  [Martinusbe]
-d363525  Revert "CallFeaturesSettings: Only show Call Barring if QTI package is installed"  [Martinusbe]
-   * vendor/codeaurora/telephony/
-8de9275  IMS-VT: Send static image in a Video Call  [Martinusbe]
+13135d5  OmniJaws: fix OWM metric wind speed units  [Alx31]
+ae3cf40  OmniJaws: widget layout madness  [Alx31]
+418449b  OmniJaws: dont show OmniJaws error that prominent  [Alx31]
 
-   * hardware/libhardware_legacy/
-6559ee3  wifi: add firmware loader support for the non-LKM case  [Josue Rivera]
-   * hardware/qcom/fm/
-ba45ce9  libfm_jni: Fix strchr implicit char* typecast in ConfFileParser  [Josue Rivera]
-c810bd1  libjm_jni: Missing liblog dependency and jni core headers  [Josue Rivera]
-c59116f  Automatic translation import  [Josue Rivera]
-   * packages/apps/Bluetooth/
-1706726  Automatic translation import  [Josue Rivera]
-7a4942b  Revert "Bluetooth: handle opening incoming APK files"  [Josue Rivera]
+   * OTA_config/
+57e2414  Flo 05/12  [GitHub]
+
+   * OTA_config/
+8d779bb  Bullhead 05/11  [GitHub]
+
+   * build/
+129e2e0  Revert "Don't overwrite device audio_effects.conf with aosp frameworks/av one"  [Martinusbe]
+   * device/oneplus/oneplus3/
+ee6a937  op3: don't use DSP lib for now  [Martinusbe]
+   * manifest/
+a312ee2  track our recovery  [Martinusbe]
+fefe9c4  track musicfx n7.1 again  [Martinusbe]
+   * packages/apps/MusicFX/
+fc5b47b  Tipsy accents  [Martinusbe]
+3fd7aba  Bring in Validus theming  [Martinusbe]
+   * system/sepolicy/
+45c5197  sepolicy: Allow system_server to set theme_prop  [Martinusbe]
+
+   * OTA_config/
+cb61cc7  Clark 05/09  [GitHub]
+   * build/
+d6f6562  Don't overwrite device audio_effects.conf with aosp frameworks/av one  [Martinusbe]
+   * frameworks/base/
+2b9b2e3  audiofx: added missing @hide to BassBoost enhancements  [Martinusbe]
+b6107bd  base: audiofx: harden against offload effects  [Martinusbe]
+578d878  [3/3] AudioFX: Add center frequency param to bassboost  [Martinusbe]
+   * manifest/
+f558467  musicfx testing branch  [Martinusbe]
+   * system/media/
+91ecdde  [1/3] AudioEffects: Add center frequency param to bassboost  [Martinusbe]
+   * vendor/tipsy/
+c8b6fb3  Add dsplibs to build as well as add a way to disable per device  [Martinusbe]
+01a75f2  Testing 5.7  [Martinusbe]
+
+   * frameworks/base/
+072b5b1  [3/3] AudioEffect: Add a stereo widener effect  [Martinusbe]
+   * manifest/
+f516a3c  track DSPlibs  [Martinusbe]
+ae3c9e9  track our system/media  [Martinusbe]
+   * packages/apps/MusicFX/
+5997166  Better layout for the Reverb spinner  [Martinusbe]
+8a9c6ec  Theming: Center Visualizer view  [Martinusbe]
+b648ce2  Theming: add missing reverb effects list background color  [Martinusbe]
+   * system/core/
+64c9dc0  Revert "init.rc: set initial cpuset to all cores"  [Martinusbe]
+0fe1e20  Revert "rootdir: init.rc: Fix for "add_tid_to_cgroup failed to write" warnings"  [Martinusbe]
+   * system/extras/
+add1bd8  Use    * pathmap for recovery  [Josue Rivera]
+   * system/media/
+3f717e8  [2/3] audio_effects: Add a stereo widening effect  [Martinusbe]
+
+   * OTA_config/
+b96c317  ota: Redmi2 05/07  [Prema Chand Alugu]
+530a1cf  ota: bacon 05/07  [Prema Chand Alugu]
+2e463cf  op2: Lucifer  [Martinusbe]
+39ca9cc  op3 Mystic  [Martinusbe]
+   * device/oneplus/bacon/
+f5bfcb6  Fix more sepolicy denials  [Prema Chand Alugu]
+2ab5c99  Fix long pending sepolicy errors  [Prema Chand Alugu]
+   * device/oneplus/oneplus3/
+0b4d5d5  op3: Update decoder profiling result  [Martinusbe]
+eb4ce86  op3: Unpin fpc hal  [Martinusbe]
+   * kernel/oneplus/msm8996/
+7062e78  mm: Tighten x86 /dev/mem with zeroing reads  [Martinusbe]
+f98f4ad  crypto: ahash - Fix EINPROGRESS notification callback  [Martinusbe]
+b1a8f63  mm/mempolicy.c: fix error handling in set_mempolicy and mbind.  [Martinusbe]
+4e453eb  KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings  [Martinusbe]
+fd73a74  scsi: sg: check length passed to SG_NEXT_CMD_LEN  [Martinusbe]
+6bff6fd  xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window  [Martinusbe]
+66257f9  KEYS: Change the name of the dead type to ".dead" to prevent user access  [Martinusbe]
+abb3774  ANDROID: ion: Protect kref from userspace manipulation  [Martinusbe]
+53add53b7  Kconfig: msm: disable ultrasound driver  [Martinusbe]
+718abb2  KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings  [Martinusbe]
+a21c3af  mm: migrate dirty page without clear_page_dirty_for_io etc  [Martinusbe]
    * packages/resources/devicesettings/
-c08986d  Automatic translation import  [Josue Rivera]
-22b6d92  Add strings for hand wave gesture extra option  [Josue Rivera]
-6df1340  Add strings for fingerprint pocketmode  [Josue Rivera]
-decab19  Automatic translation import  [Josue Rivera]
-f9a8b9f  Automatic translation import  [Josue Rivera]
-1477228  Automatic translation import  [Josue Rivera]
-a0991a1  Automatic translation import  [Josue Rivera]
-9a535f0  Automatic translation import  [Josue Rivera]
-e3a2579  Automatic translation import  [Josue Rivera]
+e118a1c  Automatic translation import  [Josue Rivera]
+   * vendor/motorola/
+5f8b3e6  addison: Display blobs update  [Luca Stefani]
+12285bf  addison: Drop unneeded blobs  [Luca Stefani]
+17d357d  addison: Switch to OSS GPS  [Luca Stefani]
+3a43b3d  victara: Add libtqi-perfd-client.so  [Christopher R. Palmer]
+   * vendor/oneplus/
+7755625  op3: Update fpc hal from OB15  [Martinusbe]
