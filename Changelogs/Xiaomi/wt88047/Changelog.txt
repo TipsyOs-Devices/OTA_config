@@ -1,4 +1,92 @@
 ====================
+     05-14-2017
+====================
+
+   * bionic/
+b57bd20  libc: memcpy_base: Disable opt for certain targets  [Alx31]
+   * frameworks/base/
+2253290  base: SystemUI: add dedicated TextView for OmniJaws error marker  [Alx31]
+2f5f735  base: SystemUI: dont show OmniJaws error that prominent  [Alx31]
+658bfd2  base: remove duplicates sounds  [Alx31]
+e21c6c3  base: SystemUI: thread protect keyguard callbacks  [Alx31]
+2ec2924  base: SystemUI: dont hide weather forcast data on errors  [Alx31]
+9c9dbbc  base: SystemUI: use new OmniJaws error broadcasts  [Alx31]
+028841f  base: SystemUI: remove force weather update bits  [Alx31]
+1289df1  audiofx: added missing @hide to BassBoost enhancements  [Alx31]
+23fafef  base: audiofx: harden against offload effects  [Alx31]
+5307e00  [3/3] AudioFX: Add center frequency param to bassboost  [Alx31]
+7c02ed6  [3/3] AudioEffect: Add a stereo widener effect  [Alx31]
+   * manifest/
+d91072d  track our system_media and DSPlibs  [Alx31]
+   * packages/services/OmniJaws/
+13135d5  OmniJaws: fix OWM metric wind speed units  [Alx31]
+ae3cf40  OmniJaws: widget layout madness  [Alx31]
+418449b  OmniJaws: dont show OmniJaws error that prominent  [Alx31]
+   * vendor/tipsy/
+c093434  v5.7 NakedLadies week it is.  [Alx31]
+3448e5d  Add dsplibs to build as well as add a way to disable per device  [Alx31]
+
+====================
+     05-13-2017
+====================
+   * OTA_config/
+57e2414  Flo 05/12  [GitHub]
+
+====================
+     05-12-2017
+====================
+   * OTA_config/
+8d779bb  Bullhead 05/11  [GitHub]
+
+====================
+     05-11-2017
+====================
+
+   * manifest/
+04756ad  track our recovery  [GitHub]
+   * packages/apps/MusicFX/
+fc5b47b  Tipsy accents  [Martinusbe]
+3fd7aba  Bring in Validus theming  [Martinusbe]
+   * system/media/
+91ecdde  [1/3] AudioEffects: Add center frequency param to bassboost  [Martinusbe]
+   * system/sepolicy/
+45c5197  sepolicy: Allow system_server to set theme_prop  [Martinusbe]
+
+====================
+     05-10-2017
+====================
+   * OTA_config/
+cb61cc7  Clark 05/09  [GitHub]
+   * packages/apps/MusicFX/
+5997166  Better layout for the Reverb spinner  [Martinusbe]
+8a9c6ec  Theming: Center Visualizer view  [Martinusbe]
+b648ce2  Theming: add missing reverb effects list background color  [Martinusbe]
+   * system/media/
+3f717e8  [2/3] audio_effects: Add a stereo widening effect  [Martinusbe]
+
+====================
+     05-09-2017
+====================
+
+   * system/core/
+64c9dc0  Revert "init.rc: set initial cpuset to all cores"  [Martinusbe]
+0fe1e20  Revert "rootdir: init.rc: Fix for "add_tid_to_cgroup failed to write" warnings"  [Martinusbe]
+   * system/extras/
+add1bd8  Use    * pathmap for recovery  [Josue Rivera]
+
+====================
+     05-08-2017
+====================
+   * OTA_config/
+b96c317  ota: Redmi2 05/07  [Prema Chand Alugu]
+530a1cf  ota: bacon 05/07  [Prema Chand Alugu]
+2e463cf  op2: Lucifer  [Martinusbe]
+39ca9cc  op3 Mystic  [Martinusbe]
+   * device/oneplus/bacon/
+f5bfcb6  Fix more sepolicy denials  [Prema Chand Alugu]
+2ab5c99  Fix long pending sepolicy errors  [Prema Chand Alugu]
+
+====================
      05-07-2017
 ====================
 
@@ -21,189 +109,4 @@ f7b5a98  track 8937 from Tesla for Alex  [Prema Chand Alugu]
 b71ef95  v5.6 Mystic  [Prema Chand Alugu]
 1bcc130  Update Amaze to RC3  [Prema Chand Alugu]
 e404771  Add AmazeFileManager apk v3.1.2-RC2  [Prema Chand Alugu]
-
-====================
-     05-06-2017
-====================
-
-
-====================
-     05-05-2017
-====================
-   * OTA_config/
-0ce1acd  Flounder 05/04  [GitHub]
-   * frameworks/av/
-844da4c  seccomp: Fix policy for ffmpeg  [Martinusbe]
-
-====================
-     05-04-2017
-====================
-   * OTA_config/
-74a8dcf  onyx (05/03)  [GitHub]
-   * build/
-5b40e13  pull BoardConfigTIPSY.mk from vendor  [GitHub]
-   * vendor/tipsy/
-266a5a3  Rename BoardConfigCM.mk to BoardConfigTIPSY.mk  [GitHub]
-
-====================
-     05-03-2017
-====================
-
-   * build/
-1cceefe  N2G47O  [Martinusbe]
-62e9d73  N2G47N  [Martinusbe]
-eec4276  N2G47M  [Martinusbe]
-9f54eff  N2G47L  [Martinusbe]
-0186621  N2G47K  [Martinusbe]
-6aed3a7  Update Security String to 2017-05-05 on nyc-dev  [Martinusbe]
-94f8b0c  Update Security String to 2017-05-01 on nyc-dev  [Martinusbe]
-2ef3365  N2G47I  [Martinusbe]
-49782e9  N2G47H  [Martinusbe]
-acf9399  N2G47G  [Martinusbe]
-d9e5559  N2G47F  [Martinusbe]
-   * device/qcom/common/
-6f3603c  add support of mpctlv3 on msm8953  [Alx31]
-1af178b  add power-8953  [Alx31]
-   * frameworks/av/
-649801f  Add bounds check in SoftAACEncoder2::onQueueFilled()  [Martinusbe]
-253956a  Fix NPDs in h263 decoder  [Martinusbe]
-a6263fc  Fix out of bounds access  [Martinusbe]
-01b856a  Fix integer overflow and divide-by-zero  [Martinusbe]
-e53dd22  Validate lengths in HEVC metadata parsing  [Martinusbe]
-58967f1  AudioFlinger: Check framecount overflow when creating track  [Martinusbe]
-   * frameworks/base/
-5affdc0  Remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
-e169fd6  [DO NOT MERGE] Don't allow permission change to runtime  [Martinusbe]
-1e26fbe  [DO NOT MERGE] Throw exception if slot has invalid offset  [Martinusbe]
-65ca0fa  [DO NOT MERGE] Check bounds in offsetToPtr  [Martinusbe]
-949995d  Fix issue with saving admins before finishing loading.  [Martinusbe]
-79130c8  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release  [Martinusbe]
-2f8ac0c  Protect Bluetooth OPP ACCEPT and DECLINE broadcast  [Martinusbe]
-4bbd37e  fix anr when concurrent request provider  [Martinusbe]
-edc660f  Ensure that the decor view is attached to window.  [Martinusbe]
-983b699  Bad token of activity when do the launch work at the app process side.  [Martinusbe]
-97ec414  Query geo description in worker thread to prevent ANR  [Martinusbe]
-225ca85  remove duplicated incorrectly code in ProcessRecord  [Martinusbe]
-3592883  fix foreground process will be mistakenly killed when it uses content provider.  [Martinusbe]
-bca4541  Fix PacketKeepalive.stop() crash  [Martinusbe]
-b600df4  Restart persistent process if start timeout.  [Martinusbe]
-c3814be  fix system_server crash issue caused by fd leak.  [Martinusbe]
-6cd6431  framework: fix screenshot and rotation animation for devices with abnormal hw rotation  [Martinusbe]
-   * frameworks/native/
-199664b  Merge pull request #11 from TipsyOs/testing  [GitHub]
-9a52e54  binder: remove cgroup interactions [ DO NOT MERGE ]  [Martinusbe]
-   * manifest/
-69489e3  7.1.2_r8  [Martinusbe]
-c64f144  tc cleanup and bring back 5.x for mzp kernel  [Martinusbe]
-d550923  update readme just because  [GitHub]
-   * packages/apps/masquerade/
-00415e7  JobService: Expose configuration shim refresh delay  [Martinusbe]
-8208ce8  Add a looper to the locale change handler  [Martinusbe]
-ebb9a01  README: Recommend Interfacer be put in the services folder  [Martinusbe]
-67f9a0c  JobService: Transition to the Binder Interprocess Communication System  [Martinusbe]
-963118d  restartService --> forceStopService  [Martinusbe]
-8d305f3  Polish copyright  [Martinusbe]
-a97402d  Fix failed authorization toast on restartService  [Martinusbe]
-509ae52  JobService: Fix inital font application  [Martinusbe]
-5f24233  JobService: fix initial theme dir creation  [Martinusbe]
-e0d329d  Run RestartService immediately if called  [Martinusbe]
-eb7d9ad  Welcome to Theme Interfacer! [1/2]  [Martinusbe]
-38a4d87  AndroidManifest: Add protected broadcasts  [Martinusbe]
-df989e9  JobService: new RestartService job  [Martinusbe]
-d1529cb  Broadcast authorization result  [Martinusbe]
-5677261  Introducing Signature check in Masquerade (1/3)  [Martinusbe]
-d2678da  Add missing exception handling in setDefaultAudible  [Martinusbe]
-52816c6  Rewrite the way we handle sound overlays  [Martinusbe]
-81fa0c9  This is not how you convert long to String ;_;  [Martinusbe]
-503d252  Improve code style  [Martinusbe]
-877bd69  Unify logging  [Martinusbe]
-cff4d74  Use Log.e() instead of printStackTrace();  [Martinusbe]
-   * system/bt/
-f8eceb6  resolve merge conflicts of a3ee2e35 to nyc-dev  [Josue Rivera]
-   * system/core/
-400c7fc  libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]  [Martinusbe]
-3393bef  init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
-   * vendor/tipsy/
-6be4419  Update Magisk Manager 4.3.3  [Martinusbe]
-
-====================
-     05-02-2017
-====================
-   * OTA_config/
-3963e16  Flo 05/01  [GitHub]
-   * hardware/qcom/fm/
-7297363  Automatic translation import  [Josue Rivera]
-   * packages/apps/Snap/
-af5839c  Automatic translation import  [Josue Rivera]
-
-====================
-     05-01-2017
-====================
-   * OTA_config/
-c1dabfa  Redmi2 04/30 Lucifer  [Prema Chand Alugu]
-b1764aa  Clark 04/30  [GitHub]
-885c217  ota: bacon 04/30 Lucifer  [Prema Chand Alugu]
-ec695ab  op3 Lucifer  [Martinusbe]
-   * build/
-8e0b0cb  Use 'release-keys' for build tag  [Alx31]
-   * frameworks/base/
-816d18a  fix pastie derp  [Alx31]
-25334e7  QS WiFi easy toggle: if enabled, long press for detail view no.2  [Alx31]
-aabb00a  QS BT easy toggle: if enabled, long press for detail view  [Alx31]
-cb23f84  QS: BT easy toggle [1/2]  [Alx31]
-1ad3d00  Data tile quick toggle: apply the custom behavior also to mini tiles bar  [Alx31]
-66f06ff  Add VOLTE icon from caf  [Alx31]
-95bcfc6  IMS: Add API to get IMS Registration Status based on subId  [Alx31]
-43796c4  SystemUI:Notification bar custom notification display problems  [Alx31]
-ff41679  SystemUI: Fix SystemUI ANR  [Alx31]
-7988612  Retro Theme [2/7]  [Alx31]
-   * frameworks/native/
-b80cbb6  Retro Theme [3/7]  [Alx31]
-   * manifest/
-59c7629  track our caf telephony  [Alx31]
-1dc85e3  track MusicFX  [Alx31]
-7c25100  track our development and fw_support  [Alx31]
-   * packages/apps/Dialer/
-89a3a77  IMS-VT: Send static image in a Video Call  [Martinusbe]
-   * packages/apps/Settings/
-98aa5d4  add new Tipsy banner for red theme  [Alx31]
-56ee678  Settings: Phone process crash in SIM Status.  [Alx31]
-6f5d274  IMS: Cellular network type is not showing VoLTE enabled  [Alx31]
-6c4f1fd  Add package overlay support for carrier  [Alx31]
-3cc6d93  Add new network types in settings app.  [Alx31]
-4299439  Port "Battery Usage Alerts" feature from factory images to aosp  [Alx31]
-5462fb0  cosmetics.  [Alx31]
-10d6b47  move wolvesden retro theme commit to tipsy settings  [Alx31]
-6499987  Retro Theme [5/7]  [Alx31]
-   * packages/apps/Tavern/
-4124874  add missing import from b8dce5c  [Alx31]
-e261ac2  Unify all "advanced" tiles into one easy toggle tile  [Alx31]
-3abd317  QS: WiFi easy toggle [2/2]  [Alx31]
-c425a74  QS: Bluetooth easy toggle [2/2]  [Alx31]
-   * packages/services/OmniJaws/
-7ebbbc4  Automatic translation import  [Alx31]
-75a2504  OmniJaws: come here all you hidden bugs into the bright light  [Alx31]
-   * packages/services/Telephony/
-f713b23  Revert "Add support to launch call barring"  [Martinusbe]
-d363525  Revert "CallFeaturesSettings: Only show Call Barring if QTI package is installed"  [Martinusbe]
-   * vendor/codeaurora/telephony/
-8de9275  IMS-VT: Send static image in a Video Call  [Martinusbe]
-   * vendor/tipsy/
-967a342  v5.5 Lucifer week it is.  [Alx31]
-ffed833  Introduce the 'Turbo' apk  [Alx31]
-c9d367d  Retro Theme [7/7]  [Alx31]
-
-====================
-     04-30-2017
-====================
-
-   * hardware/libhardware_legacy/
-6559ee3  wifi: add firmware loader support for the non-LKM case  [Josue Rivera]
-   * hardware/qcom/fm/
-ba45ce9  libfm_jni: Fix strchr implicit char* typecast in ConfFileParser  [Josue Rivera]
-c810bd1  libjm_jni: Missing liblog dependency and jni core headers  [Josue Rivera]
-c59116f  Automatic translation import  [Josue Rivera]
-   * packages/apps/Bluetooth/
-1706726  Automatic translation import  [Josue Rivera]
-7a4942b  Revert "Bluetooth: handle opening incoming APK files"  [Josue Rivera]
 
