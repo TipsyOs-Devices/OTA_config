@@ -168,11 +168,11 @@
                 description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
         </flo>
         <flounder>
-            <Filename>Tipsy-flounder-7.1.2.Lucifer-v5.5-20170504-1017.zip</Filename>
+            <Filename>Tipsy-flounder-7.1.2.NakedLadies-v5.7-20170515-2058.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=673368273298952317</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=817550096634769527</RomUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -180,7 +180,7 @@
             <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit XDA thread">https://forum.xda-developers.com/nexus-9/development/rom-gzroms-tesla-flounder-2015-06-19-t3139058</XDAUrl>
+                description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/rom-gzroms-tesla-flounder-2015-06-19-t3139058</XDAUrl>
         </flounder>
         <clark>
             <Filename>Tipsy-clark-7.1.2.Mystic-v5.6-20170509-2113.zip</Filename>
