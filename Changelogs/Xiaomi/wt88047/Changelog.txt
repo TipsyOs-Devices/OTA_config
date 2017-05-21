@@ -1,9 +1,172 @@
 ====================
-     05-14-2017
+     05-21-2017
 ====================
 
+   * frameworks/base/
+8be4b71  Tipsy Logo: Option to chose Statusbar/Lockscreen  [Alx31]
+11b6b81  Tipsy Logo: Enable logo at the lockscreen  [Alx31]
+   * vendor/tipsy/
+5364c16  It's Tipsy O week  [GitHub]
+
+====================
+     05-20-2017
+====================
+
+   * build/
+06fab8f  build: Hide gcc and clang warnings  [Prema Chand Alugu]
+336773b  Revert "Don't overwrite device audio_effects.conf with aosp frameworks/av one"  [Prema Chand Alugu]
+e3651f2  Don't overwrite device audio_effects.conf with aosp frameworks/av one  [Prema Chand Alugu]
+   * frameworks/base/
+a7466ce  Tipsy Logo: add cheerz bro style logo  [Prema Chand Alugu]
+858f0a9  Tipsy Logo: Provision for list of logo styles  [Prema Chand Alugu]
+7233078  bt profile: MAX_PROFILE_ID = 21  [Prema Chand Alugu]
+cc41b75  Download: Add support to manually pause/resume download  [Prema Chand Alugu]
+d28934b  Logo more prominent with increase of size to 24dp  [Prema Chand Alugu]
+4de39e1  Tipsy logo in the statusbar  [Prema Chand Alugu]
+6786176  bt manager: add missing mHandler  [Prema Chand Alugu]
+cc2823e  Bluetooth: Enable peripheral & mutli-adv in BLE-Always-on mode  [Prema Chand Alugu]
+c1f7ef3  Obex: Reduce MTU Size.  [Prema Chand Alugu]
+   * frameworks/native/
+dd1ad7f  sensorservice: Fix orientation sensor for HAL's missing rotation vector sensor  [Prema Chand Alugu]
+   * manifest/
+9b2785f  services telecomm testing branch  [Prema Chand Alugu]
+2526f57  track our art  [Prema Chand Alugu]
+1ca2b06  track our bt app  [Prema Chand Alugu]
+   * packages/apps/Settings/
+89306da  Redundant waiting time of keyguard unlocking after reboot  [Prema Chand Alugu]
+   * packages/services/Telecomm/
+98dc191  DayNight Telephony Theming (6/7)  [Martinusbe]
+   * packages/services/Telephony/
+3aadf15  DayNight Telephony Theming (7/7)  [Martinusbe]
+a4e09b0  VoicemailSettingsActivity: Fix NPE  [Martinusbe]
+2eaf93b  Telephony: Fix "Redirect to roaming SIM network setting(Dual SIM)"  [Martinusbe]
+bf0fb52  MobileNetworkSettings: Read and write USER_NETWORK_MODE  [Martinusbe]
+2d85f05  MSIM: Fix for preferred SIM for voice  [Martinusbe]
+   * vendor/tipsy/
+794ef61  tipsy: don't build AudioFX, we have MusicFX  [Prema Chand Alugu]
+
+====================
+     05-19-2017
+====================
+
+   * packages/providers/DownloadProvider/
+82426aa  DownloadProvider: Add support for manual pause/resume  [Josue Rivera]
+   * packages/services/Telecomm/
+f131dbd  fix outgoing call  [Martinusbe]
+3bf1819  Accept timeout from apps requesting call disconnect  [Martinusbe]
+e808977  Add lock to NewOutgoingCallBroadcastIntentReceiver  [Martinusbe]
+
+====================
+     05-18-2017
+====================
+
+   * packages/providers/DownloadProvider/
+450dda8  DownloadProvider: Display download speed in notification  [sayeed99]
+   * packages/services/Telecomm/
+9a9b5fa  Revert "Honor option to allow vibration during priority zen mode."  [Martinusbe]
+559b277  Merge tag 'android-7.1.2_r2' into cm-14.1  [Martinusbe]
+3328446  [3/4] Add increasing ring feature  [Martinusbe]
+10d794a  Strip separators while sending CLCC response  [Martinusbe]
+fef42fa  Fix issue where the dnd mode remains on after a call terminates.  [Martinusbe]
+e2eb6e4  Add cap on number of calls stored in analytics  [Martinusbe]
+bcaebc8  Telecomm: Fix error due to protected broadcast  [Martinusbe]
+b606796  Automatic translation import  [Martinusbe]
+d6538b7  Fix incorrect key in Maps  [Martinusbe]
+c78e54f  telecom: Ensure that we always update bluetooth in dsda case  [Martinusbe]
+f7d9884  Telecom: Ues proper sub IDs  [Martinusbe]
+d86ad75  Expose call creation time to link call recordings with recent call log (2/2)  [Martinusbe]
+267ee98  Ignore null groupId when restoring default account.  [Martinusbe]
+d36b64b  Honor option to allow vibration during priority zen mode.  [Martinusbe]
+a6c39d9  Fix sporadic crashes with MSIM devices and inactive SIMs  [Martinusbe]
+7458e40  Telecomm: Update icon to Material  [Martinusbe]
+6e95ec0  Telecom: Break qti-telephony-framework dependency  [Martinusbe]
+24cc407  Telecomm: Squash changes to default SIM handling  [Martinusbe]
+0b57e2c  Revert "Phone: Add headset notification when wired headset plugged in"  [Martinusbe]
+eca08d3  Proper supplementary service notification handling (3/5)  [Martinusbe]
+   * system/bt/
+984c812  Do not include the trailing NULL from the C-String in the SDP service name  [Josue Rivera]
+   * vendor/tipsy/
+d8af74b  Enable Night Display globally  [GitHub]
+
+====================
+     05-17-2017
+====================
+
+   * frameworks/av/
+f7742be  Revert AudioSessionInfo API  [Martinusbe]
+   * vendor/tipsy/
+5529662  cm: overlay: Enable auto-power-save modes globally  [GtrCraft]
+
+====================
+     05-16-2017
+====================
+   * OTA_config/
+aecbea5  ota: flounder 05/15  [GitHub]
+   * art/
+829db8e  runtime: arch: support kryo for 32 bit  [Martinusbe]
+   * bionic/
+80a4c97  libc: ARM: Add 32-bit Kryo memcpy  [Martinusbe]
+2c58697  libc: use Cortex-A7/A53 memset on Kryo  [Martinusbe]
+e6a7073  Add kryo support.  [Martinusbe]
+   * frameworks/av/
+7589a3e  media: Allow using legacy HSR calculation  [Martinusbe]
+   * kernel/oneplus/msm8974/
+e9898e7  Revert "PM: Introduce suspend state PM_SUSPEND_FREEZE"  [Prema Chand Alugu]
+158a43b  Revert "wakeup: add toggles for wlan wakelocks. They are all enabled by default, it's up to the user and I provide no support if Wi-Fi stops working normally without these locks enabled. This is for advanced users"  [Prema Chand Alugu]
+7d09709  drivers: video: Add bounds checking in fb_cmap_to_user  [Prema Chand Alugu]
+b61694d  msm: mdss: hide kernel addresses from unprevileged users  [Prema Chand Alugu]
+0fbced9  usb: gadget: f_mbim: Change %p to %pK in debug messages  [Prema Chand Alugu]
+bfede56  platform: msm: spmi: Fix possible race condition in debugfs  [Prema Chand Alugu]
+b944814  scsi: sg: check length passed to SG_NEXT_CMD_LEN  [Prema Chand Alugu]
+5d0b9d0  sg: relax 16 byte cdb restriction  [Prema Chand Alugu]
+0261270  qseecom: remove entry from qseecom_registered_app_list  [Prema Chand Alugu]
+d3d140e  qseecom: validate the inputs of __qseecom_send_modfd_resp  [Prema Chand Alugu]
+09272cc  msm-camera: Addressing possible overflow conditions  [Prema Chand Alugu]
+01caedd  msm: sensor: Avoid potential stack overflow  [Prema Chand Alugu]
+d3efff5  msm: camera: Restructure data handling to be more robust  [Prema Chand Alugu]
+0ed4226  msm: sensor: validate the i2c table index before use  [Prema Chand Alugu]
+d5da3d9  dm-req-crypt: properly close the current device  [Prema Chand Alugu]
+28a9477  msm: kgsl: fix sync file error handling  [Prema Chand Alugu]
+c042787  BACKPORT: ion: fix a race condition in the ion driver  [Prema Chand Alugu]
+80dfb29  crypto: msm: check integer overflow on total data len in qcedev.c  [Prema Chand Alugu]
+891d3d4  msm: crypto: fix issues on digest buf and copy_from_user in qcedev.c  [Prema Chand Alugu]
+dd7c610  qcrypto: protect potential integer overflow.  [Prema Chand Alugu]
+caf1e79  msm: crypto: Fix integer over flow check in qce driver  [Prema Chand Alugu]
+c01fb26  msm: crypto: Fix integer over flow check in qcedev driver  [Prema Chand Alugu]
+d970763  block: add blk_rq_set_block_pc()  [Prema Chand Alugu]
+75b8086  sg_write()/bsg_write() is not fit to be called under KERNEL_DS  [Prema Chand Alugu]
+79e04bd  soc: qcom: smp2p: Fix kernel address leak  [Prema Chand Alugu]
+f8dc513  net: ipc_router: fix NULL pointer de-reference issue  [Prema Chand Alugu]
+00669f7  drivers: soc: add size checks and update log messages  [Prema Chand Alugu]
+59f95e8  ASoC: msm: lock read/write when add/free audio ion memory  [Prema Chand Alugu]
+b57e642  drivers: soc: Add buffer overflow check for svc send request  [Prema Chand Alugu]
+2d25267  ASoC: msm: qdsp6v2: Change audio drivers to use %pK  [Prema Chand Alugu]
+
+====================
+     05-15-2017
+====================
+
+   * frameworks/native/
+0d91365  native: add phone-xxhdpi-4096-dalvik-heap property config  [oadam11]
+   * packages/apps/Bluetooth/
+3d79620  OPP: Prevent holding wake lock multiple times  [Martinusbe]
+22a0fa9  OPP: Check file size before send  [Martinusbe]
+5fb875f  OPP: Reduce MTU size while simultaneous A2DP and OPP  [Martinusbe]
+a352129  OPP: Handle Stale Data Exception  [Martinusbe]
+1c0d159  OPP: Clear ongoing notification while force killing BT.  [Martinusbe]
+27eff98  OPP: fix notification count display error after bt off  [Martinusbe]
+
+====================
+     05-14-2017
+====================
+   * OTA_config/
+dac0f96  ota: Fix Oneplus One/Redmi2 builds interchange  [Prema Chand Alugu]
+e5984b9  op3: NakedLadies  [Martinusbe]
+5b7b82d  ota: Redmi2, Oneplus One 05/14  [Prema Chand Alugu]
    * bionic/
 b57bd20  libc: memcpy_base: Disable opt for certain targets  [Alx31]
+   * device/oneplus/bacon/
+9e327b0  sepolicy: Fix up neverallow errors  [Prema Chand Alugu]
    * frameworks/base/
 2253290  base: SystemUI: add dedicated TextView for OmniJaws error marker  [Alx31]
 2f5f735  base: SystemUI: dont show OmniJaws error that prominent  [Alx31]
@@ -23,90 +186,7 @@ d91072d  track our system_media and DSPlibs  [Alx31]
 ae3cf40  OmniJaws: widget layout madness  [Alx31]
 418449b  OmniJaws: dont show OmniJaws error that prominent  [Alx31]
    * vendor/tipsy/
+6a7a37d  backuptool 7.1.2  [Alx31]
 c093434  v5.7 NakedLadies week it is.  [Alx31]
 3448e5d  Add dsplibs to build as well as add a way to disable per device  [Alx31]
-
-====================
-     05-13-2017
-====================
-   * OTA_config/
-57e2414  Flo 05/12  [GitHub]
-
-====================
-     05-12-2017
-====================
-   * OTA_config/
-8d779bb  Bullhead 05/11  [GitHub]
-
-====================
-     05-11-2017
-====================
-
-   * manifest/
-04756ad  track our recovery  [GitHub]
-   * packages/apps/MusicFX/
-fc5b47b  Tipsy accents  [Martinusbe]
-3fd7aba  Bring in Validus theming  [Martinusbe]
-   * system/media/
-91ecdde  [1/3] AudioEffects: Add center frequency param to bassboost  [Martinusbe]
-   * system/sepolicy/
-45c5197  sepolicy: Allow system_server to set theme_prop  [Martinusbe]
-
-====================
-     05-10-2017
-====================
-   * OTA_config/
-cb61cc7  Clark 05/09  [GitHub]
-   * packages/apps/MusicFX/
-5997166  Better layout for the Reverb spinner  [Martinusbe]
-8a9c6ec  Theming: Center Visualizer view  [Martinusbe]
-b648ce2  Theming: add missing reverb effects list background color  [Martinusbe]
-   * system/media/
-3f717e8  [2/3] audio_effects: Add a stereo widening effect  [Martinusbe]
-
-====================
-     05-09-2017
-====================
-
-   * system/core/
-64c9dc0  Revert "init.rc: set initial cpuset to all cores"  [Martinusbe]
-0fe1e20  Revert "rootdir: init.rc: Fix for "add_tid_to_cgroup failed to write" warnings"  [Martinusbe]
-   * system/extras/
-add1bd8  Use    * pathmap for recovery  [Josue Rivera]
-
-====================
-     05-08-2017
-====================
-   * OTA_config/
-b96c317  ota: Redmi2 05/07  [Prema Chand Alugu]
-530a1cf  ota: bacon 05/07  [Prema Chand Alugu]
-2e463cf  op2: Lucifer  [Martinusbe]
-39ca9cc  op3 Mystic  [Martinusbe]
-   * device/oneplus/bacon/
-f5bfcb6  Fix more sepolicy denials  [Prema Chand Alugu]
-2ab5c99  Fix long pending sepolicy errors  [Prema Chand Alugu]
-
-====================
-     05-07-2017
-====================
-
-   * device/wingtech/wt88047/
-52a2beb  wt88047: charger: Switch to CM charger libhealthd  [Prema Chand Alugu]
-   * frameworks/base/
-e87d3c3  Frameworks: Re-adapt toast window animations for 7.1.1 - Since google updated toast popup notifications on 7.1.1 release. toast window animations stop working .So now this is make it work again  [Prema Chand Alugu]
-2003a49  SystemUI:Bluetooth can't be turn off  [Prema Chand Alugu]
-d2bb0f7  BT: Update wait function in ManagerService to handle  BLE states  [Prema Chand Alugu]
-49edbfd  Bluetooth: Handle user switch with new states  [Prema Chand Alugu]
-af22b80  StatusBar: Catch OOM caused by third-party icons  [Prema Chand Alugu]
-   * manifest/
-f7b5a98  track 8937 from Tesla for Alex  [Prema Chand Alugu]
-   * packages/apps/Settings/
-4e44f4d  Settings[Wifi]: fix the input invalid length for WEP encryption.  [Prema Chand Alugu]
-4f957d2  Settings: Fix internal storage summary for non-emulated storage  [Prema Chand Alugu]
-   * packages/apps/Tavern/
-357ddbc  nuke wifi easy toggle since we have this b8dce5c  [Prema Chand Alugu]
-   * vendor/tipsy/
-b71ef95  v5.6 Mystic  [Prema Chand Alugu]
-1bcc130  Update Amaze to RC3  [Prema Chand Alugu]
-e404771  Add AmazeFileManager apk v3.1.2-RC2  [Prema Chand Alugu]
 
