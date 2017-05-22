@@ -138,19 +138,11 @@
                 description="View TipsyOs changelogs">https://github.com/TipsyOs-Devices/OTA_config/blob/n7.1/Changelogs/Motorola/falcon/Changelog.txt</ChangelogUrl>
         </falcon>
         <mako>
-            <Filename>Tipsy-mako-frunk-v4.6-20160819-1759.zip</Filename>
+            <Filename>Tipsy-mako-7.1.2.Omer-v5.8-20170521-2106.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?w=files&amp;flid=88527</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View TipsyOs changelogs">https://github.com/TipsyOs/OTA_config/blob/master/Changelogs/Vatsal/Changelog.txt</ChangelogUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="Download latest Banks gapps">http://downloads.hostingsharedbox.com/nathanchance/GApps/banks_dynamic_gapps-6.x.x-20160730.zip</GappsUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862728408</RomUrl>
         </mako>
         <flo>
             <Filename>Tipsy-flo-7.1.2.Mystic-v5.6-20170512-1637.zip</Filename>
