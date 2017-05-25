@@ -145,11 +145,11 @@
                 description="Download TipsyOs build">https://www.androidfilehost.com/?fid=529152257862728408</RomUrl>
         </mako>
         <flo>
-            <Filename>Tipsy-flo-7.1.2.Mystic-v5.6-20170512-1637.zip</Filename>
+            <Filename>Tipsy-flo-7.1.2.Omer-v5.8-20170525-1715.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=817550096634768843</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=817550096634771906</RomUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
@@ -190,15 +190,19 @@
                 description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/02-22-7-1-1-ground-zero-roms-validus-t3561477</XDAUrl>
         </clark>
         <bullhead>
-            <Filename>Tipsy-bullhead-7.1.2.Mystic-v5.6-20170511-1900.zip</Filename>
+            <Filename>Tipsy-bullhead-7.1.2.Omer-v5.8-20170525-1447.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=745425885120731033</RomUrl>
+                description="Download TipsyOs build">https://www.androidfilehost.com/?fid=817550096634771895</RomUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit XDA thread">https://forum.xda-developers.com/ground-zero-roms/ground-zero-roms-feature-development/05-11-7-1-2-ground-zero-roms-validus-t3605719</XDAUrl>
         </bullhead>
         <lux>
             <Filename>Tipsy-lux-7.1.1.Gildenbier-v5.0-20170319-1937.zip</Filename>
